@@ -1,6 +1,6 @@
 # Chapter 14: When the Teacher Leaves the Classroom
 
-When the physical form of the spiritual master is no longer present on this earth, how should a disciple feel? [199, 206] How should we, who have received his fatherly guidance, navigate the devastating pain of his physical disappearance? [208, 216]
+Whether the spiritual master is far away preaching, or we are simply apart from him in our daily service, how should a disciple maintain the connection? [199, 206] What is the actual test of a disciple who is physically separated from his guru? [208, 216]
 
 To find our answer, we must first understand the fundamental difference between the physical presence of the Guru (*vapu*) and his eternal instructions (*vāṇī*) [214]. While the spiritual master is physically present, we should render loving service to his physical form [214]. This is sweet and necessary [214]. But his physical body does not live eternally [428]. His word lives eternally [428]. Therefore, while the spiritual master is physically present on this earth, the disciple must try to establish a deep, unshakeable connection with his *vāṇī* [428]. 
 
@@ -16,13 +16,13 @@ When the teacher is physically present inside the school classroom, everyone is 
 
 But if you want to know the actual character of the students, you must observe what they do when the teacher leaves the classroom [572, 666]! The moment the teacher walks out the door, the behavior of the students shows who they really are [572, 666]. One student immediately starts jumping on the tables, another starts throwing papers, and the entire classroom becomes chaotic and wild [572]. Only the rare, genuine students keep their heads down, ignore the distraction, and continue their assignments exactly as instructed [572].
 
-The physical disappearance of the Guru is the time when the teacher leaves the classroom [572, 666]. It is the ultimate test of what we have actually learned [572, 666]. How are we going to perform our Kṛṣṇa consciousness when his physical eye is no longer watching us [572, 666]? Are we going to close down the temple, or slide back into our lazy, old material habits [572, 648]? Our job, our hearing, our daily Sādhana—everything will be tested [667]. If we are not practicing properly now in the classroom of life, we will have nothing to write on our paper on examination day [667].
+Any time we are physically separated from the Guru — whether he is away preaching, or has departed this world — is the time the teacher has left the classroom [572, 666]. It is the ultimate test of what we have actually learned [572, 666]. How are we going to perform our Kṛṣṇa consciousness when his physical eye is no longer watching us [572, 666]? Are we going to close down the temple, or slide back into our lazy, old material habits [572, 648]? Our job, our hearing, our daily Sādhana—everything will be tested [667]. If we are not practicing properly now in the classroom of life, we will have nothing to write on our paper on examination day [667].
 
 ---
 
 ## **The Myth of Being an Orphan**
 
-The moment the spiritual master is physically gone, some devotees fall into the trap of the "orphan mentality" [573]. They sit back, fold our arms, and cry: *“Oh, my Guru is gone, what can I do now? I am completely helpless. I am a poor, lonely orphan.”* [573]
+The moment we are apart from the spiritual master, some devotees fall into the trap of the "orphan mentality" [573]. They sit back, fold our arms, and cry: *“Oh, my Guru is gone, what can I do now? I am completely helpless. I am a poor, lonely orphan.”* [573]
 
 You made yourself an orphan! Your Guru did not make you an orphan [573]!
 

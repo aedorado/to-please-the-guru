@@ -1,4 +1,4 @@
-# Chapter 21: What is Our Sacrifice?
+# Chapter 22: What is Our Sacrifice?
 
 We must think deeply about our future [193]. 
 
@@ -119,7 +119,7 @@ So let us come together, sit down on the floor, and discuss what to do [185]. Le
 
 ---
 
-## **Chapter 21: Heart Check**
+## **Chapter 22: Heart Check**
 
 ### **Building for the Future**
 *   What am I actively building in my spiritual life and community that will outlive my physical body [208]?  
