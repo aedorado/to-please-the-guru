@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Two &middot; The Internal Battle</div>
+  <div class="chap-num">X</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">Bypassing the Gatekeeper</div>
+  <p class="drop">When we look at the prayers of Prahlāda Mahārāja in the seventh canto of the <em>Śrīmad-Bhāgavatam</em> (7.9.28), we find a foundational principle of our entire philosophy.</p>
+<p>Prahlāda Mahārāja is a small, five-year-old boy standing before Lord Nṛsiṁhadeva. The Lord is highly pleased with his devotion and tells him, “Ask from Me any benediction you desire”. Prahlāda has the opportunity to ask for anything in the three worlds—unlimited wealth, direct liberation, or material kingdoms.</p>
+<p>But Prahlāda Mahārāja refuses to ask for any material blessings for himself. Instead, he kneels down, offers his respects, and prays to the Lord:</p>
+<div class="verse"><em>evam janaṁ nipatitaṁ prabhavāhi-kūpe</em><br><em>kāmābhikaṁ bahu-yujā-bhara-bhajyamānam</em><br><em>yasya prapāda-rajasā spṛśataḥ pramodaḥ</em><br><em>so ’haṁ kathaṁ na visṛje tava bhṛtya-sevām</em></div>
+<p>Translation by Śrīla Prabhupāda:</p>
+<p><strong>“My dear Lord, O Supreme Personality of Godhead, because of my association with material desires, one after another, I was gradually falling into a blind well full of snakes, following the general populace. But Your servant Nārada Muni kindly accepted me as his disciple and instructed me how to achieve this transcendental position. Therefore, my first duty is to serve him. How could I leave his service?”</strong></p>
+<p>This is the ultimate, unyielding standard of discipleship. Prahlāda Mahārāja is teaching us that even when the Supreme Lord Himself stands directly in front of you, offering you personal blessings and direct access, you must never try to leap over or bypass the Spiritual Master.</p>
+<p>Śrīla Viśvanātha Cakravartī Ṭhākura, in his commentary on this verse, writes a deeply moving instruction representing the heart of the disciple: <em>“How can I give up the service of my Spiritual Master who has favored me in such a way that I am now able to see You face to face?”</em></p>
+<p>We must understand this science. The Spiritual Master is the authorized guide, the representative of the Supreme Lord, through whose mercy we learn to approach and please Kṛṣṇa. We cannot bypass him to approach the Lord independently.</p>
+<p>I must tell you straight: <strong>We don't know Kṛṣṇa. We don't understand Kṛṣṇa. Not that we don't understand Kṛṣṇa—we don't understand ourselves!</strong> We don't know who we are, what is our duty, or what is our relationship with Kṛṣṇa. It is the Spiritual Master who gives us the training, the vision, and the qualification to approach the Supreme Lord.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Guru as the Soldier of Our Ignorance</h3>
+<p>Why is the Spiritual Master completely indispensable to our lives?</p>
+<p>Because we are blind. All conditioned souls are born into this material world suffering from a thick, heavy, and sticky “cataract” covering our inner vision. Because of this spiritual cataract, we identify ourselves with these temporary bodies of skin and bones, completely unable to see our actual spiritual identity or perceive the presence of Kṛṣṇa.</p>
+<p>Can a blind man perform surgery on his own eye?</p>
+<p>If you have a cataract, can you take a knife, sit in front of a mirror, and operate on your own eyeball? No, of course not! If you attempt to do that, you will only blind yourself permanently. You must submit yourself to an expert who knows how to operate on the eye and remove the obstruction.</p>
+<p>The Spiritual Master is like a soldier. He is authorized by the disciplic succession to fight our ignorance and operate on our blind eyes. Through his sharp, heavy instructions, his daily chiding, and his diligent watch over our practice, he removes the cataract from our eyes. It is a painful surgery. Sometimes, when the Guru corrects us, our false ego bleeds, and we feel wounded. But that purification is the only way our vision will be restored so that we can finally see Kṛṣṇa.</p>
+<div class="divider">&#10022;</div>
+<h3>The Science of Approach, Inquiry, and Service</h3>
+<p>How do we begin this process of cure? Śrīla Prabhupāda has guided us beautifully on the three things required at the beginning of spiritual life:</p>
+<ol class="content-list"><li><strong>Submissive Approach:</strong> We must go to a bona fide Spiritual Master.</li><li><strong>Submissive Inquiry:</strong> We must present our inquiries with a submissive heart. Absurd inquiries and blind following are both condemned. We must ask questions which are beneficial for everyone.</li><li><strong>Service:</strong> Sincere, unmotivated service is compulsory.</li></ol>
+<p>Three things are required; two is not complete. You can make a submissive approach, and you can ask submissive questions—but without <em>service</em>, the required purification will never come.</p>
+<p>And that service must be completely free from motivation—100% free from motivation! Then it is a service. Sincere service of a disciple will touch the heart of the sādhu, which is very soft. When pure, selfless service penetrates and touches his heart, a blessing automatically comes. That blessing of the Guru is the secret of success for all of us.</p>
+<p>Without service, we are simply playing games.</p>
+<p>Today, we are missing this science. I see some devotees trying to keep <strong>one leg inside and one leg outside</strong> the disciplic process. They stay in Kṛṣṇa consciousness, but they go to hear from other unauthorized persons outside of our disciplic line.</p>
+<p>They think: <em>“Oh, let me hear from here, and let me hear from there. What is the harm?”</em></p>
+<p>But those unauthorized persons do not follow the principles, and hearing from them is a sheer waste of time. The moment you start sadhu-hopping and hearing from different places, your mind starts to discriminate. You begin to compare, and from that discrimination, offenses naturally arise. You start finding faults in the devotees and the disciplic succession.</p>
+<p>Eventually, those offenses dry up your taste completely, and both of your legs end up outside the temple altogether!</p>
+<div class="divider">&#10022;</div>
+<h3>Servant of the Servant of the Servant</h3>
+<p>To protect ourselves from this danger, we must strengthen our understanding of being the <strong>“servant of the servant of the servant”</strong>. Serving the Guru’s followers and associates is the true meaning of guru-pūjā.</p>
+<p>Kṛṣṇa told Uddhava in the eleventh canto, and He told Arjuna in the scriptures, that He is not pleased by direct worship that bypasses His devotees. In the <em>Ādi Purāṇa</em>, Kṛṣṇa boldly declares: <em>“Those who are My direct devotees are actually not My devotees. But those who are the devotees of My devotees are My real devotees.”</em></p>
+<p>Yet, what do we see today? Many devotees will cook one thousand and eight elaborate preparations for the Spiritual Master, but they will not offer a single thing to his disciples and traveling followers!</p>
+<p>They act as if the Guru is an isolated star, separate from those around him. That is not guru-worship; that is celebrity <strong>hero worship</strong>!</p>
+<p>The Spiritual Master is a father who comes with a family of followers and associates. The way you treat his disciples and the junior devotees around him actually pleases him far more than how you treat him personally. True guru-pūjā means recognizing that the Guru is a package deal. Śrīla Prabhupāda famously quoted the proverb: <em>“Love me, love my dog.”</em> The followers are the sādhu’s family, and we must serve them in connection with him.</p>
+<p>To show us how much He loves this principle, let us look at a beautiful, confidential pastime from the forest of Vraja.</p>
+<p>One day in Vṛndāvana, Mother Yaśodā wanted to keep Kṛṣṇa home to feed Him all of His favorite preparations. She approached Him and said, <em>“My dear boy, tomorrow you must not go to the forest with the cows. I have made an exclusive invitation for You. You must stay home and honor this feast.”</em></p>
+<p>Kṛṣṇa looked at His mother and immediately asked, <em>“Does this invitation include my cowherd friends? Are Śrīdāmā, Subala, and Madhumaṅgala also invited?”</em></p>
+<p>Yaśodā said, <em>“No, my dear. This feast is exclusively for You. I have prepared it only for You.”</em></p>
+<p>Kṛṣṇa’s face instantly turned dark. He shook His head and flatly refused: <strong>“If my friends are not invited, then I am not coming! Me means my friends! Wherever I am invited, my friends must be included, otherwise I will not accept a single bite!”</strong></p>
+<p>Another time, Mother Yaśodā wanted to make a beautiful pair of shoes for Kṛṣṇa. Kṛṣṇa looked at her and said, <em>“If you want to make shoes for me, you must also make shoes for all my friends and all the cows.”</em></p>
+<p>Yaśodā said, <em>“No, I cannot do that.”</em> So Kṛṣṇa refused to wear them and continued to walk bare-footed in the forest because His friends had no shoes.</p>
+<p>This is the sweet, absolute reality of the Lord. Kṛṣṇa never separates Himself from His friends. In the same way, the Spiritual Master never separates himself from his followers and disciples. If you try to worship the Guru while neglecting or criticizing his associates, your worship is artificial, dry, and offensive.</p>
+<div class="divider">&#10022;</div>
+<h3>The Express Route of Sincere Devotion</h3>
+<p>Our scriptures declare that service to a sādhu is the <strong>express route</strong> to liberation.</p>
+<p>In the material world, if you drive on a high-speed express highway, there is always a danger of terrible, fatal accidents. But on this spiritual express route, <strong>there are no accidents and no breakdowns!</strong></p>
+<p>Why? Because you are not the driver of the vehicle!</p>
+<p>On this express highway, the sādhu is the expert driver. He knows the road, he knows how to navigate every turn, and he is driving under the direct guidance of the disciplic succession. For those who are under the able guidance of a bona fide sādhu, there is no fear, no accident, and no vehicle breakdown. As long as the disciple remains submissively in the vehicle, keeping their head down, chanting their rounds, and executing instructions without trying to grab the steering wheel, they are carried safely to Kṛṣṇa.</p>
+<div class="divider">&#10022;</div>
+<h3>The Disciplic Surrender of Rāmānujācārya’s Disciple</h3>
+<p>To help us examine our own hearts, let us study a pastime from the life of the great Ācārya, Śrīpāda Rāmānujācārya.</p>
+<p>Once, during his travels across India, Rāmānujācārya was staying near a quiet pond. Every afternoon, after taking his lunch, he would walk to the edge of the water and throw his leftover mahā-prasāda remnants into the pond for the fish.</p>
+<p>When the simple fish in the pond swarmed to swallow his holy remnants, a miracle took place. The very second those pond fish swallowed the remnants of the Ācārya, they instantly cast off their animal fish bodies, assumed beautiful, four-handed spiritual forms, and returned directly to the spiritual world of Vaikuṇṭha.</p>
+<p>An intimate disciple of Rāmānujācārya, who had been traveling and serving him for many years, witnessed this and felt deeply bewildered. He knelt before his master and asked:</p>
+<p><em>“Gurudev, I have been traveling with you for years, performing constant services, fasting, and observing Ekādaśī. I have eaten your mahā-prasāda remnants a hundred times—yet my lust, my anger, and my envy are still here! I am still completely bound by my material nature. But these simple, foolish pond fish, who have never performed a single day of service or studied a single line of scripture, have been instantly liberated simply by swallowing your remnants! Why am I still suffering while they are delivered?”</em></p>
+<p>Rāmānujācārya looked at his disciple with great compassion and asked a single, penetrating question:</p>
+<p><em>“My dear disciple, it is true you are traveling with me and serving me every day. But where is your consciousness? When you perform your services, where is your consciousness? Is your mind really with me, or is your consciousness on the food? Are you serving me sincerely from the heart, or are you secretly calculating: ‘When will I eat? When will I get prestige and respect? When will I become the authorized representative of my Guru?’ All these contaminations of pride, calculation, and desire for position are going on inside your heart. That is why the purification is blocked.”</em></p>
+<p>This is the ultimate mirror for our lives. We can sit in the temple for decades, dress like advanced devotees, and hold prestigious positions in management. But if our hearts are full of calculations, competition, and desire for prestige, we are spiritually more diseased than the fish in the pond. We must strip away all duplicity, follow instructions without calculation, and serve with a clean, open heart.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 10 &middot; Heart Check</p>
+<h4>What Am I Asking Kṛṣṇa For?</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly reflect on the inner motivation behind your spiritual practice:</p>
+<p class="hc-item">Are you performing your services strictly to bring a smile to your Guru’s face, or are you quietly calculating how your service will get you more respect, prestige, and influence in the community?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Do you behave like the disciple of Rāmānujācārya, performing many external rituals while your heart is meditating on when you will become the master?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Caring for Those Connected with the Guru</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">To defeat the disease of celebrity hero-worship in our hearts:</p>
+<p class="hc-item">How do you treat the junior devotees, the traveling companions of the Guru, and those who have no social prestige?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>Realize:</em> Serving the Guru means caring for his followers and associates. If you neglect his followers while trying to worship his feet, your worship is artificial, dry, and offensive.</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Am I Hearing from the Right Sources?</h4>
+<p class="hc-item">Are you trying to keep “one leg inside, one leg outside” by running after other speakers outside our disciplic line, risking offense and discrimination?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item plain"><span class="commitment">The Commitment:</span> Next time your mind wanders or seeks outside excitement, sit submissively and read Śrīla Prabhupāda’s books, knowing that his words are sent to destroy your cataracts.</p>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">Serving the Hand That Operates</div>
+  <p class="prayer-prompt">Prahlāda Mahārāja stood before Lord Nṛsiṁhadeva and begged only to remain a servant of his Guru, Nārada Muni. Write a raw prayer to your Spiritual Master, begging for the egoless integrity of the pond fish—to serve his followers with a clean, uncalculating heart, and to grant you the courage to endure the painful surgery of his instructions.</p>
+  <p class="prayer-salut">My Dear Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

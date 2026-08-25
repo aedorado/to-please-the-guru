@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 21</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Three &middot; The Offering</div>
+  <div class="chap-num">XXI</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">The Apple of His Eye</div>
+  <p class="drop">To satisfy Lord Kṛṣṇa is our only business. With our services, with our activities, and in everything we do, our sole motivation must be the desire to please the Lord. That is selflessness. The moment the desire for satisfying ourselves enters, it becomes selfishness, and we can go on performing activities for millions of years without ever being successful in Kṛṣṇa consciousness.</p>
+<p>How do we please Him? Nārada Muni reveals that the Supreme Lord, Janārdana, is very satisfied with His devotee when the devotee greets other people with tolerance, mercy, friendship, and equality.</p>
+<p>In the <em>Śrīmad-Bhāgavatam</em> (4.31.19), this divine formula is declared:</p>
+<div class="verse"><em>dayayā sarva-bhūteṣu</em><br><em>santuṣṭyā yena kena vā</em><br><em>sarvendriyopaśāntyā ca</em><br><em>tuṣyaty āśu janārdanaḥ</em></div>
+<p><strong>Translation by Śrīla Prabhupāda:</strong> <strong>“By showing mercy to all living entities, being satisfied somehow or other, and controlling the senses from sense objects, one can very quickly satisfy the Supreme Personality of Godhead, Janārdana.”</strong></p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Piece of Apple</h3>
+<p>What is mercy? What is compassion?</p>
+<p>To have the interest to show mercy to all living entities means we must be compassionate. Compassion means that you cannot tolerate the sufferings of others. A selfish person can never be compassionate; only a selfless person can have real compassion.</p>
+<p>If we look at our own history, we must ask: how did our supreme preceptor, Śrīla Prabhupāda, preach? He did not convince us through dry, academic philosophy. He did not conquer our hearts by showing off his intellectual scholarship. He convinced us by his personal, sweet behavior. It was his mercy. It was his compassion.</p>
+<p>In the early days of his preaching in New York, a typical lecture by Śrīla Prabhupāda was very brief—only twenty minutes! But at the end of the lecture, he would personally share a small piece of apple with everyone in the room <sup class="cite">1</sup>.</p>
+<p>Think about this: he didn't hand out gold, he didn't offer prestigious corporate positions, and he didn't show off high-sounding Sanskrit expertise. He simply spoke for twenty minutes and gave everyone a piece of apple from his own hand. That simple, sweet gesture—that piece of apple—is what made people surrender and become devotees. It was his compassion, not the philosophical complexity, that entered their hearts. The Lord is pleased when we greet others with that same spirit of mercy, friendship, and tolerance.</p>
+<div class="divider">&#10022;</div>
+<h3>Character is Power</h3>
+<p>To show mercy to all living entities means we must preach Kṛṣṇa consciousness all over the world so that people can make their lives successful. But we must understand what true preaching actually is.</p>
+<p>Preaching is not an exercise or a drama. It is not a stage show where you go to some theater, practice acting, and then come to the stage to make a demonstration. Preaching is the manifestation of Vaiṣṇava character.</p>
+<p><strong>“A preacher is one who has character. It is character that preaches, not philosophy. Knowledge does not preach; knowledge cannot transform somebody, but character can transform. Character preaches—that is a preacher. Therefore, knowledge is not power—character is power.”</strong></p>
+<p>We talk endlessly about mercy, yet we struggle with basic, gentle Vaiṣṇava dealings. Sometimes, Hare Kṛṣṇa devotees cannot even greet each other nicely when they meet in the temple!</p>
+<p>Look at the tiny ants. Have you ever seen an ant pass another ant on a wall without greeting? I am talking about ants, not human beings! When two ants meet on a wall, they stop and kiss each other before they pass. They check on each other: <em>“How are you doing?”</em> But a Hare Kṛṣṇa devotee will often only greet you if they want something from you! If they don't need anything, they will walk right past you as if you are a stone!</p>
+<p>Why are we suffering in this movement? Sincere devotees sometimes ask me why we face so much suffering. I tell them straight: we suffer because we are duplicitous. We are still deeply attached to our dirty, sinful habits, and we are not feeling bad about how filthy our hearts actually are. We want to speak big philosophy to others, but we fail to apply tolerance, mercy, and friendship in our own daily interactions.</p>
+<p>Śrīla Prabhupāda notes that it is the duty of an advanced devotee on the <em>madhyama-adhikārī</em> platform—the second stage of devotional perfection—to act in accordance with this verse <sup class="cite">2</sup>. A <em>kaniṣṭha-adhikārī</em> does not have the Vaiṣṇava character to affect others because their hearts are still empty of purity. A <em>madhyama-adhikārī</em> bhakta has character, and because they are free of duplicity, their only interest is to help and liberate all conditioned souls.</p>
+<div class="divider">&#10022;</div>
+<h3>Relieving His Anxiety</h3>
+<p>If purity is the force that transforms hearts, how does a disciple please the spiritual master?</p>
+<p>Śrīla Prabhupāda once explained: <strong>“The duty of a disciple is to relieve the spiritual master of his anxiety. A disciple should never be a liability or a drain on the Guru. But these days, we are liabilities. We are not disciples. The bona fide disciple's absolute duty is to relieve the spiritual master of his anxiety <sup class="cite">3</sup>.”</strong></p>
+<p>How do we relieve his anxiety? We do it by supporting his preaching, facilitating his mission, and taking active risks to expand his service.</p>
+<p>Pure devotees make incredible, life-threatening sacrifices to spread Kṛṣṇa consciousness. Traveling from country to country is not a comfortable vacation; dealing with embassies, visas, and physical hardships is full of intense anxiety. Yet they do it because their hearts bleed out of compassion for the conditioned souls who are suffering all over the world.</p>
+<p>Understanding what the spiritual master wants and executing it is what makes a true disciple. Śrīla Prabhupāda noted that all the great previous spiritual leaders had established their centers in the Holy Dham of Mayapur, and he expressed his own deep desire to have a special center there as well <sup class="cite">4</sup>. A genuine disciple does not sit back and wait; they take that desire of their spiritual master on their head and actively manifest it as a loving offering. Kṛṣṇa is extremely pleased when He sees devotees dedicating their lives to supporting the mission of His pure representative.</p>
+<p>Let us look at a beautiful, sacred pastime of Lord Caitanya and Haridāsa Ṭhākura that shows the ultimate standard of this anxiety <sup class="cite">5</sup>.</p>
+<p>One day, Śrī Caitanya Mahāprabhu went to visit Haridāsa Ṭhākura. The Lord looked very grave and said: <em>“Haridāsa, I am in great anxiety.”</em></p>
+<p>Haridāsa Ṭhākura looked at Him in surprise and said: <em>“My Lord, what can be anxiety for You? You are the Supreme Personality of Godhead. All Your desires are automatically fulfilled by Your energy. Why should You feel any anxiety?”</em></p>
+<p>Mahāprabhu replied: <em>“I came to this world to deliver all living entities. I have easily done that for the human beings through this congregational chanting. But what about the plants, the trees, and the animals? They cannot chant the Holy Name! How will I be able to deliver them from this material bondage? That is my intense anxiety.”</em></p>
+<p>Haridāsa Ṭhākura smiled with great love and said: <em>“My dear Lord, You have already done it! Do not be in anxiety. When You walk through the forest of Jārikhaṇḍa and chant the Hare Kṛṣṇa mahā-mantra loudly, Your voice echoes through the hills and valleys. When the trees, the plants, and the animals hear the echo of Your Holy Name, they are automatically receiving the ultimate benediction. That echo is their chanting! You have already liberated all of them.”</em></p>
+<p>Hearing these comforting words from His pure devotee, the Lord’s anxiety was completely relieved. This is the science. The Lord and His pure representative carry this burning anxiety for the suffering souls, and our only duty as disciples is to step forward and help relieve that anxiety.</p>
+<div class="divider">&#10022;</div>
+<h3>The Divine Formula: Forget the Problem</h3>
+<p>Many devotees are constantly overwhelmed by personal problems, health issues, bad karma, and material anxieties. They spend their days meditating on their sickness, or complaining about what they lack.</p>
+<p><strong>“If you continue to think of your problem, you will get problems continuously, because that is what you are meditating upon! When the problem becomes your deity, it will never go away, because you are always calling the problem to come. Forget about the problem, and the problem will forget you! This is a divine formula.”</strong></p>
+<p>Stop meditating on your bad health, your financial struggles, or your material anxieties. If you keep meditating on your bad health, you will remain in bad health! Instead, throw your mind and your intelligence into planning how to spread Kṛṣṇa consciousness and how to help others become free of their anxieties.</p>
+<p>To preach, we must first be satisfied ourselves in our own Kṛṣṇa consciousness. We cannot distribute frustration to others; we must distribute the process of becoming free from anxiety. If you are already full of anxiety, how can you preach? What will you give to the people? Frustration!</p>
+<p>What is in your mind will be transferred to the people you are preaching to. They will hear it directly in your voice: <em>“You are trying to teach me something you don't even believe yourself. I can hear the doubt and frustration in your voice. Why do you want me to be like you?”</em> People want to be with someone who is spiritually successful, happy, and satisfied.</p>
+<p>When your mind is fully engaged in planning how to make Kṛṣṇa consciousness easy for others, you are instantly transported to Goloka. Your mind is absorbed in His service, and Kṛṣṇa Himself smiles with you. And when Kṛṣṇa is smiling, that joy immediately floods your own heart, and you automatically know that your service has been accepted.</p>
+<div class="divider">&#10022;</div>
+<h3>Expanding the Director's Business</h3>
+<p>When you forget your own selfish anxieties and spend your life planning how to reclaim lost souls, you become <strong>“the apple of Kṛṣṇa's eye.”</strong></p>
+<p>Kṛṣṇa can never forget a devotee who is deeply concerned with supporting His mission. In fact, He declares that the highest opulence of His divine character is His eagerness to reclaim the conditioned souls.</p>
+<p><strong>“When you support that mission, Kṛṣṇa becomes your personal supporter. Why? Because you are doing His duty! It is completely natural. If you are working very hard in an office, your director will like you and promote you, because he sees you are expanding his business. If you are expanding Kṛṣṇa’s business, your promotion back to Godhead is guaranteed.”</strong></p>
+<p>We must become selfless. Sincere devotees are always selfless. When you give Kṛṣṇa to people, you get Kṛṣṇa back! It is a scientific, unshakeable law of spiritual reciprocation.</p>
+<div class="divider">&#10022;</div>
+<h3>The Art of Association</h3>
+<p>How do we maintain this standard of satisfaction when surrounded by the whimsical, disturbing behaviors of others in community life?</p>
+<p>We should not allow the misbehavior of others to become our meditation. If someone behaves foolishly, and we have the opportunity to advise them, we should do so affectionately. If we cannot, we look for someone close to them to address it. But if nothing works, we must immediately remove our mind, focus on our own early-morning Sādhana, and continue our service.</p>
+<p><strong>“We should learn how to take all the good things from people and leave the bad things with them. That is the practice.”</strong></p>
+<p>Śrīla Rūpa Gosvāmī categorized the different grades of devotees so we would know exactly how to relate with everyone without committing offenses <sup class="cite">6</sup>. If we are strong in our early morning Sādhana, the material disturbances of others will simply bounce off our chests. But if we are weak, we will be affected by everything.</p>
+<p>Let us stop treating Kṛṣṇa consciousness as a cheap, mechanical show. Let us build Vaiṣṇava character, relieve our spiritual master's anxieties, expand Kṛṣṇa's business, and become the apple of His eye.</p>
+<div class="divider">&#10022;</div>
+<h3>References</h3>
+<p><sup class="cite">1</sup> Biographical accounts of Śrīla Prabhupāda's early days at 26 Second Avenue, New York (1966). <sup class="cite">2</sup> <em>Śrīmad-Bhāgavatam</em> 11.2.46 (defining the character and preaching duties of a <em>madhyama-adhikārī</em>). <sup class="cite">3</sup> Śrīla Prabhupāda's Purport to <em>Śrīmad-Bhāgavatam</em> 4.31.19. <sup class="cite">4</sup> Śrīla Prabhupāda's room conversations and letters regarding the development of the Śrī Māyāpur Candrodaya Mandir. <sup class="cite">5</sup> <em>Śrī Caitanya-caritāmṛta</em>, Antya-līlā 3.67-76 (the dialogue of Lord Caitanya and Haridāsa Ṭhākura on the plants and trees). <sup class="cite">6</sup> Śrīla Rūpa Gosvāmī, <em>Upadeśāmṛta</em> (The Nectar of Instruction), Verse 5.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 21 &middot; Heart Check</p>
+<h4>Character over Scholarship</h4>
+<p class="hc-item">Do you focus entirely on memorizing philosophy and giving high-sounding lectures, while failing to show tolerance, mercy, and friendship in your daily dealings with Vaiṣṇavas?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>The Ant Test:</em> Am I greeting my godbrothers and godsisters with genuine warmth, or do I only interact with others when I want to get something from them?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>An Asset vs. A Liability</h4>
+<p class="hc-item">Examine your relationship with your spiritual master or authority: Are you a liability who constantly dumps personal anxieties on him, or are you an asset who actively works to relieve his anxiety?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">What is one concrete, practical action you can perform this week to facilitate his preaching, fund his book distribution, or support his mission anonymously?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>The Formula of Selflessness</h4>
+<p class="hc-item">Are you constantly meditating on your bad karma, health issues, and material problems, making them the "deity" of your mind?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">How will you apply the divine formula this week to forget your own problems by throwing your mind into planning how to reclaim other conditioned souls?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">The Apple of Your Eye</div>
+  <p class="prayer-prompt">To satisfy Janārdana, we must show mercy to all living entities and relieve the spiritual master of his anxieties. Write a raw, submissive prayer begging Lord Kṛṣṇa to cure you of the duplicity that dries up Vaiṣṇava character, asking for the strength to become an asset to the disciplic succession, and dedicating your mind to planning how to expand His business so you can become the apple of His eye.</p>
+  <p class="prayer-salut">My Dear Janārdana / Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

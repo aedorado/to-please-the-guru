@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 17</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Three &middot; The Offering</div>
+  <div class="chap-num">XVII</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">The Kāliya Inside Us</div>
+  <p class="drop">Why are we not making rapid progress in our spiritual life? We hear these beautiful pastimes of Kṛṣṇa year after year, yet our characters remain unchanged, our hearts remain hard, and we continue to carry critical, offensive, and envious thoughts in our minds.</p>
+<p>Let us look at a dynamic pastime: the subduing of the venomous serpent, Kāliya.</p>
+<p>Śrīla Bhaktivinoda Ṭhākura reveals a profound truth: these pastimes are not merely historical dramas or sweet myths. They represent our own internal struggles. The dark, boiling poison of Kāliya represents our own deep-seated <em>anarthas</em>—treachery (<em>khala</em>), crookedness, brutality, pride, envy, and maliciousness <sup class="cite">1</sup>.</p>
+<p>And until we allow Kṛṣṇa to step into our hearts and dance on our pride, we will remain completely polluted.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Rotten Feet of the Sage: The King’s Test</h3>
+<p>To understand how a conditioned soul receives the rare, unimaginable mercy of having Kṛṣṇa’s lotus feet placed upon their head, we must look at Kāliya’s previous life <sup class="cite">2</sup>.</p>
+<p>There was once a powerful king who was afflicted with an unbearable, agonizing stomach disease. He tried every medical treatment, spent vast fortunes, but nothing could cure his suffering.</p>
+<p>One day, an astrologer told him that there was a specific, rare bird in the deep forest. If the king could catch it and make a meal of its flesh, his disease would be permanently cured.</p>
+<p>The king began going to the forest every day, searching desperately for this bird. Finally, he spotted it. He drew his bow, but the bird was swift and escaped. Day after day, the king chased the bird, but it slipped through his fingers.</p>
+<p>After several attempts, the bird stopped on a high branch and spoke to him in a human voice. It told the king: <em>“You are trying to kill me to cure your stomach. But eating my flesh will never cure you. Actually, there is an exalted, self-realized sage living in this forest. If you can find this holy sādhu, wash his feet, and drink the sacred wash-water, the caraṇāmṛta, your disease will vanish forever.”</em></p>
+<p>The king immediately threw down his weapons and began searching for the sage. After wandering through the thick forest, he finally found him sitting in silent meditation. The king fell to his knees and begged the sage to allow him to wash his feet and drink the water to cure his suffering. The quiet sage nodded and slowly extended his right foot.</p>
+<p>The king looked at the foot, but he hesitated. The right foot was sick, covered in painful sores and lesions. Fearing the disease, the king begged him: <em>“Can you please give me the left one instead?”</em></p>
+<p>The sage slowly pulled back his right foot and extended his left one.</p>
+<p>But when the king looked at the left foot, it appeared ten times worse! It was completely rotten, decaying, stinking, and covered in oozing pus with white worms dancing in the open wounds.</p>
+<p>The king was filled with horror. His disgust overpowered him. He thought: <em>“How can I wash these feet and drink this water with all these pus and worms?”</em> He was completely bewildered. Finally, to show some respect while avoiding the terrible taste, he washed the foot, but instead of drinking it, he blocked his nose and rubbed the wash-water all over his head.</p>
+<p>We must understand the deep, confidential secret of this pastime: the sage’s feet were not actually rotten, smelly, or full of worms. To any pure, qualified soul, they were sweet and transcendental. But because of the king’s heavily diseased, offensive material condition, his vision was blocked, and the feet appeared stinking and rotten to him.</p>
+<p>Because the king lacked the purity and faith to drink the water, he was not qualified to return back to Godhead in that lifetime. But because he had sincerely rubbed that sacred water all over his head, Kṛṣṇa noted his gesture. In his next birth, that king was born as the massive, venomous serpent Kāliya. And because he had rubbed the wash-water on his head, Kṛṣṇa personally came to dance on his hoods, decorating his head with the brilliant, protective footprint of His divine lotus feet!</p>
+<div class="divider">&#10022;</div>
+<h3>The Proprietor Mentality</h3>
+<p>In his serpent body, Kāliya lived in a deep, boiling lake in the Yamunā River. He was so venomous that his poison polluted the entire atmosphere. The water of the Yamunā was boiling with heat and poison, the trees on the banks were dead, and even the birds flying in the sky would fall dead into the water the moment they flying across that area <sup class="cite">3</sup>.</p>
+<p>The Yamunā had descended from the spiritual world to serve Kṛṣṇa’s pastimes, but Kāliya had occupied her and polluted her water. Kṛṣṇa decided to personally chastise this intruder and clean the Yamunā for His devotees. He climbed a high Kadamba tree and jumped straight into the poisoned lake, swimming around carefree and splashing the water <sup class="cite">4</sup>.</p>
+<p>When Kāliya heard the splashing, his hoods flared with rage. He thought: <em>“I am the proprietor here! This is my place. You cannot do anything here without my permission. Somebody has entered my area where I am the king without my permission!”</em></p>
+<p>Do we also think like that? We get a little position, some authority in a temple, or some management power, and we immediately think: <em>“I am the boss here! I am the proprietor! I control here. You cannot preach here, you cannot serve here, you cannot do anything without my permission!”</em></p>
+<p>That is not Kṛṣṇa consciousness; that is the diseased, toxic mentality of Kāliya.</p>
+<p>Kāliya swam to the surface and saw Kṛṣṇa. Kṛṣṇa was exquisitely beautiful and sweet, but because Kāliya’s heart was full of envy and pride, he could not appreciate His beauty. He saw only an enemy to be destroyed.</p>
+<p>Why do we not appreciate the beautiful Deities on the altar? We see them, but we don't faint. We don't cry. Why is that? Because we have the same Kāliya inside us. We must know what we have to work on in our lives. If we do not know what to work on, how will we become better?</p>
+<div class="divider">&#10022;</div>
+<h3>The Laughter of Dauji Baba</h3>
+<p>Kāliya immediately attacked, coiling his massive body around Kṛṣṇa's delicate waist and squeezing Him tighter and tighter <sup class="cite">5</sup>.</p>
+<p>In Vṛndāvana, terrible, inauspicious omens began to manifest. The earth shook, and the left eyes of the residents began to twitch. A Brāhmaṇa came running to announce that Kṛṣṇa was in great danger. Upon hearing this, everyone in Vṛndāvana—except for infants under three months old—desperately left the village and entered the forest, following His footprints in the dust until they reached the banks of the Yamunā.</p>
+<p>When they saw their beloved Kṛṣṇa completely enveloped in the tight, crushing coils of the black serpent, they fell to the ground completely unconscious.</p>
+<p>But there was one person who did not faint. Lord Balarāma—our beloved Dauji Baba—stood on the bank, looking at the scene, and He began to laugh!</p>
+<p>Why was Dauji Baba laughing?</p>
+<p>Because He knows His younger brother’s power. He saw how Kṛṣṇa was showing Kāliya great mercy. He laughed and thought: <em>“My brother never played with me in my form of Ananta Śeṣa—He never let Me coil Him or hold Him in this way—yet He is showing this ordinary snake such mercy! Oh Kāliya, you are so fortunate, you got my brother's friendship!”</em></p>
+<p>But as the Vraja-vāsīs lay on the ground like dead bodies, some desperately trying to enter the river to die with Him, Lord Balarāma knew they could not tolerate it. They knew nothing except Kṛṣṇa. If this continued, they would physically die of grief.</p>
+<p>Balarāma called out: <em>“My dear brother Kṛṣṇa! Please, stop this drama now. You are not dealing with the residents of Vaikuṇṭha or Ayodhyā who understand Your opulence. These are Vraja-vāsīs. They don’t know anything or anybody except You. This pastime is not giving them any pleasure. Stop it at once!”</em></p>
+<div class="divider">&#10022;</div>
+<h3>The Dancing Chastisement of Lord Kṛṣṇa</h3>
+<p>Hearing His brother’s call, Kṛṣṇa instantly expanded His body, freeing Himself from the serpent’s grip. Kāliya raised his hundred hoods, spitting fire and poison, trying to bite Kṛṣṇa. But Kṛṣṇa was too fast. He began to leap from hood to hood, kicking them down with His lotus feet <sup class="cite">6</sup>.</p>
+<p>Kṛṣṇa even invited His gopī friends to come over and watch Him dance on the hoods of the serpent! He performed a magnificent, ecstatic dance right on the heads of the serpent! Whenever Kāliya tried to raise one of his hundred heads in pride, Kṛṣṇa would leap into the air and kick it down with a heavy, crushing blow. Kṛṣṇa's kicking helped Kāliya get the poison out. When Kṛṣṇa kicked him, the boiling poison was squeezed out of his hoods, and he began to vomit blood and toxic waste.</p>
+<p>Bhakti is exactly like that. Bhakti is exhausting, tiring, and purifying. When we begin to practice seriously, the spiritual master and Kṛṣṇa will begin to kick our pride, our lust, and our envy. It is an exhausting process. When we are purging, it is very tiring, but that chiding and kicking is highly purifying. It squeezes the poison and toxic waste out of our hearts.</p>
+<p>Finally, all the poison was gone, and Kāliya was completely exhausted and purified. His wives, the Nāgapatnīs, emerged from the water and offered beautiful, submissive prayers, asking Kṛṣṇa to spare his life: <em>“Our husband is naturally a low-class, wicked snake. It is his animal nature to be cruel and bite. But You have purified him. Please spare his life.”</em></p>
+<p>Kṛṣṇa was pleased and stopped the chastisement. Kāliya, having no suitable Sanskrit prayers, simply repeated the humble words of his wives: <em>“My Lord, I live in a dark hole. It is my nature to be wicked and cruel. But You have shown me mercy, and I am grateful.”</em></p>
+<p>Kṛṣṇa ordered him to leave the Yamunā immediately and return to his island in the ocean <sup class="cite">7</sup>. Kṛṣṇa promised that Garuḍa would never attack him because: <em>“The moment Garuḍa sees the brilliant footprint of My lotus feet decorated on your head, he will bow in respect and never trouble you.”</em> Kāliya and his family departed, and the waters of the Yamunā became sweet and pure once again.</p>
+<div class="divider">&#10022;</div>
+<h3>Overcoming the Disease of No Faith</h3>
+<p>Śukadeva Gosvāmī gives a supreme benediction: whoever hears the chastisement of Kāliya with faith will instantly be purified of all envy and pride.</p>
+<p>But last year, you heard this pastime. The year before, you also heard it. Why are you still carrying the same envy? Why are you still fighting with other devotees, spreading politics, and critical gossip? Why are those internal demons not dead?</p>
+<p>Because we have no faith. I tell you this straight.</p>
+<p>The scriptures do not tell lies, and our Ācāryas do not tell lies. The benedictions they give are real. But we are treating these pastimes like a cheap, dry social ritual. We hold the bead bag in our hands, but we keep our <em>anarthas</em> locked up tightly in our chests, refusing to let them go.</p>
+<p>Look at Śrīla Raghunātha dāsa Gosvāmī. He cried for days just to hear the pastimes of Kṛṣṇa <sup class="cite">8</sup>. Why did he cry? He cried because there is no Kāliya in his life. He is free. Because he is free, his heart is soft. But our hearts are like stone because of our envy.</p>
+<p>Do you know what real, unhesitating faith looks like? Look at the great disciple Sanandana and his spiritual master, Śrīpāda Śaṅkarācārya.</p>
+<p>Some of Śaṅkarācārya’s disciples became envious of Sanandana, accusing the master of being partial: <em>“Gurudev, why do you favor Sanandana? We do the same services, but you show him more affection. We think you are partial.”</em></p>
+<p>To show them why Sanandana was truly special, Śaṅkarācārya decided to test him. One afternoon, while they were sitting on the bank of a deep, rushing river, Sanandana was on the opposite bank busily engaged in service. Śaṅkarācārya called out across the water: <em>“Sanandana, come here!”</em></p>
+<p>Sanandana did not stop to think. He didn’t look for a bridge, he didn’t search for a boat, and he didn’t calculate how deep the water was. He didn’t even see the water! He only saw his spiritual master. The moment he heard the order, he entered the water, stepping straight onto the deep, dangerous river. And nature instantly provided a beautiful, fully bloomed lotus flower under his step to support him. He walked cleanly across the surface of the river on a path of lotuses to meet his Guru.</p>
+<p>Seeing Sanandana's absolute surrender, the envious disciples were completely silenced. They understood that his connection to the Guru was based on pure, uncalculating faith, not material calculation. Because of this instantaneous surrender, Śaṅkarācārya named him Padmapāda—the one who has lotus feet <sup class="cite">9</sup>.</p>
+<p>That is faith!</p>
+<p>We do not have that faith. We are full of offenses and calculations. So, how do we get rid of these offenses and build genuine faith?</p>
+<p><strong>First: Just follow what the Guru says.</strong> Do it! Whether your mind believes it or not, whether you feel like it or not—just execute the order unhesitatingly.</p>
+<p><strong>Second: Sincere sādhana and association.</strong> Faith is developed in the association of sādhus. They will create the faith for you through their realizations.</p>
+<p><strong>Third: Active practice of character.</strong> We must make a conscious effort to give up cruelty, intolerance, and envy. We must actively practice tolerance, humility, and freedom from envy. If you know you are intolerant, do not wait for a miracle. Sit down and actively practice: <em>“I know I am intolerant... so let me try to practice tolerance with this devotee today.”</em></p>
+<p>If we do our part, the footprint of Kṛṣṇa will be decorated on our heads, and the toxic serpent in our chest will be subdued forever.</p>
+<div class="divider">&#10022;</div>
+<h3>References</h3>
+<p><sup class="cite">1</sup> Śrīla Bhaktivinoda Ṭhākura, <em>Caitanya-śikṣāmṛta</em>, Chapter 5 (establishing the specific <em>anarthas</em> represented by the demons in Vraja-līlā). <sup class="cite">2</sup> Śrīla Madhvācārya, <em>Bhāgavata-tātparya-nirṇaya</em> (citing Puranic accounts of King King Purañjana's previous life and Kāliya's origin). <sup class="cite">3</sup> <em>Śrīmad-Bhāgavatam</em> 10.15.47-52. <sup class="cite">4</sup> <em>Śrīmad-Bhāgavatam</em> 10.16.1-4. <sup class="cite">5</sup> <em>Śrīmad-Bhāgavatam</em> 10.16.5-12. <sup class="cite">6</sup> <em>Śrīmad-Bhāgavatam</em> 10.16.25-30. <sup class="cite">7</sup> <em>Śrīmad-Bhāgavatam</em> 10.16.54-67. <sup class="cite">8</sup> Śrīla Raghunātha dāsa Gosvāmī, <em>Muktā-caritra</em> (describing his ecstatic symptoms upon hearing Kṛṣṇa's pastimes). <sup class="cite">9</sup> Śrīpāda Vyāsācala, <em>Śaṅkara-vijaya-vilāsa</em>, Chapter 12 (recording the pastime of Sanandana walking on water and receiving the name Padmapāda).</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 17 &middot; Heart Check</p>
+<h4>The Envy in Our Hearts</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Observe your reactions when someone enters your territory or critiques your work:</p>
+<p class="hc-item">Where do I become possessive or proprietor-like in my service or temple dealings?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Do I find myself thinking: <em>“This is my department, and you cannot do anything here without my permission”</em>?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Submitting to Purifying Mercy</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly examine your attitude toward instructions that challenge your comfort:</p>
+<p class="hc-item">Which instruction or service do I consider “rotten” because it challenges my comfortable, lazy routine?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Am I willing to accept the chiding and correction of my spiritual master, knowing that chastisement is very purifying and is a sign of his fatherly mercy?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Active Practice of Character</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">We remain spiritually sick because we carry our bead bags while keeping our envy locked up in our chests.</p>
+<p class="hc-item">Which devotee in your community are you currently carrying envy, criticism, or coldness toward?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">What quality—tolerance, humility, or freedom from envy—will you actively practice this week to squeeze the poison out of your heart?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Commit to saying: <em>“I know I am intolerant, so let me try to practice tolerance with this devotee today.”</em></p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">Dancing on My Pride</div>
+  <p class="prayer-prompt">Lord Kṛṣṇa’s kicking is the ultimate, purifying mercy that squeezes the deadly venom of envy and pride out of our hearts. Write a raw, un-concocted prayer to Kṛṣṇa and your spiritual master, begging them to step into the poisoned lake of your heart, to crush your stubborn pride, and to dance on your envy until your soul is free from the material disease.</p>
+  <p class="prayer-salut">My Dear Krishna / Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

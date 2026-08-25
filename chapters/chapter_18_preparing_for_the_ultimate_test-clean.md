@@ -2,111 +2,106 @@
 
 What is the duty of a person who is about to die? 
 
-This is the question of an intelligent person like Parīkṣit Mahārāja. An intelligent person is one who is asking how to quit the material body and prepare for their next destination. Of course, we are asking so many questions every day, but the most important question is not asked. Why is this question the most important question, and why is it not being asked? Because death determines our next destination. As the soul continues to change the body, a destination is prepared. 
+This is the supreme question of an intelligent person like Parīkṣit Mahārāja. An intelligent person is one who is asking how to quit the material body and prepare for their next destination. Of course, we are asking so many questions every day, but the most important question is never asked. Why is this question the most important question, and why is it not being asked? Because death determines our next destination [1]. As the soul continues to change the body, a destination is prepared by the mind. Our present situation and body were created by our past minds, and our next body is being created by our mind right now. 
 
-But in human society, all over the world, there are millions and billions of men and women, and almost all of them are less intelligent. Why? Because they have very little knowledge of the spirit soul. They identify themselves completely with their gross and subtle material bodies, which they are not. 
+Most people in this world focus entirely on "living before dying." They draw up a "bucket list" of material aspirations to pursue before their time runs out—traveling to scenic places, acquiring prestige, and experiencing as much material sense gratification as possible [2]. But the *Bhagavad-gītā* teaches us a far deeper, more courageous quest: **to die before we die.** To experience life in its truest beauty, we must break free of our material entanglements, defeat the enemies within our own hearts—lust, anger, greed, envy, and pride—and revive our eternal spiritual consciousness before our physical body expires [3]. 
 
------
+---
 
 ## **The Lump of Flesh**
 
-Look at our struggles in this material world. All our struggles from morning to night—what is it for? It is for this body. One is going to school, one is going to work, one is sleeping, one is going to eat. Whatever we do in this world, it is for this body. 
+Look at our struggles in this material world. All our struggles from morning to night—what are they for? They are for this temporary body. One is going to school, one is going to work, one is sleeping, one is going to eat. Whatever we do in this world, it is strictly to maintain this body. 
 
-But let me ask you: suppose someone delivered a lump of flesh to your door, just a lump of flesh. What would you do with it? You would throw it away! You would say, “This is useless!” 
+But let me ask you: suppose someone delivered a lump of dead flesh to your door. Just a lump of flesh. What would you do with it? You would throw it away! You would say, “This is useless, it is stinking!” 
 
-So, what makes the body important? If you deliver a live body, we care, we maintain it. But what are we maintaining? The body, which is just a lump of flesh that can be thrown away. That is what we are busy doing! But what makes this body important, what we work so hard from morning to night to maintain, is forgotten. Nobody cares for the spirit soul. That is a big, big problem.
+So, what makes the body important? If someone delivers a live body, we care for it, we dress it, we maintain it. But what are we actually maintaining? The body, which is in itself just a temporary lump of flesh that will eventually be thrown away. That is what we are busy doing from morning to night! But the spirit soul—the actual spark of life that makes this lump of flesh important—is completely forgotten. Nobody cares for the spirit soul. That is a massive, universal tragedy.
 
-In big, big universities all over the world, there is not one single department which is dedicated to studying the spirit soul. In fact, in some schools, even to talk about religion is not allowed. Here in India, in some schools, we can't talk about religion; it is not allowed! 
+In big, prestigious universities all over the world, there is not one single department dedicated to studying the spirit soul [4]. In fact, in many modern schools, even to talk about religion or God is strictly forbidden. Gurukula was not established by scientists; it was established by great, self-realized sages to teach the science of the soul. But now our schools are in the hands of the scientists—whom Śrīla Prabhupāda boldly called the modern demons! So it is not a surprise that there is no spiritual knowledge in our classrooms. Even to talk about God, you have to take special, rare permission, while other dry subjects require no permission at all. 
 
-But the school was not originally studied by scientists. The school was not established by scientists. Gurukula was established by sages; it is sages who studied the school. But now our schools are in the hands of the scientists. Our scientists are the modern demons! So it is not a surprise that there is no religion in school. Even to talk about God, you have to take special permission, while other subjects you don't need any permission—they are already there in the school. 
+I remember visiting a university in Brazil many years ago, where the assigned topic of my lecture was "The Importance of Religion in Our Life" [5]. I looked at the students, I looked at the teachers, and I couldn't help but laugh. 
 
-I remember some years ago in Brazil, we went to a university and the topic was the importance of religion in our life. I was looking at the students and all the teachers, and I was laughing. 
+They looked at me and said, “Maharaj, why are you laughing? You have to speak on the subject!” 
 
-They said, “Why are you laughing? You have to speak something about the subject!” 
+I told them: “I am laughing because of the subject, and because of all of you! You are asking the importance of religion in your life! You don't ask the importance of geography in your life. To study to become a first-class barbarian, you have to pay money for it! But to study to become a pure devotee, you must take special permission! Without permission, you are not allowed. If you want to become a first-class fool, you are glorified, honored, and given degrees. That is the tragedy of modern civilization!”
 
-I said, “I am laughing because of the subject, and all of you! You are asking the importance of religion in your life! You don't ask the importance of geography in your life. To study to become a first-class barbarian, you have to pay money for it! But to study to become a pure devotee, you must take special permission to do that! Without permission, you are not allowed. If you want to become a first-class fool, you are glorified and honored. That is the civilization of today!”
+---
 
-This is because nobody is trying to understand who we are. There are many people who try to understand that we are not the body. But it is extremely rare to find among them those who understand that we are also not the mind. The mind is still material; both the gross body and the subtle body are material. 
+## **The Completely Deformed Person on the Road**
 
-Look very carefully: every single thing we are doing in this material world is detected by our senses, not by the soul. Is it true? Can you mention one activity we are doing which is detected by the soul? Our eating? Our sleeping? All our thinking, feeling, and willing are within the body. 
+This material civilization is completely blind because nobody is trying to understand who we are. There are many people who theoretically try to understand that we are not the body. But it is extremely rare to find those who understand that we are also not the mind. The mind is still material; both the gross body and the subtle body are material. 
 
-When are we going to live a life which is detected by the spirit soul? When? 
+I remember seeing someone who was completely deformed in all respects. If you looked at him carefully according to ordinary human standards, there was absolutely no logical reason why you should expect him to desire to continue living. He sat on crutches, his legs were totally useless, and it was extremely difficult for him to even use his hands. He was going to remain in that painful, helpless condition for life, with zero hope of treatment. 
 
-An intelligent person is one who is very busy hearing about Kṛṣṇa, chanting the glories of Kṛṣṇa, and taking interest in all the wonderful pastimes of Kṛṣṇa. This is the activity of the soul, and this is what we call Kṛṣṇa consciousness.
+One day, he was crossing the road, and a vehicle came rushing toward him. The unbelievable speed at which he scrambled to cross the road and save his life—the driver of the car could never have anticipated it! 
 
------
+I watched that, and I was deeply struck. I was thinking: what is the purpose of this man's life? He is completely dependent on everyone for everything he needs, yet his desire to live was so intensely prominent. Why? 
 
-## **Drinking the Nectar of Kṛṣṇa-kathā**
+Because the soul, by nature, is eternal. Therefore, due to the eternity of the soul, nobody wants to give up this body, even if it is one hundred percent useless. Everyone wants to keep the body as long as possible. But instead of utilizing this natural, eternal desire of the soul to return to our eternal home in the spiritual world, we waste our entire life's energy trying to protect a temporary bag of skin and bones. 
 
-When Parīkṣit Mahārāja was looking for the answer to what is the duty of a person who is about to die, thousands of sages were gathered around him. What were they recommending? 
+Look very carefully: every single thing we are doing in this material world is dictated by our senses, not by the soul. Can you mention one activity we are doing today which is detected and guided by the soul? Our eating? Our sleeping? All our thinking, feeling, and willing are within the gross and subtle bodies. When are we going to live a life which is detected and guided by the spirit soul? Sincere Sādhana is what begins to awaken the soul. It is only when we are fortunate enough to meet a pure devotee of Kṛṣṇa that we are trained to live a life of the soul [6]. 
 
-Some said, “Oh, Maharaj, don't worry, we are going to give you *amṛta*.” 
-
-What is *amṛta*? Immortality for this body in this material world? Sages who are in reality and engaged in the activity of Brahmā have no material solution to death. They did not try to solve death materially. Sages have no solution to the problems of the world. The only answer they gave was the *Śrīmad-Bhāgavatam*—the continuous hearing of the activities of Kṛṣṇa.
-
-And look at the miracle that took place! Parīkṣit Mahārāja sat on the bank of the Ganges for seven days and seven nights. He did not take a single drop of water, he did not eat, and he did not sleep. 
-
-If an ordinary person is told they are going to die, they will lose their appetite out of sheer fear. One who is afraid of something will lose their appetite. But Parīkṣit Mahārāja was not losing his appetite because of fear. 
-
-He told Śukadeva Gosvāmī: “It is because I am drinking nectar. I am drinking the *Hari-kathāmṛta*. And because of what I am drinking, I have completely forgotten all external, material tastes. No more taste for anything else.”
-
-This is drinking. This is hearing. Hearing should take us to the point that we will lose taste for everything. It makes our Kṛṣṇa consciousness meaningful, realistic, and a tangible substance we can identify with and feel. 
-
-But the body should not sit in the class; the mind should sit in the class and hear. If the mind sits in the class and hears, then it is hearing. One who hears, there will be a reaction. Parīkṣit Mahārāja had this reaction: “You have planted Kṛṣṇa in my heart.” 
-
-And because Kṛṣṇa was planted in his heart, he became completely fearless. He was ready for anything. Hearing had put an end to all his material miseries. This is hearing, and it is not just a show or a ritual.
-
------
+---
 
 ## **The False Promises of Modern Civilization**
 
-The politicians, the philosophers, and the scientists—they are dangerous, first-class cheaters. They constantly keep us in anxiety. That is their duty—they are in anxiety, and they are busily distributing their anxiety to everyone else. 
+The politicians, the philosophers, and the scientists are dangerous, first-class cheaters [7]. They constantly keep us in anxiety. That is their business—they are in anxiety, and they are busily distributing their anxiety to everyone else. 
 
-The philosophers will tell you that you are God, the politicians will promise you free education and facilities if you vote for them, and the scientists will tell you, “Don't worry! We are going to take you to the moon very soon. We are making arrangements to make you deathless!” 
+The philosophers will tell you that you are God, the politicians will promise you free education and facilities if you vote them into power, and the scientists will tell you: “Don't worry! We are going to take you to the moon very soon. We are making arrangements to make you deathless!” 
 
-And look at their Samsung phones. Every year they release Samsung x20, Samsung x22, 24, 26, 30, 50, 100! People run to buy them. But let me ask you: what is the actual difference between Samsung 30 and Samsung 100? 
+And look at their Samsung phones. Every year they release Samsung X20, Samsung X22, 24, 26, 30, 50, 100! People run to buy them. But let me ask you: what is the actual difference between Samsung 30 and Samsung 100? It has the same communication, the same internet, the same browser! The only difference is the name, the price, and the artificial anxiety they plant in your head to make you believe that 100 is somehow better than 30! It is the same anxiety changing shape for you. 
 
-It has the same communication, the same internet, the same browser! The only difference is the name, the price, and the artificial anxiety they plant in your head to make you believe that 100 is somehow better than 30! It just changes shape for you—anxiety.
+Even Lord Brahmā, who lives the longest life in this universe, felt miserable and full of anxiety. During the creation, before Lord Brahmā had even finished his work, two powerful demons named Madhu and Kaiṭabha appeared from the wax of Lord Viṣṇu's ear [8]. Because they were not created by Brahmā, Lord Brahmā was terrified. He saw them and began to run for his life in sheer fear! Lord Viṣṇu Himself was calling out to him, “Brahma, come! I have already killed the demons!” But Brahmā was so bewildered by fear that he didn't listen; he kept running! 
 
-Even Lord Brahmā, who lives the longest life in this universe, felt miserable and full of anxiety. Once, Lord Brahmā saw the sky like a fool, and a tortured demon—Rudra—came out directly from his forehead. Brahmā was so terrifed that he turned and began to run for his life! Lord Viṣṇu Himself was calling out to him, “Brahma, come! I have already killed the demon!” But Brahmā didn't listen; he was running in sheer fear! 
+If Lord Brahmā himself, who lives for 311 trillion years, is running in fear, what about us? This material world is a place where fear and anxiety are inescapable. But an intelligent person is one who realizes that they must get out of this anxiety-ridden prison and revive their lost relationship with Kṛṣṇa.
 
-If Lord Brahmā himself is running in fear, what about us? This material world is a place where fear and anxiety are inescapable. But an intelligent person is one who realizes that they must get out of this anxiety-ridden prison and revive their lost relationship with Kṛṣṇa.
+---
 
------
+## **Drinking the Nectar of Kṛṣṇa-kathā**
 
-## **Preparing for the Inevitable Exit**
+How do we practically prepare for the moment of death? Sincere, attentive hearing of *Śrīmad-Bhāgavatam* is the only medicine that removes the material cataract from our eyes, allowing us to see Kṛṣṇa face-to-face and become completely fearless.
 
-How should an intelligent person prepare for the threshold of death? This is the supreme inquiry that *Śrīmad-Bhāgavatam* (2.3.1) opens with. Śukadeva Gosvāmī begins his reply by addressing Parīkṣit Mahārāja’s question as the absolute duty of a thoughtful human being (*manīṣiṇām*). 
+When Parīkṣit Mahārāja sat on the bank of the Ganges, having been cursed to die in seven days, thousands of great sages gathered around him. What did they recommend? 
 
-Yet, in human society all over the world, millions and billions of men and women are living their lives without any preparation for death. Nobody is prepared because nobody is thinking about it. We foolishly act as if we are going to live eternally in these temporary material bodies. But eternal life is not in this material world, nor is it in this temporary bag of skin; eternal life is in the spiritual world. 
+Some of them came and said, “Maharaj, don't worry, we are going to give you *amṛta*—immortality.” But they were talking about physical longevity in this material world! Sages who are in reality and engaged in the activity of Brahman have no material solution to death. The only true answer they gave was the *Śrīmad-Bhāgavatam*—the continuous hearing of the activities of Kṛṣṇa [9].
 
-Unless a person inquires about their spirit self beyond the body and the mind, all their activities in human life—their prestigious education, career achievements, wealth, and material profiles—are absolute, total failures. 
+And look at the miracle that took place! Parīkṣit Mahārāja sat on the bank of the Ganges for seven days and seven nights. He did not take a single drop of water, he did not eat, and he did not sleep. 
 
-Out of thousands and hundreds of thousands of people, hardly one takes a serious note of this human form of life. This human body is an incredibly rare opportunity obtained only after traveling through the grueling evolutionary cycle of 8.4 million species of life. To waste this rare opportunity on "animal-like" pursuits of eating, sleeping, mating, and defending is a tragic misuse of our intelligence. 
+If an ordinary person is told they are going to die, they will lose their appetite out of sheer fear. But Parīkṣit Mahārāja was not losing his appetite because of fear. He told Śukadeva Gosvāmī: “I am not hungry or thirsty, because I am drinking nectar. I am drinking the *Hari-kathāmṛta*. And because of this nectar, I have completely forgotten all external, material tastes. I have no more taste for anything else [10].”
 
-The whole process of *bhakti-yoga* is therefore a revival of our lost relationship with Kṛṣṇa. And this revival is especially recommended when a person is preparing for their inevitable exit from this world. Sincere, attentive hearing of *Śrīmad-Bhāgavatam* is the only medicine that removes the material cataract from our eyes, allowing us to see Kṛṣṇa face-to-face and become completely fearless.
+This is genuine, submissive hearing. Hearing should take us to the point that we lose our taste for material enjoyment. The body should not sit in the class; the mind must sit in the class and hear. If the mind sits in the class and hears, then it is hearing. One who hears submissively will experience a powerful reaction. Parīkṣit Mahārāja had this reaction: “You have planted Kṛṣṇa in my heart.” And because Kṛṣṇa was planted in his heart, he became completely fearless. He was ready for anything. Hearing had put an end to all his material miseries. This is hearing, and it is not just a show or a cheap ritual.
+
+---
 
 ## **The Absolute Consistency of a Pure Devotee**
 
 If you want to know a pure devotee, you must check their consistency. Genuine bhakti is reflected in consistent behavior. 
 
-What was the speaker doing before the lecture? What would he do after the lecture? Check and see if they are consistent. That is a pure devotee. If they are different, that is not a pure devotee. 
+What was the speaker doing before the lecture? What would he do after the lecture? Check and see if they are consistent. If their behavior is different, that is not a pure devotee. We must not confuse material skills or academic eloquence with pure devotion. A speaker may speak very nice philosophy on the Vyasāsana. But does he practice what he is speaking? He is speaking for the audience, but he doesn't even practice it! 
 
-We should not forget that we are using our material ability, and our material ability is different from being a pure devotee. A devotee may speak very nice philosophy on the Vyasasana. But does he practice what he is speaking? He is speaking for the audience, but he doesn't even practice it! 
+To read something and repeat it is not a problem. To realize it and live it—that is the real challenge. And that is extremely rare. 
 
-To read something and repeat it is not a problem. To realize it and live that is a problem. And that is not easy; it is very rare. 
+A pure devotee's private life and public life are exactly the same. He doesn't have a double, compromised life. Public life is the same, private life is the same. Consistent. 
 
-Therefore, check our activities before we speak our philosophy. Check our activities after we speak our philosophy and see if they are consistent. If they are not, we are not pure devotees. It is that simple.
-
-A pure devotee's private life and public life is the same. He doesn't have a double life. It is one life. Public life is the same, private life is the same. Consistent. 
-
-Do not just check the outside. Anyone can put on a dress. Will you know what is inside the body? Will you know if the body is full of scars? If I cover my body with a shirt and show my teeth to you, does that mean I am a happy person? No. 
-
-Bhakti is not a cosmetic, plastic smile. If you want to know bhakti, check if it is consistent.
+Do not just check the outside dress. Anyone can put on a dress. Will you know what is inside the body? Will you know if the body is full of scars? If I cover my body with a shirt and show my teeth to you, does that mean I am a happy person? No. Bhakti is not a cosmetic, plastic smile. If you want to know bhakti, check if it is consistent.
 
 Let us stop playing games. Let us take our Sādhana seriously, hear with our minds sitting in the class, and let Kṛṣṇa be planted in our hearts so we can perfectly pass our final examination at the moment of death.
 
------
+---
+
+## References
+
+[1] *Bhagavad-gītā* 8.6.
+[2] *Bhagavad-gītā* 2.44.
+[3] *Bhagavad-gītā* 8.15.
+[4] *Śrīmad-Bhāgavatam* Canto 2, Chapter 3, Purport.
+[5] *Śrīmad-Bhāgavatam* 2.3.1, Purport.
+[6] *Śrīmad-Bhāgavatam* 11.2.37, Purport.
+[7] *Śrī Isopaniṣad*, Mantra 9, Purport.
+[8] *Śrīmad-Bhāgavatam* 3.10.15-20.
+[9] *Śrīmad-Bhāgavatam* 1.19.1-40.
+[10] *Śrīmad-Bhāgavatam* 10.1.1-16.
+
+---
 
 ## **Chapter 18: Heart Check**
 
@@ -135,6 +130,7 @@ Let us stop playing games. Let us take our Sādhana seriously, hear with our min
 ✍️ **My Personal Prayer: Living a Life of the Soul** 
 
 *The success of life is determined entirely by what we remember at the moment of death. Write a raw, unpretentious prayer to Kṛṣṇa, begging Him to deliver you from the cosmetic, plastic pretense of mechanical routine, asking for the grace to align your private life with your public words, and begging for the nectar of *Śrīmad-Bhāgavatam* that makes the soul completely fearless of death.*
+
 My Dear Krishna,
 
 _____________________________________________ 
@@ -153,7 +149,5 @@ _____________________________________________
 _____________________________________________ 
 _____________________________________________ 
 _____________________________________________ 
-
-
 
 \newpage

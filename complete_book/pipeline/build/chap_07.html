@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 7</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part One &middot; The Foundation of Devotion</div>
+  <div class="chap-num">VII</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">Purity is a Force</div>
+  <p class="drop">How do we intensify our sādhana?</p>
+<p>Are you ready for it? Please, I know we have so many philosophies to speak. We speak so many philosophies because we are very weak. We are not strong—we are very weak! That is why I am hesitating to speak, because I don't know how you will take it. But because you asked me, I will try. To intensify our sādhana means putting extra effort into our practice. You want to put extra effort into our practice; that is how to intensify and upgrade our practice.</p>
+<p>We often hide behind big, complex philosophies because we are actually very weak on the practical front. We speak lofty theories to mask our internal lazy struggles. But the fundamental principles of Kṛṣṇa consciousness are themselves a sufficient, perfect process to awaken pure love of Godhead. Simply following the four regulative principles, hearing, chanting, and doing our services—this is a unique, perfect principle.</p>
+<p>Look at the <em>Śikṣāṣṭaka</em> of Sri Śrī Caitanya Mahāprabhu. Just those eight prayers alone! Only eight verses! If we understand them carefully and apply them, we can become pure human beings. The <em>Śikṣāṣṭaka</em> takes us from exactly where we are—covered in dirt—all the way to the highest stage of <em>prema</em>, pure love.</p>
+<p><em>Ceto-darpaṇa-mārjanam</em>—cleansing the dust from the mirror of the heart. That is the beginning. But to get that cleansing, we have to be serious. We have to stop making excuses.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>Drinking Poison with a Smile</h3>
+<p>There is a very prominent contamination we are introducing into our society today. We are trying to run a spiritual movement using material abilities and academic qualifications.</p>
+<p>But let me ask you a very direct question: <strong>If you drink poison nicely, with a good smile, will you not die?</strong></p>
+<p>If you drink it very politely, with first-class manners, and a beautiful smile on your face—will the poison say, <em>“Oh, this person is so nice, let me not kill him”</em>? No! You will still die!</p>
+<p>In the exact same way, this is a spiritual movement. We cannot manage or expand this movement using material qualifications alone. It is not sufficient. This movement is based strictly on <strong>purity</strong>.</p>
+<p>Śrīla Prabhupāda boldly declared: <strong>Purity is the force!</strong></p>
+<p>He did not say academic degree is the force. He did not say money is the force. Purity is the force, and purity means Kṛṣṇa consciousness in full, undivided practice.</p>
+<p>It is the spirit that maintains the matter; matter can never maintain the spirit. If we make our spiritual life very strong by good sādhana, then everything else—our management, our preaching, our families—will follow nicely and become easy. But if we are spiritually sick, then everything else will be a struggle, a speculation, and a guesswork.</p>
+<div class="divider">&#10022;</div>
+<h3>Intensifying Our Practice on Special Days</h3>
+<p>In his purports to the <em>Bhagavad-gītā</em> (9.14), Śrīla Prabhupāda mentions that there are certain days which are called <strong>“determined days.”</strong> These are days like Ekādaśī and Janmāṣṭamī.</p>
+<p>Why are they called determined?</p>
+<p>Because they are serious. They are serious because these specific days have an immense, unimaginable spiritual potency. And to realize and capture this potency, we have to follow what is necessary: we must perform austerity, we must fast, and we must hear and chant more.</p>
+<p>But what do we do? We have manufactured so many clever philosophies to avoid the austerity!</p>
+<p>We look at our calendar and we carefully, philosophically bypass the sacrifice. Srila Vṛndāvana dāsa Ṭhākura writes in the <em>Śrī Caitanya-bhāgavata</em> that just two days—just two determined days in a month—are sufficient to send anyone back on the path to Godhead.</p>
+<p>What are those days? The Ekādaśī days.</p>
+<p>But instead of taking advantage of them, we eat more on Ekādaśī days than on ordinary days! We make elaborate feasts of potato, sago, and nuts, stuffing our bellies until we can barely move. The entire purpose of Ekādaśī is defeated! We are defeated!</p>
+<p>Where did Ekādaśī come from?</p>
+<p>The <em>Padma Purāṇa</em> describes this history. One day, Lord Kṛṣṇa went to visit Yamarāja, the lord of death. While He was there, Kṛṣṇa heard a horrific, groaning cry of agony. The sound was coming from the hellish inhabitants being tortured by Yamarāja’s assistants for their sins.</p>
+<p>Kṛṣṇa became deeply concerned and full of sorrow. He was thinking seriously: <em>“I am suffering like this, what should I do? I must find a way to help these poor conditioned souls get My mercy easily.”</em></p>
+<p>Thinking and thinking about this, Kṛṣṇa went to sleep to get a solution for the problem. While He was sleeping, a powerful demon named Mura Asura came to fight Him. Mura Asura came there and started talking: <em>“I will kill you because you are running away from fighting! You are sleeping, I will kill you!”</em></p>
+<p>As he was talking like that, a female personality came out from Kṛṣṇa’s body and killed the demon Mura. Kṛṣṇa woke up and saw the lady standing there. <em>“Who did this?”</em> He asked. She replied, <em>“It is me. The demon was trying to disturb you, so I killed the demon.”</em></p>
+<p>Kṛṣṇa was so pleased that He told her, <em>“Because today is the eleventh day of the month, your name is Ekādaśī. Your duty is to chase away the Papa Purusha (the personification of sin) and give people a chance to get My mercy easily.”</em></p>
+<p>The Papa Purusha realized he had nowhere left to run, so he came back and begged Kṛṣṇa for shelter. Kṛṣṇa told him, <em>“She will appear two times in a month. So on those days, you can enter inside grains, and she will not disturb you there.”</em></p>
+<p>This is why eating grains on Ekādaśī is <strong>extremely dangerous</strong>. It is so dangerous that Sri Śrī Caitanya Mahāprabhu recommended that a devotee should not eat grains on Ekādaśī—even in a dream!</p>
+<p>On Ekādaśī, we must design our lives in such a way that we have more time to chant more rounds. Sixteen rounds is the minimum prescribed standard—the “minimum property” Śrīla Prabhupāda gave us for daily maintenance. But on Ekādaśī, we should take advantage and increase our chanting. Don't chant only sixteen—sixteen is too small, especially on Ekādaśī! We should go far beyond the minimum; we should double our rounds.</p>
+<p>And that requires reducing what we talk the whole day. Reduce it, make sure it is within only Kṛṣṇa consciousness. Let our speech be within Kṛṣṇa consciousness, not outside. Especially on Ekādaśī, we should try to control our speech so that we don't talk anything against any devotee. Never! If you want to say something, let it be positive—a glorification, an appreciation. Find a way to talk good about other devotees, and spend the day reading about the previous ācāryas and appreciating the hard work they did to establish a system that is saving our lives.</p>
+<div class="divider">&#10022;</div>
+<h3>Engaging the Mind in Service</h3>
+<p>Let me share a beautiful pastime of how my spiritual master, Srila Gurudeva, celebrated Janmāṣṭamī. It is a lesson in how to occupy the mind so that Maya has no way to enter.</p>
+<p>When we were new in Kṛṣṇa consciousness, Srila Gurudeva—who was our Regional Secretary at the time—designed a very powerful meditation for Janmāṣṭamī. He literally <strong>tricked our minds</strong> so that we forgot about the physical struggle of fasting.</p>
+<p>He gave us two mandatory assignments for Janmāṣṭamī:</p>
+<ol class="content-list"><li><strong>The Chapter Narration:</strong> Every devotee was assigned exactly one specific chapter from the <em>Kṛṣṇa</em> book. We had to read it, condense it, and stand before all the senior devotees to narrate the entire chapter from memory!</li><li><strong>The Personal Letter:</strong> We had to sit down and write a deeply personal, confidential letter to Lord Kṛṣṇa.</li></ol>
+<p>Do you know what happened?</p>
+<p>The entire temple was in an absolute state of spiritual absorption. We were so busy thinking about our chapters and wondering, <em>“How will I write this letter to Kṛṣṇa? Will He reply? If He replies, how will I get the reply?”</em> that nobody even remembered the hunger or the fasting!</p>
+<p>Even the devotees who were cooking for the massive festival—before they could even touch a pot, they had to sit and read their assigned chapters. While they were standing over the hot stoves, stirring the preparations, they were silently memorizing their pastimes.</p>
+<p>The cooking was first-class because there was no gossip, no talking, and <strong>no animosity</strong>! Everyone was simply consumed by the thoughts of Kṛṣṇa.</p>
+<p>That is real Janmāṣṭamī. If we plan our Kṛṣṇa consciousness like this, we will soon be there. Very, very soon we will be there.</p>
+<div class="divider">&#10022;</div>
+<h3>Chanting Sincerely and Audibly</h3>
+<p>How should we chant our Japa?</p>
+<p>Śrīla Prabhupāda, drawing from the commentaries of Srila Visvanatha Cakravarti Thakura, gives us the ultimate key: <strong>Chant nicely, which means distinctly and loudly!</strong></p>
+<p>Why loud and distinct?</p>
+<p>Because when you shout at someone, they are forced to give you their attention. Chanting loudly and distinctly is literally <strong>shouting at your own distracted mind to sit down and listen!</strong> It forces the ear to hear, and when the ear hears, the mind cannot wander off to Maya.</p>
+<p>We must chant clearly while our body is still fit and healthy. At the time of death, your bodily functions will be completely in disorder. You will be bewildered and in pain. You may not be able to chant the Hare Kṛṣṇa mantra very distinctly at that moment.</p>
+<p>But Visvanatha Cakravarti Thakura reveals a secret: If you have practiced chanting loudly and distinctly during your life, then at the time of death, Kṛṣṇa Himself will look at you and feel: <strong>“This person has called My name clearly throughout their life. It is now My personal duty to give them all protection.”</strong></p>
+<p>What a beautiful, comforting promise! Kṛṣṇa takes it as His personal obligation to save you because you called Him clearly.</p>
+<div class="divider">&#10022;</div>
+<h3>First Japa, Then Management</h3>
+<p>Let us be very clear about our priorities: <strong>Sādhana is our primary duty.</strong> Services come <em>after</em> Sādhana.</p>
+<p>If we want to be a good book distributor, we must chant our rounds first. Otherwise, it is just ordinary selling of books, not a spiritual activity. We must chant the Hare Kṛṣṇa mantra distinctly and clearly, then book distribution becomes a spiritual activity. It is the same with everything else we do in Kṛṣṇa consciousness. One is not qualified to cook for Kṛṣṇa without chanting, and one should not do Deity worship without chanting. Our consciousness has to be purified to do what is offerable to Kṛṣṇa.</p>
+<p>But today, we are managing in Japa—it is wrong! That is not what Śrīla Prabhupāda gave to us. Managing in a class is wrong! Prabhupāda gave us distinctly clear activities: a time for Japa, a time for classes, a time for book distribution, and a time for cooking.</p>
+<p>If you do not chant your rounds properly <em>before</em> you step out to manage, you are going to manage the devotees for your own selfish benefit and prestige. A good leader manages people for <em>their</em> benefit. If you chant sincerely first, you will receive the spiritual potency from your Kṛṣṇa consciousness to lead and manage the devotees purely for their spiritual benefit. A good devotee will be a good manager because his practice makes him good, so he will manage devotees for the benefit of devotees.</p>
+<p>Purity is our only strength. Let us take our Sādhana seriously, shout at our distracted minds, and straighten our hands to receive the mercy.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 7 &middot; Heart Check</p>
+<h4>Am I Cultivating Purity and Practice?</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Take a few quiet, reflective minutes and look honestly into your heart:</p>
+<p class="hc-item numbered" data-n="1"><strong>Shouting at the Mind:</strong> The next time you sit down to chant, try chanting <strong>distinctly and loudly</strong> for ten minutes. Let your ear lock onto every single syllable. <em>Did your restless mind stop its wandering when you literally shouted the Holy Name at it to force it to listen?</em></p>
+<ol class="hc-lines one"><li></li></ol>
+<p class="hc-item numbered" data-n="2"><strong>Drinking Poison with a Smile:</strong> Examine your daily services and management. Are you relying on your natural material skills and academic qualifications with a "polite smile," while secretly seeking prestige, control, or personal credit?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p class="hc-item numbered" data-n="3"><strong>Honoring Determined Days:</strong> On the upcoming Ekādaśī or Janmāṣṭamī, how will you consciously transition from material routines and elaborate eating to intensified Sādhana? What specific numbers of rounds or devotee-glorification will you plan to occupy your mind?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><em>Write down one practical, sincere way you will increase your effort in Sādhana this week, followed by a raw prayer:</em></p>
+<p class="hc-item plain"><span class="commitment">My Devotional Intention:</span> <span class="inline-blank" style="width:2.4in;"></span></p>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">The Call for Protection</div>
+  <p class="prayer-prompt">Lord Kṛṣṇa promises that if we call His name clearly during our life, He feels it is His personal duty to protect us at the moment of death. Write a sincere prayer begging for the strength to shout at your lazy mind, to stop drinking the polite poison of material prestige, and to wear the true armor of attentive Sādhana.</p>
+  <p class="prayer-salut">My Dear Krishna,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

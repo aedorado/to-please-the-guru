@@ -4,11 +4,11 @@ I was very new in Kṛṣṇa consciousness, and my beloved spiritual master, Hi
 
 So I started writing regularly, every day. One day, I was writing, and I was writing, and writing: *“Please Gurudev, do not abandon me.”*
 
-When I wrote those words, I fell asleep right there over my paper. In my sleep, I saw him appear. He was smiling, and his smile was expanding. Then he looked at me and said: *“I do not abandon you.”*
+When I wrote those words, I fell asleep right there over my paper. In my sleep, I saw him appear. He was smiling, and his smile was expanding. He was in full, blazing effulgence, and his smile was astounding. Then he looked at me and said: *“I do not abandon anyone.”*
 
 I woke up, and because he had already answered my prayer internally, there was no need to continue. I didn’t write the other things I wanted to say in that letter. I just signed it, folded it, and kept it hidden away.
 
-At that time, Gurudev was in the United States, thousands of miles away from Africa. Three months later, he returned to West Africa. After he finished singing *Jaya Rādhā-Mādhava* and offered the *praṇāma-dhvani*, the very first thing he said when he opened his mouth was: **“I never abandon anyone.”**
+At that time, Gurudev was in the United States, thousands of miles away from Africa. Three months later, he returned to West Africa. We received him at the airport, performed a full bath and offered Guru Puja. After he finished singing *Jaya Rādhā-Mādhava* and offered the *praṇāma-dhvani*, the very first thing he said when he opened his mouth to speak was: **“I never abandon anyone.”**
 
 I was completely stunned! He did not know what I had written in my private diary. Nobody had read that letter. But his sensitivity and deep, personal connection with his disciples was so strong. Kṛṣṇa must have revealed my anxiety to him.
 
@@ -16,25 +16,25 @@ I was completely stunned! He did not know what I had written in my private diary
 
 ## **Physical, Mental, Mystical, and Spiritual Protection**
 
-Gurudev was very personal in his dealings. He believed that a genuine spiritual master must provide fourfold protection to his disciples: **“Physical protection. Mental protection. Mystical protection, spiritual protection.”**
+Gurudev was very personal in his dealings. He believed that a genuine spiritual master must provide fourfold protection to his disciples: **“Physical protection. Mental protection. Mystical protection, spiritual protection”** [1].
 
 To provide physical and mental protection, he wanted us to be completely self-sufficient. He established farm communities in Nigeria and Ghana. Today, in Nigeria, we are working on the Surabhi project—a farm, school, clinic, temple, and residential community—reviving the self-sufficient standard he left us. He was teaching us everything in a practical way. For years, we were not ordering anything from India. We were producing our own incense, oils, soap, candles, mṛdaṅgas, cutlasses, and even karma-free shoes—you can still see those shoes in his Samadhi today! We had a clinic, a nice restaurant, and everything was there. I still remember the taste of the samosas I ate at that time. I am still remembering the taste in my head! They were so tasty that if you saw a samosa alone, you would immediately feel appetized.
 
-In our communities, he established a system of absolute devotee care Maharaj noticed that in some places, when a devotee visits a temple, they are asked to pay for accommodation and prasāda. He strictly forbade this, teaching us: *“If a devotee is going to any temple, it is the responsibility of that temple to take care of him.”* This system of cooperative care was established so that the devotees would get absolute security. Under his care, we were never afraid of the future. We did not have to worry: *“What will happen to me tomorrow if I get sick or old?”* Gurudev's leadership covered that space completely, and we felt very free in his leadership.
+In our communities, he established a system of absolute devotee care. I noticed that in some places, when a devotee visits a temple, they are asked to pay for accommodation and prasāda. He strictly forbade this, teaching us: *“If a devotee is going to any temple, it is the responsibility of that temple to take care of him.”* This system of cooperative care was established so that the devotees would get absolute security. Under his care, we were never afraid of the future. We did not have to worry: *“What will happen to me tomorrow if I get sick or old?”* Gurudev's leadership covered that space completely, and we felt very free in his leadership.
 
 ---
 
-## **“Stop This Rekha Sangeet”**
+## **“Stop This Reggae Sangeet”**
 
 A father's protection is continuous. He sees where you are going wrong, and he corrects you today before you ruin yourself tomorrow. Before I joined the movement, I was very attached to music. It had actually delayed me from joining. After some time in the temple, I started the music again—but this time, I wrote Kṛṣṇa-conscious lyrics. The songs were very nice, very powerful. But the instruments were pure reggae music, which originated from Jamaica.
 
 I recorded the songs on a cassette and gave it to Gurudev. He took it and listened to it in his room for three days. On the fourth day, he called me in. When I went there, he was sitting on the floor, reading the *Nectar of Devotion*. He had already marked the exact portion he wanted to use to teach me.
 
-He handed me the book and asked me to read. As I was reading, I came to the point where Śrīla Rūpa Gosvāmī was describing *mixed devotional service*. I froze! He turned to me and said: *“None of our Ācāryas performed mixed devotional service. Why are you doing it?”*
+He handed me the book and asked me to read. As I was reading, I came to the point where Śrīla Rūpa Gosvāmī was describing *mixed devotional service* [2]. I froze! He turned to me and said: *“None of our Ācāryas performed mixed devotional service. Why are you doing it?”*
 
 I was completely silent. When a pure devotee speaks, he enters you. He speaks physically, but his words continue to speak to you mentally, softly. I sat there contemplating what he said. He didn’t speak many things physically, but he was saying them to me heart-to-heart, and those silent instructions were very loud—very loud!
 
-Gurudev looked at me and said: **“Stop this Rekha Sangeet. We can do kīrtana for twenty-four hours.”**
+Gurudev looked at me and said: **“Stop this reggae sangeet. We can do kīrtana for twenty-four hours.”**
 
 I had never been forbidden to perform kīrtana, but he told me: **“Stop this music.”** At that time, my music was highly popular. If I had continued, I would have brought a lot of money to the temple and attracted a lot of young people who would jump on stage and dance with me. But Gurudev knew that I would not last in the movement. If I had continued, the fame and lower-chakra beats would have fed my false pride, I would have fallen from my vows, got married, and even died before now. He stopped me today before the danger could happen tomorrow. That is the spiritual protection of a father.
 
@@ -46,7 +46,7 @@ A pure devotee is sensitive to every situation. Under Gurudev's guidance, we had
 
 One morning, a godsister was cooking in the kitchen and suddenly realized she had forgotten a very important ingredient. She desperately needed her husband’s help to find it, but her husband was sitting inside the temple room attending the class. She left the kitchen and came down, but she stopped at the threshold. She couldn’t enter, because entering meant creating a distraction. Everybody would see her, and Gurudev would see her from the *vyāsāsana*. So she stood outside the door in great anxiety, wondering how she would complete her cooking before the class finished.
 
-Gurudev was speaking, but he immediately picked up her energy. He knew she was in anxiety, she could not enter, and she needed her husband very gently. He stopped the class, looked at the husband in the audience, and told him: *“Go outside.”* He relieved her anxiety instantly. He was that sensitive to our struggles.
+Gurudev was speaking, but he immediately picked up her energy [3]. He knew she was in anxiety, she could not enter, and she needed her husband very gently. He stopped the class, looked at the husband in the audience, and told him: *“Go outside.”* He relieved her anxiety instantly. He was that sensitive to our struggles.
 
 My Gurudev had such mystical power; he could read every person like a book. But he also told me that having such mystic power has a side effect—it can be a heavy burden. Why? Because you become connected with everyone. You sit on the seat, and you hear the silent voices of everyone in the room. One is thinking: *“money, money, money.”* Another is thinking: *“fear, fear, fear.”* Another is thinking: *“anxiety, anxiety.”* You are constantly absorbing their worries and their pain. It is a heavy, silent load that a father carries to protect his children.
 
@@ -54,7 +54,7 @@ My Gurudev had such mystical power; he could read every person like a book. But 
 
 ## **“Where is My Stick?”**
 
-A father always checks his children to remove their subtle pride and prestige, making sure their spiritual life is real, not artificial. When Gurudev decided to put my name on the sannyāsa recommendation list, he wrote me a formal letter. When I opened it, I saw he had addressed me as “Maharaj.” Sannyāsa is extremely difficult, and I immediately felt a wave of anxiety. Gurudev was not there physically when I read it, so I quietly took the letter and slipped it deep inside the pages of the scripture I was reading. It was completely hidden inside the book, not outside.
+A father always checks his children to remove their subtle pride and prestige, making sure their spiritual life is real, not artificial. When Gurudev decided to put my name on the sannyāsa recommendation list, he wrote me a formal letter. When I opened it, I saw he had addressed me as “Maharaj.” Sannyāsa is extremely difficult [4], and I immediately felt a wave of anxiety. Gurudev was not there physically when I read it, so I quietly took the letter and slipped it deep inside the pages of the scripture I was reading. It was completely hidden inside the book, not outside.
 
 Later that day, we went for a preaching lecture in a car. He sat in the front seat, and we sat behind. After the program, we were returning back to the temple in silence. Suddenly, without turning his head or looking back, Gurudev reached his hand straight over the seat, put his fingers directly between the exact pages of my book, and pulled out the hidden letter! He showed it to me and said with a smile: **“Maharaj.”**
 
@@ -74,7 +74,7 @@ Many of our struggles in community life come from our inability to deal with eac
 
 He fell down and cried: *“Gurudev, this Prabhu is so bad, and what he did is so terrible that I can never forgive him!”*
 
-Maharaj looked at him and said very calmly: **“Yes, you are right. Don’t forgive him. Too much for him.”**
+Maharaj looked at him and said very calmly: **“Don’t forgive him. Too much for him”** [5].
 
 The devotee was suddenly very happy and relieved, thinking that Gurudev was taking his side. He sat up and smiled: *“Yes, yes, Gurudev!”*
 
@@ -88,7 +88,7 @@ The devotee was completely stunned. He understood his own hypocrisy. He broke do
 
 To teach us how to resolve deep-seated interpersonal distance, Maharaj showed us that the solution is always simple, affectionate care, not grand management.
 
-A married devotee came to Maharaj, deeply unhappy because he and his wife had been living in silent coldness for seven years. He complained that she was a “bad woman” and that they had no communication.
+A married devotee came to Maharaj, deeply unhappy because he and his wife had been living in silent coldness for seven years [6]. He complained that she was a “bad woman” and that they had no communication.
 
 Maharaj asked him: *“Have you ever given her anything on her birthday?”*
 
@@ -116,7 +116,19 @@ He exposed the devotee's hypocrisy immediately. But Gurudev was not saying, don'
 
 He told us: **“So, try, keep trying, to make something good.”**
 
-Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura once mentioned a heavy thing: to make one person a devotee requires two thousand gallons of your own blood! Think about how much effort, how much patience, and how many years of sacrifice that means. We must put in that same serious effort for the people in our own home first, and Kṛṣṇa will help us.
+Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura once mentioned a heavy thing: to make one person a devotee requires two thousand gallons of your own blood [7]! Think about how much effort, how much patience, and how many years of sacrifice that means. We must put in that same serious effort for the people in our own home first, and Kṛṣṇa will help us.
+
+---
+
+## References
+
+[1] *Bhagavad-gītā* 9.22.
+[2] Śrīla Rūpa Gosvāmī, *Bhakti-rasāmṛta-sindhu* 1.1.11.
+[3] *Bhagavad-gītā* 12.15.
+[4] *Śrīmad-Bhāgavatam* 11.18.1-15.
+[5] *Śrīmad-Bhāgavatam* 9.15.40.
+[6] *Śrīmad-Bhāgavatam* 7.14.3-4.
+[7] Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura, biographical records.
 
 ---
 
@@ -162,7 +174,6 @@ _____________________________________________
 _____________________________________________ 
 _____________________________________________ 
 _____________________________________________ 
-
 
 
 \newpage

@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 16</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Two &middot; The Internal Battle</div>
+  <div class="chap-num">XVI</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">A Caring Father</div>
+  <p class="drop">I was very new in Kṛṣṇa consciousness, and my beloved spiritual master, His Holiness Bhakti Tīrtha Swami, had taught us a very simple and powerful practice: how to write a personal letter to Lord Kṛṣṇa. He encouraged us to put our deepest thoughts, our struggles, and our prayers on paper, addressing the Lord directly.</p>
+<p>So I started writing regularly, every day. One day, I was writing, and I was writing, and writing: <em>“Please Gurudev, do not abandon me.”</em></p>
+<p>When I wrote those words, I fell asleep right there over my paper. In my sleep, I saw him appear. He was smiling, and his smile was expanding. He was in full, blazing effulgence, and his smile was astounding. Then he looked at me and said: <em>“I do not abandon anyone.”</em></p>
+<p>I woke up, and because he had already answered my prayer internally, there was no need to continue. I didn’t write the other things I wanted to say in that letter. I just signed it, folded it, and kept it hidden away.</p>
+<p>At that time, Gurudev was in the United States, thousands of miles away from Africa. Three months later, he returned to West Africa. We received him at the airport, performed a full bath and offered Guru Puja. After he finished singing <em>Jaya Rādhā-Mādhava</em> and offered the <em>praṇāma-dhvani</em>, the very first thing he said when he opened his mouth to speak was: <strong>“I never abandon anyone.”</strong></p>
+<p>I was completely stunned! He did not know what I had written in my private diary. Nobody had read that letter. But his sensitivity and deep, personal connection with his disciples was so strong. Kṛṣṇa must have revealed my anxiety to him.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>Physical, Mental, Mystical, and Spiritual Protection</h3>
+<p>Gurudev was very personal in his dealings. He believed that a genuine spiritual master must provide fourfold protection to his disciples: <strong>“Physical protection. Mental protection. Mystical protection, spiritual protection”</strong> <sup class="cite">1</sup>.</p>
+<p>To provide physical and mental protection, he wanted us to be completely self-sufficient. He established farm communities in Nigeria and Ghana. Today, in Nigeria, we are working on the Surabhi project—a farm, school, clinic, temple, and residential community—reviving the self-sufficient standard he left us. He was teaching us everything in a practical way. For years, we were not ordering anything from India. We were producing our own incense, oils, soap, candles, mṛdaṅgas, cutlasses, and even karma-free shoes—you can still see those shoes in his Samadhi today! We had a clinic, a nice restaurant, and everything was there. I still remember the taste of the samosas I ate at that time. I am still remembering the taste in my head! They were so tasty that if you saw a samosa alone, you would immediately feel appetized.</p>
+<p>In our communities, he established a system of absolute devotee care. I noticed that in some places, when a devotee visits a temple, they are asked to pay for accommodation and prasāda. He strictly forbade this, teaching us: <em>“If a devotee is going to any temple, it is the responsibility of that temple to take care of him.”</em> This system of cooperative care was established so that the devotees would get absolute security. Under his care, we were never afraid of the future. We did not have to worry: <em>“What will happen to me tomorrow if I get sick or old?”</em> Gurudev's leadership covered that space completely, and we felt very free in his leadership.</p>
+<div class="divider">&#10022;</div>
+<h3>“Stop This Reggae Sangeet”</h3>
+<p>A father's protection is continuous. He sees where you are going wrong, and he corrects you today before you ruin yourself tomorrow. Before I joined the movement, I was very attached to music. It had actually delayed me from joining. After some time in the temple, I started the music again—but this time, I wrote Kṛṣṇa-conscious lyrics. The songs were very nice, very powerful. But the instruments were pure reggae music, which originated from Jamaica.</p>
+<p>I recorded the songs on a cassette and gave it to Gurudev. He took it and listened to it in his room for three days. On the fourth day, he called me in. When I went there, he was sitting on the floor, reading the <em>Nectar of Devotion</em>. He had already marked the exact portion he wanted to use to teach me.</p>
+<p>He handed me the book and asked me to read. As I was reading, I came to the point where Śrīla Rūpa Gosvāmī was describing <em>mixed devotional service</em> <sup class="cite">2</sup>. I froze! He turned to me and said: <em>“None of our Ācāryas performed mixed devotional service. Why are you doing it?”</em></p>
+<p>I was completely silent. When a pure devotee speaks, he enters you. He speaks physically, but his words continue to speak to you mentally, softly. I sat there contemplating what he said. He didn’t speak many things physically, but he was saying them to me heart-to-heart, and those silent instructions were very loud—very loud!</p>
+<p>Gurudev looked at me and said: <strong>“Stop this reggae sangeet. We can do kīrtana for twenty-four hours.”</strong></p>
+<p>I had never been forbidden to perform kīrtana, but he told me: <strong>“Stop this music.”</strong> At that time, my music was highly popular. If I had continued, I would have brought a lot of money to the temple and attracted a lot of young people who would jump on stage and dance with me. But Gurudev knew that I would not last in the movement. If I had continued, the fame and lower-chakra beats would have fed my false pride, I would have fallen from my vows, got married, and even died before now. He stopped me today before the danger could happen tomorrow. That is the spiritual protection of a father.</p>
+<div class="divider">&#10022;</div>
+<h3>Sensitivity to Anxiety</h3>
+<p>A pure devotee is sensitive to every situation. Under Gurudev's guidance, we had a strict standard: when he was giving Śrīmad-Bhāgavatam class, there was to be no distraction, no moving here and there, no going and coming. You sit! You sit and listen.</p>
+<p>One morning, a godsister was cooking in the kitchen and suddenly realized she had forgotten a very important ingredient. She desperately needed her husband’s help to find it, but her husband was sitting inside the temple room attending the class. She left the kitchen and came down, but she stopped at the threshold. She couldn’t enter, because entering meant creating a distraction. Everybody would see her, and Gurudev would see her from the <em>vyāsāsana</em>. So she stood outside the door in great anxiety, wondering how she would complete her cooking before the class finished.</p>
+<p>Gurudev was speaking, but he immediately picked up her energy <sup class="cite">3</sup>. He knew she was in anxiety, she could not enter, and she needed her husband very gently. He stopped the class, looked at the husband in the audience, and told him: <em>“Go outside.”</em> He relieved her anxiety instantly. He was that sensitive to our struggles.</p>
+<p>My Gurudev had such mystical power; he could read every person like a book. But he also told me that having such mystic power has a side effect—it can be a heavy burden. Why? Because you become connected with everyone. You sit on the seat, and you hear the silent voices of everyone in the room. One is thinking: <em>“money, money, money.”</em> Another is thinking: <em>“fear, fear, fear.”</em> Another is thinking: <em>“anxiety, anxiety.”</em> You are constantly absorbing their worries and their pain. It is a heavy, silent load that a father carries to protect his children.</p>
+<div class="divider">&#10022;</div>
+<h3>“Where is My Stick?”</h3>
+<p>A father always checks his children to remove their subtle pride and prestige, making sure their spiritual life is real, not artificial. When Gurudev decided to put my name on the sannyāsa recommendation list, he wrote me a formal letter. When I opened it, I saw he had addressed me as “Maharaj.” Sannyāsa is extremely difficult <sup class="cite">4</sup>, and I immediately felt a wave of anxiety. Gurudev was not there physically when I read it, so I quietly took the letter and slipped it deep inside the pages of the scripture I was reading. It was completely hidden inside the book, not outside.</p>
+<p>Later that day, we went for a preaching lecture in a car. He sat in the front seat, and we sat behind. After the program, we were returning back to the temple in silence. Suddenly, without turning his head or looking back, Gurudev reached his hand straight over the seat, put his fingers directly between the exact pages of my book, and pulled out the hidden letter! He showed it to me and said with a smile: <strong>“Maharaj.”</strong></p>
+<p>I became very small—very tiny! I realized he could see my internal struggle. He wanted my realization to be real, not artificial or based on cheap prestige.</p>
+<p>Another day, we were sitting in the car going for a program. Gurudev suddenly paused and asked: <strong>“Where is my stick?”</strong></p>
+<p>I immediately came down from the car, ran back into the temple, found his stick, and brought it to him. When I gave it to him, he looked at me and said: <strong>“Maharaj.”</strong></p>
+<p>At that moment, I realized that now I was truly a Maharaj, because my mind was completely off from my own prestige, off from my sannyāsa recommendation, and off from my position. I was simply serving. Gurudev only spoke that single, heavy word, but he used it to teach me that when your mind is completely off yourself, you are truly a Maharaj. He knew sannyāsa was hard, so he prepared us like that.</p>
+<div class="divider">&#10022;</div>
+<h3>“Don't Forgive Him”</h3>
+<p>Many of our struggles in community life come from our inability to deal with each other submissively. One afternoon, a devotee came to Gurudev’s room, weeping and deeply disturbed.</p>
+<p>He fell down and cried: <em>“Gurudev, this Prabhu is so bad, and what he did is so terrible that I can never forgive him!”</em></p>
+<p>Maharaj looked at him and said very calmly: <strong>“Don’t forgive him. Too much for him”</strong> <sup class="cite">5</sup>.</p>
+<p>The devotee was suddenly very happy and relieved, thinking that Gurudev was taking his side. He sat up and smiled: <em>“Yes, yes, Gurudev!”</em></p>
+<p>But then Maharaj leaned forward, looked him directly in the eye, and said: <strong>“But let me ask you: the person whom you yourself have offended in the past, does he not feel the exact same way about you? That person also has such thoughts about you, that you are very bad. So, as you cannot forgive him, why will that person forgive you?”</strong></p>
+<p>The devotee was completely stunned. He understood his own hypocrisy. He broke down, wept tears of genuine repentance, and learned what it means to live in a real, sweet relationship rather than a mechanical ritual.</p>
+<div class="divider">&#10022;</div>
+<h3>The Ten-Rupee Flower</h3>
+<p>To teach us how to resolve deep-seated interpersonal distance, Maharaj showed us that the solution is always simple, affectionate care, not grand management.</p>
+<p>A married devotee came to Maharaj, deeply unhappy because he and his wife had been living in silent coldness for seven years <sup class="cite">6</sup>. He complained that she was a “bad woman” and that they had no communication.</p>
+<p>Maharaj asked him: <em>“Have you ever given her anything on her birthday?”</em></p>
+<p>The husband replied: <em>“No, birthday is Maya.”</em></p>
+<p>Maharaj looked at him and said: <strong>“Seven years. You never considered that you should give her something? Why we don’t do that? That is the only thing which is Maya for us? You who is getting married, you are not Maya? Only one person is Maya? If you are the husband of Maya, you are what?”</strong></p>
+<p>Maharaj then gave him a simple instruction: <strong>“Go and buy, bring one flower. Go and put it in the middle of her bed.”</strong></p>
+<p>The husband was doubtful, noting that a single flower would cost only ten rupees—not a hundred, not a hundred! But he went and bought it, and put it on the bed.</p>
+<p>When the woman came and saw the flower on her bed, she picked it up. This “bad woman” came to him, hugged him, and they both wept together. That is how they resolved the seven years of coldness!</p>
+<p>Maharaj was teaching us that our lessons are mechanical. We don't know how to live with each other. We are not together because we don't know how to deal with each other. Relationship is very, very powerful, very important, and we miss it.</p>
+<div class="divider">&#10022;</div>
+<h3>“Whom Are You Going to Make a Devotee?”</h3>
+<p>On another occasion, a devotee came to Maharaj, complaining about his wife. The devotee was enumerating: <em>“My wife is like this, like this...”</em> on and on and on. Maharaj sat in complete silence. He didn’t speak, and he didn’t stop him. He waited until the devotee had completely exhausted himself. The devotee was thinking: <em>“I have convinced my Guru that I can divorce my wife. I have given him sufficient, logical reasons.”</em></p>
+<p>But when the devotee stopped, Gurudev turned everything around. He looked at him and said: <strong>“This is the closest person to you. You cannot make her a devotee. Why are you going on sankirtan? You cannot make the person close to you a devotee. Why are you going on sankirtan? Whom are you going to make a devotee?”</strong></p>
+<p>He exposed the devotee's hypocrisy immediately. But Gurudev was not saying, don't go on sankirtan again. No, he wanted us to preach. What Gurudev was trying to say was: as you are going to sankirtan and trying to preach to strangers, similarly, here also in your home, you must take care of your husband or wife, preach to them also, and change their behavior through your own gentle character.</p>
+<p>He told us: <strong>“So, try, keep trying, to make something good.”</strong></p>
+<p>Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura once mentioned a heavy thing: to make one person a devotee requires two thousand gallons of your own blood <sup class="cite">7</sup>! Think about how much effort, how much patience, and how many years of sacrifice that means. We must put in that same serious effort for the people in our own home first, and Kṛṣṇa will help us.</p>
+<div class="divider">&#10022;</div>
+<h3>References</h3>
+<p><sup class="cite">1</sup> <em>Bhagavad-gītā</em> 9.22. <sup class="cite">2</sup> Śrīla Rūpa Gosvāmī, <em>Bhakti-rasāmṛta-sindhu</em> 1.1.11. <sup class="cite">3</sup> <em>Bhagavad-gītā</em> 12.15. <sup class="cite">4</sup> <em>Śrīmad-Bhāgavatam</em> 11.18.1-15. <sup class="cite">5</sup> <em>Śrīmad-Bhāgavatam</em> 9.15.40. <sup class="cite">6</sup> <em>Śrīmad-Bhāgavatam</em> 7.14.3-4. <sup class="cite">7</sup> Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura, biographical records.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 16 &middot; Heart Check</p>
+<h4>Devotee Care and Protection</h4>
+<p class="hc-item">Do the devotees around you—especially your family and dependents—feel physically, mentally, and spiritually protected by your presence? Or do they feel constant anxiety, fear, and neglect?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item plain"><span class="commitment">The Safe Space:</span> Identify one devotee or family member who has been struggling or in anxiety lately. Commit to one small, practical act of care this week (e.g., <em>offering prasāda, checking on their health, or simply listening to them submissively</em>) with zero expectation of return.</p>
+<h4>Correcting Pride and Hypocrisy</h4>
+<p class="hc-item">When a senior devotee or authority corrects your service or behavior, do you get defensive and angry, or do you accept it as the surgeon’s purifying mercy to save your spiritual life?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Are you trying to preach and teach others while treating the closest people in your home with coldness, distance, and critical judgment?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>Realize:</em> To preach to strangers while neglecting your own family is hypocrisy. True preaching begins with gentle, submissive behavior at home.</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>The Power of Forgiveness</h4>
+<p class="hc-item">Is there a devotee or family member whom you refuse to forgive, claiming that “what they did is too bad”?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>Meditation:</em> Remember Maharaj’s words: if you do not forgive others, how can you expect Kṛṣṇa or others to forgive your own massive mountain of offenses?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">Praying to Be a Real Maharaj</div>
+  <p class="prayer-prompt">Lord Balarāma and the Spiritual Master are the embodiments of strength in service, helping us completely strip away our prestige and false doership. Write a raw prayer to your spiritual master, begging for the humility of a simple servant—to serving his followers with real affection, to accept his heavy corrections with gratitude, and to make your spiritual life completely real and free from all duplicity.</p>
+  <p class="prayer-salut">My Dear Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

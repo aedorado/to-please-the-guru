@@ -12,11 +12,11 @@ Lord Balarāma is called the safest form of Kṛṣṇa. In the Western traditio
 
 In His intense desire to serve, Lord Balarāma expands Himself into everything we see in both the material and spiritual worlds. 
 
-First, He expands into the *Catur-vyūha*—Vāsudeva, Saṅkarṣaṇa, Pradyumna, and Aniruddha. Then He expands into Mahā-Viṣṇu, Garbhodakaśāyī Viṣṇu, Kṣīrodakaśāyī Viṣṇu, and Ananta Śeṣa. All of these are Balarāma! Every single one of them is manifested strictly for the purpose of service. Only *one* form of Balarāma is used for dancing and playing with Kṛṣṇa. All other forms are used for creation, maintenance, and the physical heavy-lifting of the universes. 
+First, He expands into the *Catur-vyūha*—Vāsudeva, Saṅkarṣaṇa, Pradyumna, and Aniruddha. Then He expands into Mahā-Viṣṇu, Garbhodakaśāyī Viṣṇu, Kṣīrodakaśāyī Viṣṇu, and Ananta Śeṣa [1]. All of these are Balarāma! Every single one of them is manifested strictly for the purpose of service. Only *one* form of Balarāma is used for dancing and playing with Kṛṣṇa. All other forms are used for creation, maintenance, and the physical heavy-lifting of the universes. 
 
 All the sciences we study—algebra, mathematics, physics, or chemistry—are not dry, secular subjects. They are simply the engineering of Lord Balarāma. Even the planetary systems, the innumerable universes, the oceans, the mountains, the rivers—everything is maintained and taken care of by Lord Balarāma. 
 
-Even Kṛṣṇa’s personal, intimate objects are expansions of Balarāma! Kṛṣṇa’s dhoti is Balarāma, His chador is Balarāma, His shoes, His bed, His chair, His flute, and His crown—all are Balarāma’s body, transformed into objects of comfort strictly to serve His brother. In the spiritual world, Kṛṣṇa’s Sandhinī and Saṁvit potencies are placed completely under Balarāma’s charge to maintain the entire structural reality of the spiritual and material realms. All these manifestations exist strictly for service.
+Even Kṛṣṇa’s personal, intimate objects are expansions of Balarāma! Kṛṣṇa’s dhoti is Balarāma, His chador is Balarāma, His shoes, His bed, His chair, His flute, and His crown—all are Balarāma’s body, transformed into objects of comfort strictly to serve His brother. In the spiritual world, Kṛṣṇa’s Sandhinī and Saṁvit potencies are placed completely under Balarāma’s charge to maintain the entire structural reality of the spiritual and material realms [2]. All these manifestations exist strictly for service.
 
 ---
 
@@ -38,7 +38,7 @@ Before we walk into a beautifully constructed temple room, an engineer must firs
 
 But when they were coming, Balarāma had to prepare the way. To teach us how compulsory and sacred the *Garbhādāna-saṁskāra* is for all human beings, Lord Balarāma Himself performed it. If we do not perform this saṁskāra, Śrīla Prabhupāda warns us that the child we produce will be no better than an animal. Balarāma was the very first person in the universe to perform this sacred act of preparing the womb. 
 
-He entered the womb of Devakī first, installing His expansion, Ananta Śeṣa, to make Devakī's womb a comfortable place for Kṛṣṇa. Once Balarāma had made sure everything was complete and secure, Kṛṣṇa ordered Yogamāyā to transfer Balarāma from Devakī’s womb to Rohiṇī’s womb in Gokula. 
+He entered the womb of Devakī first, installing His expansion, Ananta Śeṣa, to make Devakī's womb a comfortable place for Kṛṣṇa. Once Balarāma had made sure everything was complete and secure, Kṛṣṇa ordered Yogamāyā to transfer Balarāma from Devakī’s womb to Rohiṇī’s womb in Gokula [3]. 
 
 When Kṛṣṇa gave this instruction, Yogamāyā was hesitant and worried, feeling that she did not have the power to drag the supreme brother of the Lord. But Kṛṣṇa insisted that this was her assigned service, so Yogamāyā executed the order and transferred Him. 
 
@@ -56,7 +56,7 @@ But the Yamunā River refused to move, thinking that He was acting like a drunka
 
 Balarāma’s eyes flared with anger. He shouted, *“You called me a drunkard? You think I am contaminated? Okay! Let me teach you exactly how a drunkard behaves!”* 
 
-He snatched His mighty plow, dug it deep into her banks, and dragged the Yamunā violently toward Him! The Yamunā River was terrified, fell at His feet, and begged for His forgiveness. Even though Balarāma forgave her, the *Śrīmad-Bhāgavatam* records that she was permanently divided, flowing in crooked curves to this day because she was dragged by Balarāma’s plow.
+He snatched His mighty plow, dug it deep into her banks, and dragged the Yamunā violently toward Him! The Yamunā River was terrified, fell at His feet, and begged for His forgiveness. Even though Balarāma forgave her, the *Śrīmad-Bhāgavatam* records that she was permanently divided, flowing in crooked curves to this day because she was dragged by Balarāma’s plow [4].
 
 ---
 
@@ -66,7 +66,7 @@ For eleven years, Kṛṣṇa and Balarāma lived in Vṛndāvana, tending the c
 
 But the peaceful days in Vṛndāvana were interrupted. Kaṁsa sent Akrūra to Vṛndāvana to invite Kṛṣṇa and Balarāma to Mathurā for a wrestling match. Akrūra was a pure devotee. He knew Kaṁsa’s wicked plan, but he also knew that Kṛṣṇa and Balarāma are the Supreme Lords. 
 
-When Akrūra arrived in Vṛndāvana, he did something shocking: he heavily chastised Kṛṣṇa and Balarāma! He looked at the two brothers and asked: *“Kṛṣṇa! Balarāma! What are you doing? How can you sit here so peacefully taking care of cows and enjoying yourselves in the forest, while your own mother and father are being tortured every day in Kaṁsa’s prison? Every day, Kaṁsa enters their cell, draws his sharp sword, and threatens to cut off their heads! Have you forgotten your duty? The demigods begged you to appear to kill Kaṁsa, and yet you are sitting here quietly!”* 
+When Akrūra arrived in Vṛndāvana, he did something shocking: he heavily chastised Kṛṣṇa and Balarāma! He looked at the two brothers and asked: *“Kṛṣṇa! Balarāma! What are you doing? How can you sit here so peacefully taking care of cows and enjoying yourselves in the forest, while your own mother and father are being tortured every day in Kaṁsa’s prison [5]? Every day, Kaṁsa enters their cell, draws his sharp sword, and threatens to cut off their heads! Have you forgotten your duty? The demigods begged you to appear to kill Kaṁsa, and yet you are sitting here quietly!”* 
 
 This brings us to a deep question: was Akrūra actually committing an offense, or was he serving Kṛṣṇa’s arrangement? 
 
@@ -92,7 +92,7 @@ This is a vital lesson: **a devotee must never cause anxiety to another devotee.
 
 Akrūra drove the chariot as fast as he could. They reached the border of Vṛndāvana at Akrūra Ghāṭ. 
 
-This border is the ultimate, mysterious boundary of our philosophy. *Vrajendranandana* Kṛṣṇa—the original, sweet cowherd boy of Vṛndāvana—never leaves Vṛndāvana. He did not take a single step outside the boundary. At the very border, Kṛṣṇa and Balarāma stepped off and returned secretly into the forests of Braj. Simultaneously, Their formal, royal expansions—Vāsudeva and Saṅkarṣaṇa (the *Yadu Kumāra* expansions)—manifested and went to Mathurā on the chariot. 
+This border is the ultimate, mysterious boundary of our philosophy. *Vrajendranandana* Kṛṣṇa—the original, sweet cowherd boy of Vṛndāvana—never leaves Vṛndāvana [6]. He did not take a single step outside the boundary. At the very border, Kṛṣṇa and Balarāma stepped off and returned secretly into the forests of Braj. Simultaneously, Their formal, royal expansions—Vāsudeva and Saṅkarṣaṇa (the *Yadu Kumāra* expansions)—manifested and went to Mathurā on the chariot. 
 
 When Akrūra went to take his ritual dip in the river, he saw Kṛṣṇa and Balarāma on the chariot, and simultaneously saw Lord Viṣṇu resting majestically on Ananta Śeṣa in the water. We do not need to over-explain this mystery. Kṛṣṇa wants us to enter His mysteries through undivided, submissive devotional service, not through dry intellectual speculation.
 
@@ -112,13 +112,13 @@ Gurudeva gives us a simple, beautiful explanation of this spiritual separation: 
 
 After some time, Lord Balarāma could no longer tolerate His family’s pain in Vṛndāvana. Having taken Lord Kṛṣṇa’s permission, He mounted His chariot and traveled alone to Nanda Gokula. 
 
-Śukadeva Gosvāmī calls Him **Balabhadra Kuru Śreṣṭha**. Here, Gurudeva explicitly calls Him the supreme spiritual master, *Guru-śreṣṭha*—the best of the Gurus, full of sweetness and strength, who connects us back to Kṛṣṇa. 
+Śukadeva Gosvāmī calls Him **Balabhadra Kuru Śreṣṭha** [7]. Here, Gurudeva explicitly calls Him the supreme spiritual master, *Guru-śreṣṭha*—the best of the Gurus, full of sweetness and strength, who connects us back to Kṛṣṇa. 
 
 But why did Balarāma go alone? Why did Kṛṣṇa stay back? 
 
 The Yadus in Dvārakā knew the secret: Kṛṣṇa is completely subservient to pure love. If Kṛṣṇa went back to Vṛndāvana even for a single second, He would be so conquered by their love that He would never be able to leave. 
 
-Kṛṣṇa Himself revealed His heart to His queen Satyabhāmā: *“Satyabhāmā, I am not going back to Vṛndāvana. It is not because I do not love them. If I go back there, they will be filled with the ultimate happiness. But when the time comes for Me to leave again, they will suffer a pain that is ten times more devastating than the first heartbreak. I cannot repeat my bad nature. I cannot torture them twice. Therefore, to protect them from a double heartbreak, I stay back in Dvārakā and send my brother Balarāma to console them.”* 
+Kṛṣṇa Himself revealed His heart to His queen Satyabhāmā: *“Satyabhāmā, I am not going back to Vṛndāvana. It is not because I do not love them. If I go back there, they will be filled with the ultimate happiness. But when the time comes for Me to leave again, they will suffer a pain that is ten times more devastating than the first heartbreak. I cannot repeat my bad nature. I cannot torture them twice. Therefore, to protect them from a double heartbreak, I stay back in Dvārakā and send my brother Balarāma to console them [8].”* 
 
 Balarāma went to Vṛndāvana and spent months holding the Gopīs, weeping with them, and comforting them with the sweet words of Kṛṣṇa’s instructions. This is the emotional climax of His service. Balarāma has the strength to console us in separation.
 
@@ -134,6 +134,23 @@ This is the path of Balarāma. We must understand that His strength is not physi
 * **Strength to console us in separation**, holding our broken hearts and carrying us back to Kṛṣṇa's lotus feet.
 
 Let us take shelter of this path of strength. Let us stop relying on our material qualifications and surrender completely to the lotus feet of Balabhadra, who alone holds the key.
+
+---
+
+
+
+---
+
+## References
+
+[1] *Caitanya-caritāmṛta*, Ādi-līlā 5.41.
+[2] *Caitanya-caritāmṛta*, Ādi-līlā 4.62, Purport.
+[3] *Śrīmad-Bhāgavatam* 10.2.7-15.
+[4] *Śrīmad-Bhāgavatam* 10.65.25-30.
+[5] *Śrīmad-Bhāgavatam* 10.38.1-15.
+[6] *Caitanya-caritāmṛta*, Antya-līlā 1.67.
+[7] *Śrīmad-Bhāgavatam* 10.65.1.
+[8] *Śrīmad-Bhāgavatam* 10.65.9-15.
 
 ---
 

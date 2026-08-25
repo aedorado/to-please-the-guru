@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Two &middot; The Internal Battle</div>
+  <div class="chap-num">XI</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">The Miracle of Eagerness</div>
+  <p class="drop">When we look at the pastimes of Śrī Caitanya Mahāprabhu recorded in the <em>Caitanya-bhāgavata</em>, we find a magnificent history of how the Lord reciprocates with His servants. But the secret of this history, the absolute spine of it, is <strong>eagerness</strong>—intense, uncalculating eagerness to see the Lord.</p>
+<p>Śrī Caitanya Mahāprabhu traveled from Jagannātha Purī and arrived at the house of Vidyā Vācaspati. Vidyā Vācaspati was a great pundit, the brother of Sārvabhauma Bhaṭṭācārya. The Lord wanted to stay in secret, so He told him, <em>“I want to stay with you, but do not tell anyone that I am here.”</em> Vidyā Vācaspati accepted because he wanted to please the Lord. He promised not to tell anyone.</p>
+<p>But let me ask you: <em>Who can hide the sun?</em> Can you hide the sun? How can one hide the Supreme Lord?</p>
+<p>Providence will tell everybody. Very soon, everybody got to know. Thousands and millions of people began coming. Vidyā Vācaspati’s house was not a big estate, it was a very humble place. Soon there was no space on the ground—not even a single spot!</p>
+<p>And what did the people do in their intense eagerness to see the Lord? They began climbing up into the trees. Millions and billions of people were climbing on those branches.</p>
+<p>And listen to the miracle: although millions were packed on those branches, not a single person fell down! Why? Because the Lord was there, and their uncalculating eagerness to see Him attracted His personal protection.</p>
+<p>The miracle of their safety was not a material accident. It was the miracle of their eagerness. When there is a genuine, uncalculating eagerness to see the Lord, that intense spiritual hunger attracts His personal protection and reciprocation.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>Alone Is Not Lonely</h3>
+<p>Śrī Caitanya Mahāprabhu, however, wanted to be alone.</p>
+<p>We must understand this: <strong>to be alone is completely different from being lonely.</strong></p>
+<p>In this material world, millions of people are surrounded by friends, relatives, and servants, yet they remain lonely. That loneliness is because we are empty of Kṛṣṇa. But to be alone is highly spiritual. Every devotee who wants to make advancement must find some time to be completely alone with the Supersoul, alone with the Holy Name, and alone with the scriptures. That is when spiritual life is celebrated.</p>
+<p>But because the crowd was constantly coming and there was no space for Him, Mahāprabhu was not getting the spiritual bliss He desired. They gathered at the door, pleading, <em>“Please let us see the Lord! Just to see Him, just to see alone!”</em> And when He came out and they saw Him, nobody wanted to go back to their homes.</p>
+<p>So, seeing that the crowd kept increasing, He decided to leave. In the dead of night, He secretly departed without telling anyone—not even His host, Vidyā Vācaspati.</p>
+<div class="divider">&#10022;</div>
+<h3>The Sweets-Alone Accusation</h3>
+<p>The next morning, Vidyā Vācaspati woke up and looked around. The Lord was gone! He was in deep anxiety, looking for the Lord.</p>
+<p>Meanwhile, the massive crowd gathered at his door, pleading, <em>“Please, just allow us to see the Lord! I am alone, only one person. Let me just see Him!”</em></p>
+<p>Vidyā Vācaspati told them, <em>“I do not know where the Lord has gone.”</em></p>
+<p>But nobody believed him. They began to shout at him from all directions, accusing him of being narrow-minded, selfish, and deceitful. They said: <strong>“One who buys sweets and eats it alone will go to hell!”</strong></p>
+<p>They accused him of hoarding the Lord’s mercy for himself, shouting: <em>“Brahmana, please don’t keep us from seeing the Lord. What is your problem? Will our seeing the Lord stop you from getting your own mercy? What will you gain by not allowing us to get the mercy of the Lord? Give us a chance to see the Lord!”</em></p>
+<p>Vidyā Vācaspati was in total agony, not telling a lie. He didn’t blame anyone, and he did not try to defend himself. The more he tried, the more they blamed him and shouted at him from all directions.</p>
+<p>This is a heavy lesson. Do you want to be strong in Kṛṣṇa consciousness? You must be ready to face difficulties happily and continue your service without blaming others. Vidyā Vācaspati quietly turned to his only shelter. He fell down and prayed: <em>“My Lord, please help me. Nobody believes me, and my reputation is destroyed!”</em></p>
+<div class="divider">&#10022;</div>
+<h3>The Miracle at the River</h3>
+<p>As he was praying, a Brahmana appeared with the news: <em>“The Lord has gone to Śāntipura!”</em></p>
+<p>The crowd was overjoyed. Vidyā Vācaspati came out and happily announced: <em>“Now I have got the news! The Lord has gone to Śāntipura. All of us will go together and see Him!”</em></p>
+<p>Millions of people ran to the riverbank. If you have ever been to the Kumbha Melā, you know what happened next. Millions of people wanted to enter one single boat. The boatman was desperately shouting: <em>“Please, enough! Enough!”</em> But nobody heard him. The crowd kept entering, and the boat capsized and sank.</p>
+<p>Millions of people were thrown into the deep, dangerous water—including pregnant women and people who had never learned how to swim a single stroke in their lives. They were desperately grabbing onto whatever they could see, holding onto whatever they could grab.</p>
+<p>But because of their intense eagerness to see the Lord, Śrī Caitanya Mahāprabhu performed a miracle: <strong>He made the deep river water shallow.</strong> Everyone safely swam and walked across the river without a single person drowning. Eagerness conquered the dangerous current.</p>
+<div class="divider">&#10022;</div>
+<h3>When the Lord Protects His Servant</h3>
+<p>Vidyā Vācaspati ran to Śāntipura and fell flat at Mahāprabhu’s lotus feet, weeping: <em>“My dear Lord, my reputation is destroyed! Everybody is accusing me that I am hiding You. How will I preach? Nobody will believe me. Please, help me. Just come out and let the people see You.”</em></p>
+<p>Mahāprabhu immediately came out and showed Himself to the crowd. In this way, Vidyā Vācaspati was freed from the anxiety of being blasphemed. The Lord always protects His sincere servant. He prayed to the Lord, and he got free. And when the people saw the Lord, they believed that what Vācaspati told them was true.</p>
+<p>Arjuna’s strength was that God was his friend. No one could defeat him. In the same way, a devotee should never be troubled, depressed, or in anxiety. That is the proof of Kṛṣṇa consciousness: a devotee is always victorious, in all circumstances, because they depend on Kṛṣṇa.</p>
+<p>We should learn to pray to the Lord. Even the Christians say, <em>“Why worry when you can pray?”</em> Sincere prayer is our ultimate shelter. When you pray seriously, you do not need incense, you do not need garlands, you do not need a house, and you do not need an interpreter. Just you and your Lord. That is all.</p>
+<p>If we can follow the same footsteps of Vidyā Vācaspati, and pray to the Lord with sincere, uncalculating eagerness, everything in our life will be resolved.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 11 &middot; Heart Check</p>
+<h4>My Eagerness for Kṛṣṇa</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly reflect on your desire to connect with Kṛṣṇa:</p>
+<p class="hc-item">Am I eager to see Kṛṣṇa and serve Him for His own pleasure, or is my eagerness mainly focused on asking Him to solve my material problems and fix my circumstances?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">What would genuine, uncalculating eagerness look like in my daily life? What am I willing to sacrifice to see Him?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Aloneness vs. Loneliness</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly evaluate your private time:</p>
+<p class="hc-item">When you are alone, do you feel restless and lonely, immediately reaching for your phone, social media, or gossip to fill the silence?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>The Solitary Practice:</em> Can you happily spend time completely alone with the Holy Name and the scriptures? Commit to ten minutes of silent, uninterrupted Japa or reading every day, focusing only on "just you and your Lord."</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>The Sweets-Alone Test</h4>
+<p class="hc-item">When you receive spiritual realizations, inspiring association, or Prasādam, do you keep them selfishly for your own comfort, or do you eagerly find ways to share them with other devotees?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>Realize:</em> To hoard spiritual mercy without wanting to distribute it is to "eat sweets alone."</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  
+  <p class="prayer-prompt">Write a personal prayer asking Gurudeva for the sincerity and determination to awaken that genuine, uncalculating hunger for Kṛṣṇa, and to deliver you from the dry loneliness of material attachments.</p>
+  <p class="prayer-salut">My Dear Srila Prabhupada / Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

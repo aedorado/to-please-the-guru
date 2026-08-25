@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 14</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Two &middot; The Internal Battle</div>
+  <div class="chap-num">XIV</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">When the Teacher Leaves the Classroom</div>
+  <p class="drop">Whether the spiritual master is far away preaching, or we are simply apart from him in our daily service, how should a disciple maintain the connection? What is the actual test of a disciple who is physically separated from his guru?</p>
+<p>To find our answer, we must first understand the fundamental difference between the physical presence of the Guru (<em>vapu</em>) and his eternal instructions (<em>vāṇī</em>). While the spiritual master is physically present, we should render loving service to his physical form. This is sweet and necessary. But his physical body does not live eternally. His word lives eternally. Therefore, while the spiritual master is physically present on this earth, the disciple must try to establish a deep, unshakeable connection with his <em>vāṇī</em>.</p>
+<p>Make haste while the iron is hot! Establish that spiritual connection now, so that when the spiritual master is physically not present, you will continue uninterrupted.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Metaphor of the Empty Classroom</h3>
+<p>To understand our behavior after the Guru's departure, let us look at a simple, practical metaphor.</p>
+<p>When the teacher is physically present inside the school classroom, everyone is a good student. The children sit quietly, look at their books, pay attention, and pretend to study. It is very easy to look qualified when the authority is policing you.</p>
+<p>But if you want to know the actual character of the students, you must observe what they do when the teacher leaves the classroom! The moment the teacher walks out the door, the behavior of the students shows who they really are. One student immediately starts jumping on the tables, another starts throwing papers, and the entire classroom becomes chaotic and wild. Only the rare, genuine students keep their heads down, ignore the distraction, and continue their assignments exactly as instructed.</p>
+<p>Any time we are physically separated from the Guru — whether he is away preaching, or has departed this world — is the time the teacher has left the classroom. It is the ultimate test of what we have actually learned. How are we going to perform our Kṛṣṇa consciousness when his physical eye is no longer watching us? Are we going to close down the temple, or slide back into our lazy, old material habits? Our job, our hearing, our daily Sādhana—everything will be tested. If we are not practicing properly now in the classroom of life, we will have nothing to write on our paper on examination day.</p>
+<div class="divider">&#10022;</div>
+<h3>The Myth of Being an Orphan</h3>
+<p>The moment we are apart from the spiritual master, some devotees fall into the trap of the "orphan mentality". They sit back, fold our arms, and cry: <em>“Oh, my Guru is gone, what can I do now? I am completely helpless. I am a poor, lonely orphan.”</em></p>
+<p>You made yourself an orphan! Your Guru did not make you an orphan!</p>
+<p>The Guru did not make us orphans. An orphan has no family, but in our spiritual society, do you not have the uncles—the senior godbrothers and godsisters of your Guru? Do you not have the temple community? Why do you isolate yourself and play the victim?</p>
+<p>The only reason we feel this dry, pathetic helplessness is that we are not following his orders strictly. The moment you take the order of the spiritual master on your head and execute it, the feeling of orphanage vanishes. You instantly feel his living presence guiding you, and you realize you are surrounded by the loving protection of the entire disciplic family.</p>
+<div class="divider">&#10022;</div>
+<h3>Śrīla Prabhupāda's Standard of Discipleship</h3>
+<p>Look at the example of Śrīla Prabhupāda. He did not live in an ashram with his Guru; he was a householder, running a business and managing his family responsibilities. He and his spiritual master, Śrīla Bhaktisiddhānta Sarasvatī Ṭhākura, met only occasionally. Physically, they did not spend decades together. Spiritually, their connection was unshakeable because they knew the assignment.</p>
+<p>Before Bhaktisiddhānta Sarasvatī left this planet, he wrote a letter to Prabhupāda containing his very first instruction: <em>“Preach Kṛṣṇa consciousness in the English-speaking countries.”</em> Prabhupāda never forgot it. Even when he was working and his spiritual master had physically disappeared, he spent every single day preparing himself to execute that duty. He didn't complain, <em>“Oh, my Guru is gone, and I am just a poor householder.”</em> He carried that order on his head, executed it, and always gave all the credit to his spiritual master for the global miracle of ISKCON. That is a bona fide disciple.</p>
+<div class="divider">&#10022;</div>
+<h3>The Final Phone Call and Blessing</h3>
+<p>I remember a deeply personal and sacred pastime of how this spiritual connection became a reality in my own life.</p>
+<p>Three months before my beloved spiritual master—my Srila Gurudeva, His Holiness Bhakti Tīrtha Swami—left his physical body and departed from this planet, he was in the United States, and I was serving in India.</p>
+<p>I called him on the phone, feeling the heavy, impending pain of his disappearance. I said, <em>“Gurudeva, I am preparing to travel back to Africa, but I want to come to America to see you before I go. I must see you.”</em></p>
+<p>But my Gurudeva looked at me and said: <strong>“Don’t come. Stay there. The training I have given to you is such that my physical absence will not have any effect on you. And wherever you go in this world, people will see me in you.”</strong></p>
+<p>At that time, I did not fully understand the depth of his words. But many years later, I was visiting a devotee’s house. As we were sitting on the rug, the householder looked at me with tears in his eyes and said, <em>“Maharaj, simply by seeing you and hearing you speak, I am feeling the physical presence of your spiritual master, Bhakti Tīrtha Swami, in my house.”</em></p>
+<p>When he said those words, I was completely overwhelmed. I had never told this devotee what my Gurudeva had promised me over the phone. But his blessing was 100% true. This is the reality of <em>vāṇī</em>. If we carry the orders of the spiritual master on our heads, his physical absence has no effect on our potency.</p>
+<div class="divider">&#10022;</div>
+<h3>The Qualities of a Bona Fide Disciple</h3>
+<p>We must look for a bona fide Guru, but we must first become a bona fide disciple. What is the checklist of a bona fide disciple?</p>
+<ol class="content-list"><li><strong>Vigilant standard of Sādhana:</strong> The first and foremost instruction is to chant a minimum of sixteen rounds every day. In all circumstances—whether in good health or in bad health, whether in joy or in deep distress—a bona fide disciple will never fail to chant their sixteen rounds.</li><li><strong>Never feeling alone:</strong> A bona fide disciple will never feel, <em>“My spiritual master is not here, I am alone.”</em> They always feel: <em>“My Guru is with me here. He knows where I am, and he knows exactly what I am doing. Therefore, I cannot do otherwise.”</em></li><li><strong>Never forgetting instructions:</strong> He never forgets a single instruction given to him or her. It remains his eternal guiding principle.</li><li><strong>Becoming his shadow:</strong> A bona fide disciple is the constant, transparent shadow of his spiritual master, acting strictly under his direction.</li><li><strong>Understanding his heart:</strong> He knows the heart of his spiritual master. When the Guru says something, the disciple knows perfectly what it means, because his ears are trained and his heart is purified of all duplicity. Just as Śrīla Rūpa Gosvāmī was empowered because he knew the heart of Śrī Caitanya Mahāprabhu.</li></ol>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 14 &middot; Heart Check</p>
+<h4>The Test of the Empty Classroom</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly reflect on your spiritual standards when you are away from the temple, your spiritual family, or the physical presence of the Guru:</p>
+<p class="hc-item">Do your daily standards—your early rising, your attentive chanting, and your regulative vows—remain exactly the same, or do they drop when no one is policing you?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Are you serving with the same urgency and sincere focus as you would if your spiritual master were physically standing in your room, watching your service?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Remembrance in Separation</h4>
+<p class="hc-item">Do you experience the living presence of your Guru through your daily chanting, reading, and sincere service, or has your connection become dry, managerial, and distant?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>My Resolution:</em> What practical, conscious step will you take to ensure your daily service is executed strictly under the guidance of his instructions rather than your own mind?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Defeating the Orphan Mentality</h4>
+<p class="hc-item">Are you currently isolating yourself from your godbrothers, godsisters, or the temple community, claiming that “nobody understands me now that my Guru is gone”?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item plain"><span class="commitment">The Family Shelter:</span> Identify one senior devotee or authority whom you will submissively approach this week to seek guidance and service, honoring the disciplic family:</p>
+<p style="font-size:10.2pt; margin-bottom:8pt;">`The Devotee: _________________________`</p>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">The Shadow of His Lotus Feet</div>
+  <p class="prayer-prompt">The bona fide disciple is the constant, transparent shadow of the Guru, carrying his presence everywhere. Write a raw prayer to your spiritual master, begging for the integrity of a good student when the teacher is out of the room, and asking for the grace to represent him transparently to everyone you meet.</p>
+  <p class="prayer-salut">My Dear Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

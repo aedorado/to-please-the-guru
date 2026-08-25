@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part One &middot; The Foundation of Devotion</div>
+  <div class="chap-num">II</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">What Are We Living For?</div>
+  <p class="drop">Have you ever stopped to think about what you are actually doing with this life?</p>
+<p>I know we are all very busy. We have so many plans, so many programs, and so many desires. But if you look closely, where is all this activity actually taking us?</p>
+<p>Almost all of our desires, all of our struggles, and all of our interests are centered on just one thing: this temporary bag of skin, bones, and stool that we call the body. We spend our mornings, our afternoons, and our nights trying to feed it nicely, dress it nicely, protect it nicely, and make it comfortable.</p>
+<p>But let me ask you a very honest question: <em>What are we living for?</em></p>
+<p>Is it just to keep this physical body going for as long as possible? Is that the ultimate success of a human being?</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Man on the Crutches</h3>
+<p>Some time ago, I saw something that completely stopped me in my tracks and forced me to think deeply about this material world.</p>
+<p>I saw a man who was completely, severely deformed. By any ordinary human standard, his physical situation was tragic. He had no control over his legs, and his hands were so twisted that it was extremely difficult for him to use them. He sat on a pair of crutches, depending entirely on other people for every basic need—every meal, every bath, everything. There was no hope of medical treatment or physical recovery; he was going to be in this condition for the rest of his life.</p>
+<p>As I was watching, this man began to cross a busy road. Suddenly, a motor vehicle came speeding down the street, heading straight toward him.</p>
+<p>At that moment, a shocking thing happened. The sheer speed and frantic energy that this deformed man used to drag his crutches and dodge that vehicle was unbelievable. He moved with an absolute, desperate intensity just to save himself from being hit.</p>
+<p>I watched him reach the other side of the road, and I began to contemplate: <em>What is the purpose of this person’s life?</em></p>
+<p>Materially speaking, he has nothing. He has no independence, no physical comfort, and no worldly prospects. He suffers at every moment. So why was he fighting so desperately, with every ounce of his energy, just to keep that severely afflicted body alive for one more day?</p>
+<p>The answer is both simple and profound: <strong>the soul by nature is eternal</strong>.</p>
+<p>Because the soul is eternal, it completely rejects death. No matter how miserable, broken, or 100% useless our material body becomes, we still desperately want to hold onto it. We do not want to die. And so, the entire struggle of the conditioned soul in this material world is reduced to a single, exhausting goal: <em>keeping this temporary physical shell alive for as long as possible</em>.</p>
+<div class="divider">&#10022;</div>
+<h3>Better Than the Animals?</h3>
+<p>We think we are very advanced because we are human beings. We build big houses, buy fast cars, go to engineering colleges, and eat "scientific" meals with forks and spoons.</p>
+<p>But if we look at our activities honestly, what are we doing that is so special? We eat, we sleep, we defend, and we mate. And if you look carefully, you will find that <strong>every other species of life does these things far better than us</strong>!</p>
+<p>An animal does not need to pay school fees or rent a house to stay. An animal does not need to take transport for its enjoyment. Animals do not cook their food or mix artificial spices, and because they live naturally, they do not have constipation, they do not suffer from our constant diseases, and they never go to the hospital. They have no anxiety and no fear. Any aspect of sense gratification you can think of, the animals are executing perfectly, without any of our mental stress.</p>
+<p>So if our life is only about eating nicely, sleeping nicely, and protecting our bodies, we are not living as human beings. We are just dressed-up animals.</p>
+<p>Even the greatest living entities in this material world are frustrated. Mārkaṇḍeya Ṛṣi witnessed the devastation of the universe, but he was not satisfied. Even Lord Brahmā, who lives the longest life possible in the material world, feels miserable and anxious, and eventually, his body also has to change.</p>
+<p>So why are we going to the spiritual master asking for material adjustments?</p>
+<p>Why do we go to a <em>spiritual</em> master and ask him to fix our business, improve our health, or make our material lives comfortable?</p>
+<p>This is like going to a multi-billionaire and begging him for a single piece of dry bread. Material adjustments are already available to every species of life. A pig gets its food. A dog gets its mate. You do not need a Guru or a scripture to get material facilities—your karma will bring them to you automatically.</p>
+<p>When we go to a spiritual master, we should ask for something that is <strong>not of this material world</strong>. We must ask for a permanent solution to our eternal problem.</p>
+<div class="divider">&#10022;</div>
+<h3>The Formula of the Ācāryas</h3>
+<p>There is a beautiful verse in the twelfth canto of the <em>Śrīmad-Bhāgavatam</em> (12.10.34) where Mārkaṇḍeya Ṛṣi is standing before Lord Shiva. Lord Shiva is the greatest of the Vaiṣṇavas (<em>vaishnavanam yatha shambhuh</em>), full of all perfection and capable of granting any material blessing in the universe.</p>
+<p>But listen to what Mārkaṇḍeya Ṛṣi begs of him:</p>
+<div class="verse"><em>varam ekaṁ vṛṇe ’thāpi pūrṇād varada-gīr-atam</em><br><em>bhagavaty acyutām bhaktiṁ tat-parāṇāṁ ca tad-yuji</em></div>
+<p>He prays: <em>\”I request only one blessing from you, who are full of all perfection and able to shower down the fulfillment of all desires. I ask to have unfailing, unalloyed devotion (Achyuta-bhakti) for the Supreme Personality of Godhead, and for his dedicated devotees—especially you.\”</em></p>
+<p>Mārkaṇḍeya did not ask for a longer life. He did not ask for a gold palace, a disease-free body, or material wealth. He asked only for <strong>Bhakti</strong>.</p>
+<p>The great ācārya, <strong>Śrīla Baladeva Vidyābhūṣaṇa</strong> (who was also known as Balabhadra), once answered a beautiful question: <em>“What is the beauty of Śrīmad-Bhāgavatam?”</em> Is it the print quality? Is it the design? Or is it even the philosophy?</p>
+<p>He said: <em>“No. The true beauty of Śrīmad-Bhāgavatam is that it strictly forbids its followers from accessing or desiring anything from Kṛṣṇa except Bhakti, pure devotional service.”</em></p>
+<p>Why? Because Bhakti is the only thing Kṛṣṇa is missing. He is the proprietor of everything, but He is conquered only by love.</p>
+<p>And Bhakti is the only thing we actually need.</p>
+<p>Think about it: in every lifetime you have had in this material world, you have already had a mother, a father, a husband, a wife, and children. You have had homes, wealth, and education. Whether you were born as a human, a demigod, a cat, or an insect, you had a family and you had a body.</p>
+<p>But there are only two things you do not get in every birth: <strong>a bona fide Guru and Lord Kṛṣṇa</strong>.</p>
+<p>These are the greatest treasures, and they are only available in the human form of life. If you find a genuine spiritual master, and through him you find Kṛṣṇa, your material existence is terminated for eternity. You go back home, back to Godhead.</p>
+<div class="divider">&#10022;</div>
+<h3>Sadhus are Not Business Masters</h3>
+<p>Today, we have turned spiritual life into a supermarket.</p>
+<p>People go to sadhus and gurus to ask for material blessings, physical health, or business advice. But why go to a sadhu for business advice? If you want to be a successful businessperson, go to an experienced businessman—he will train you much better! If you are sick, go to a hospital and pay a doctor.</p>
+<p>A spiritual master is not a business master or a medical doctor. His profession is <strong>Kṛṣṇa</strong>.</p>
+<p>Srila Bhaktivinoda Ṭhākura beautifully wrote: <em>\”O Sadhu! Your business is to distribute Kṛṣṇa. I do not have Kṛṣṇa, and that is why I have come to beg at your feet.\”</em></p>
+<p>The real business of a sādhu is to destroy our ignorance and cut our material attachments, planting the seed of Kṛṣṇa in our hearts.</p>
+<p>But we must ask ourselves: <em>Are we ready to receive what he is actually offering?</em></p>
+<p>Often, when we face difficulties, we try to solve them by just \”shifting the load\”. If our head hurts from carrying a heavy burden, we shift it to our shoulder and think we are making progress. But the load is still on our body! We are still in the material world.</p>
+<p>Instead of trying to make temporary adjustments, we must change our pattern of thinking. We must rise above the bodily platform altogether.</p>
+<div class="divider">&#10022;</div>
+<h3>Method and Intention</h3>
+<p>We do not need to invent new, artificial processes. We are not going to change the morning temple program from 4:30 AM to 6:30 AM. We are not going to change the Hare Kṛṣṇa Maha-mantra, and we are not going to change our scriptures or our Deities. We are going to do this same practice for the rest of our lives.</p>
+<p>But we must examine <strong>how</strong> we are doing it. What is our method? What is our internal intention?</p>
+<p>Are we just executing dry, mechanical rituals? Are we sitting in the Bhagavatam class physically, while our mind is wandering off to our business, our family, or our material anxieties?</p>
+<p>When we chant our rounds every day, what is the quality of our focus? Are we chanting with a sincere desire to please Guru and Kṛṣṇa, or are we just trying to get the sixteen rounds out of the way so we can get on with our \”real\” material day?</p>
+<p>And most importantly: <em>How do we treat our fellow travelers on this path?</em> Are we carrying hidden envy, politics, and critical thoughts in our minds while pretending to be pure devotees on the outside?</p>
+<p>A genuine spiritual master plants the seed of Kṛṣṇa in our hearts, and he teaches us how to water and maintain that plant. But the growth of that plant depends entirely on our sincerity, our honesty, and our willingness to surrender.</p>
+<p>Let us stop playing games with Kṛṣṇa. Let us stop asking the Guru for temporary toys, and let us beg only for that supreme benediction: unfailing, eternal love for Kṛṣṇa and his devotees.</p>
+<p>This is accountability. We have to regularly stop and ask ourselves: How am I actually living my Kṛṣṇa consciousness every day?</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 2 &middot; Heart Check</p>
+<h4>Where Does My Time Go?</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly map out how your hours were spent yesterday:</p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><strong>Body & Material Maintenance:</strong></p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><em>Sleep, eating, grooming, exercise, work, entertainment, scrolling, worrying.</em></p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><strong>Total:</strong> `_______` hours.</p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><strong>Spiritual Engagement:</strong></p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><em>Chanting Japa, hearing Śrīmad-Bhāgavatam, active service, devotee association, reading, prayer, remembrance.</em></p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><strong>Total:</strong> `_______` minutes.</p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><strong>The Reflection:</strong> What does the balance reveal about what I am actually living for?</p>
+<h4>Our Core Desires</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Write down the last three things you silently wished or prayed for from Kṛṣṇa:</p>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><strong>The Kick:</strong> Look closely at your time and your prayers. If Lord Shiva appeared before you right now, would you ask him for a material adjustment to your temporary body, or would you have the courage of Mārkaṇḍeya Ṛṣi to beg <em>only</em> for <em>Achyuta-bhakti</em> (unfailing devotion) and the association of those who love Him?</p>
+<p style="font-size:10.2pt; margin-bottom:8pt;">What is <strong>one</strong> thing you can change today so that your time is used more consciously for the soul? Be specific: `_________________________`</p>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">What I Really Want</div>
+  <p class="prayer-prompt">Mārkaṇḍeya Ṛṣi stood before Lord Shiva and refused to ask for health, wealth, or a comfortable life—he begged only for Achyuta-bhakti (unfailing devotion) and the association of devotees. Write your own prayer to Kṛṣṇa. Intentionally tear up your material “shopping list” and beg Him for the only blessing that can actually satisfy your soul.</p>
+  <p class="prayer-salut">My Dear Krishna,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

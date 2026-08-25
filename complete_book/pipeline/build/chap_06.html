@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part One &middot; The Foundation of Devotion</div>
+  <div class="chap-num">VI</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">If You Don’t Plan Your Day, Your Sādhana Will Suffer</div>
+  <p class="drop">There is a setting in the fifth canto of the <em>Śrīmad-Bhāgavatam</em>, Chapter Eleven, where the great self-realized soul Jaḍa Bharata is instructing King Rahūgaṇa.</p>
+<p>The text states: > <em>“When the living entity’s mind becomes absorbed in the sense gratification of the material world, it brings about its conditioned life and suffering within a material situation. However, when the mind becomes unattached to material enjoyment, it becomes the cause of liberation.”</em></p>
+<p>Everyone is suffering in this material world because of the mind. It is the mind that causes all the sufferings we are going through. Our present situation and body were created by our past minds, and our next body is being created by our mind right now. If we keep our minds engaged in material activities, it will cause continuous bondage and make us remain in this world in different bodies, suffering the consequences of our actions. Therefore, the only real solution is to engage the mind fully in Kṛṣṇa conscious activity. This is called spiritual engagement.</p>
+<p>To explain this properly, our scriptures give a beautiful analogy of a lamp. When the flame in the lamp burns the wick improperly, the lamp becomes blackened with soot. But when the lamp is filled with pure ghee and is burning properly, it gives bright illumination.</p>
+<p>Improper burning is the misuse of our mind—when the mind is absorbed in material sense gratification, it blackens our consciousness and causes suffering. But a lamp filled with ghee is when a person’s mind is properly engaged in Kṛṣṇa consciousness. When the mind is detached from material enjoyment and filled with the ghee of devotion, it brings about the original brightness and enlightenment of the soul.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Fortunate Jaḍa Bharata</h3>
+<p>To understand how to train the mind, let us look at the history of Jaḍa Bharata.</p>
+<p>Jaḍa Bharata was once a great emperor who renounced his entire kingdom, opulence, fame, and power to go to the forest to practice devotion. But while in the forest, he became distracted by his attachment to a baby deer. He forgot what took him to the forest, and eventually died thinking of the deer.</p>
+<p>But let me tell you: Jaḍa Bharata was a <em>fortunate</em> Jaḍa Bharata. Why? Because he made his mistake only once, and he learned his lesson. He said, <em>“Once beaten, twice shy.”</em> For him, it was not a normal case; it was an extreme case. Kṛṣṇa used him to teach all of us a lesson so that we would be careful while dealing with the material energy. In his next life, Jaḍa Bharata planned his Kṛṣṇa consciousness perfectly. He blocked himself completely from the world, pretending to be deaf and dumb so that nothing could enter his mind. He was living in this world, but he was not of this world.</p>
+<p>But many of us are <em>unfortunate</em> Jaḍa Bharatas. Some of us left our family, left our secular education, and abandoned everything to come to Kṛṣṇa consciousness. But after some years, we drift back to the very things we rejected.</p>
+<p>In Sanskrit, they have a word for this: <strong>vetasi</strong>. <em>Vetasi</em> means to eat your own vomit. To leave material sense gratification behind, only to gradually take it back again, is a condemned, unfortunate life. We make mistakes a hundred times and still do not learn, whereas the fortunate Jaḍa Bharata learned everything from a single mistake.</p>
+<div class="divider">&#10022;</div>
+<h3>Mr. Boeing: The Mind’s False Promise</h3>
+<p>The mind always tricks us. It says: <em>“You are not happy? That is because you don’t have this object. When you get it, you will be happy.”</em> The mind will never tell us that this is not the way.</p>
+<p>Let me tell you about Mr. Boeing. At that time, he was the number-one wealthy American in the world. He had only one child, a son who was studying animal husbandry. When the son finished his studies and was preparing his dissertation, he went into the forest to study animal life—and because he went in without security, an animal made a feast out of him. He was gone!</p>
+<p>Journalists went to Mr. Boeing and said, <em>“You are the number-one American, you must be the happiest person in the world.”</em></p>
+<p>But Mr. Boeing replied, <em>“I am not the happiest person. I am the most unhappy person in the world. My only child died. All my wealth, my sacrifices, everything is a waste. How can I be happy?”</em></p>
+<p>But look at the foolishness of the mind. Those who use his aircraft look out the window in business class, drinking their water, and think, <em>“See how I am enjoying! I wish I were Mr. Boeing.”</em> The person who made the aircraft is miserable, but we are dreaming of being him!</p>
+<p>We go before Deities, standing in the rain, praying, <em>“Jai Jagannātha! Please make me Mr. Boeing!”</em> We do so much austerity just for some material adjustment, because the mind has convinced us that if we get what we want, we will be happy.</p>
+<p>We must train our minds to be detached from these false promises.</p>
+<div class="divider">&#10022;</div>
+<h3>Squeezing the Dead Body</h3>
+<p>Because Jaḍa Bharata had planned his consciousness perfectly, he was completely carefree and situated in pure devotion.</p>
+<p>One day, Maharaja Rahūgaṇa forced Jaḍa Bharata to carry his palanquin. Because Jaḍa Bharata was walking carefully to avoid stepping on ants, the palanquin was jerking. The king became angry and shouted: <em>“What is this? Are you a dead body? Don’t you know you are carrying a king?”</em></p>
+<p>Jaḍa Bharata quietly looked at him and said: <em>“Today you are a king, and I am carrying you. Tomorrow, you will be my carrier, and I will be the king. You want to punish me, but you are actually trying to punish a dead body. If you grind iron into powder, and you continue to grind it, will it ever become iron again?”</em></p>
+<p>When the king heard these words, he offered up his senses, accepted initiation from him, and was delivered.</p>
+<p>Jaḍa Bharata was teaching us a heavy lesson: this material body is just a dead body. And when our mind is focusing on gratifying the dead body, is that life?</p>
+<p>No! But the mind convinces us: <em>“Squeeze it! Squeeze the dead body! You are not doing it properly, squeeze it more, squeeze it more, and you will get some juice from it!”</em> But let me ask you: how can juice come out of a dead body? Squeeze it all you want, but you will get nothing.</p>
+<p>Yet we keep trying, because our mind is not trained. The more the senses are gratified, the worse our spiritual situation becomes. If we want to be happy, we must practice detachment and remove the mind from material enjoyment.</p>
+<div class="divider">&#10022;</div>
+<h3>Early Morning Sādhana as Our Protective Shield</h3>
+<p>How do we practically train our minds and protect our consciousness while living in this world? We have to plan our day.</p>
+<p>You have to do your job to maintain your body, but you should never do it at the expense of your spiritual life. The two of them must go on, and we must not neglect either. The secret is to get up early, do your job, and then you are free.</p>
+<p>I did a five-day seminar on the importance of Brahma Muhūrta. If you can chant your sixteen rounds before 6:30 AM, you will have a very long, wonderful day. "Long day" means you have time to do more things—more reading, more hearing, and more services.</p>
+<p>But if you don’t chant in the morning, you don’t have a day. It becomes a passionate struggle where nothing goes right. Everything is done with passion, there is no goodness, and your entire day is just a struggle.</p>
+<p>Chanting your rounds in the morning is like taking a <strong>vaccine</strong> or a <strong>jab</strong> before you step out of your house. Once you have taken your morning vaccine of sādhana and prasāda, you can enter your office and walk among non-devotees, and no material disease or contamination will enter your heart. Morning sādhana is our only strength. It is how we can face the day very nicely. If you do not plan your morning, your entire day will suffer.</p>
+<div class="divider">&#10022;</div>
+<h3>Establishing Direct Boundaries to Protect Sādhana</h3>
+<p>To protect this morning sādhana, we must also plan our boundaries. Planning ourselves means we don’t sit around with people who have no sādhana.</p>
+<p>If you are a devotee, you cannot sit around with non-devotees past midnight. They have no morning sādhana, so they are free to sit up late, drink coffee or tea, and talk about nonsense. They will discuss worldly politics, who is getting married, who has children going to school, and who has died.</p>
+<p>What is the benefit of this for you? Nothing!</p>
+<p>If you sit with them, they will be happy, but you will not be happy. Tomorrow morning when your alarm rings for Brahma Muhūrta, your body will demand sleep, your mind will make excuses, and your sādhana will suffer.</p>
+<p>Therefore, you must plan your boundaries. You must have the courage to stand up after a few minutes and say: <em>“I am very sorry. I have to go and sleep. Tomorrow I have many spiritual duties to complete before I go to work.”</em></p>
+<p>Plan your day, establish your boundaries, and follow them strictly. That is how you will control your mind, protect your sādhana, and achieve success.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 6 &middot; Heart Check</p>
+<h4>Am I Properly Engaged?</h4>
+<p class="hc-item"><span class="commitment">The Lamp and the Ghee:</span> When the mind is absorbed in sense gratification, it improperly burns and blackens our consciousness. When it is filled with ghee, it is brightly lit. Honestly examine your mind today: is it properly engaged in planning your services, reading, and hearing, or is it wandering off and blackening your day?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><span class="commitment">The Sādhana Vaccine:</span> What time do you complete your Japa? Are you taking your "sādhana vaccine" early in the morning before exposing your mind to the office, social media, and non-devotee association?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><span class="commitment">Squeezing the Dead Body:</span> Identify one material desire where your mind is currently whispering: <em>"Squeeze it more! Squeeze it more, you will get some juice out of it!"</em> How will you practice detachment and refuse to listen to this false promise of the mind?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><span class="commitment">Protecting My Boundaries:</span> Look at your evening schedule. Are you sitting late into the night with people who have no sādhana, or scrolling on your phone, and allowing your early-morning rising to suffer? What specific boundary will you set tonight?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">Directing the Mind</div>
+  <p class="prayer-prompt">Write a personal prayer begging your spiritual master and Śrīla Prabhupāda for the strength to control your restless mind, to establish strict boundaries in your daily life, and to never eat the vomit of material sense gratification again.</p>
+  <p class="prayer-salut">My Dear Srila Prabhupada and Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 4</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part One &middot; The Foundation of Devotion</div>
+  <div class="chap-num">IV</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">Servants, Not Bosses</div>
+  <p class="drop">What is the real qualification to be a disciple?</p>
+<p>If you look at the scriptures, the <em>Śrīmad-Bhāgavatam</em> and the instructions of the great ācāryas, they define the qualities of a genuine disciple very clearly. But today, we have developed our own ideas. We think that if we can speak nice philosophy, play some instruments nicely, or raise some money, we are first-class disciples.</p>
+<p>But Śrīla Prabhupāda writes a very heavy instruction in his purports. He says: <strong>“The servant or disciple of the spiritual master should be free from false prestige, never considering himself to be the doer.”</strong></p>
+<p>Prestige is a very dangerous thing. If there is prestige in your heart, you cannot serve the spiritual master. Why? Because the moment prestige enters, you want to become the boss! You want to be respected. You want people to look at you and say, <em>“Oh, see what a great devotee he is. See how many books he is distributing. See how nicely he is managing.”</em></p>
+<p>The moment you think like that, you are no longer a servant. You are a boss. And a boss cannot be a disciple. To serve the spiritual master, you must be completely selfless, without false prestige.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>Relinquishing False Ego and Pride</h3>
+<p>We hear this phrase all the time in our philosophy: <em>“I am not the doer.”</em> It is a common word. We recite it, we speak it in classes. But do we understand what it means?</p>
+<p>Let me tell you a story.</p>
+<p>One day, many years ago, a disciple was serving Śrīla Prabhupāda. This disciple had heard the philosophy very nicely, but his mind had made a very clever twist. He went to Prabhupāda and said:</p>
+<p><em>“Prabhupāda, I am not the doer. So today, I am not going on sankirtan. I am not going out to distribute books, because I am not the one distributing them. It is actually you who is distributing the books. Since I am not the doer, why should I go?”</em></p>
+<p>He thought he was being highly philosophical! He was using the scripture to justify his laziness.</p>
+<p>But what did Śrīla Prabhupāda tell him?</p>
+<p>Prabhupāda looked at him and said: <strong>“That is not the meaning. That is not the meaning!”</strong></p>
+<p>Prabhupāda explained that the spiritual master is the one who empowers the disciple to distribute the books. Without the mercy of the spiritual master, you cannot do anything. You cannot even open your mouth to speak about Kṛṣṇa. So we must never forget the person who is giving us the intelligence, the strength, and the ability to perform the service.</p>
+<p>We are not the doer, yes. But that does not mean we sit back and do nothing. It means we execute the service with deep gratitude. We should never forget the person who is giving us the intelligence and ability to perform our service. If you succeed, you don’t take the credit. You give the credit to your spiritual master, just as Śrīla Prabhupāda always gave all the credit to his spiritual master for everything he achieved.</p>
+<div class="divider">&#10022;</div>
+<h3>The Guru Waking the Disciples</h3>
+<p>There is another quality mentioned here: <strong>“A disciple should be active and never lazy.”</strong></p>
+<p>I want to say something very direct about our behavior today. In our temples, we see a complete reversal of spiritual etiquette.</p>
+<p><strong>A Guru should not wake the disciples from sleep. A disciple should wake the Guru!</strong></p>
+<p>But what do we see? The spiritual master is awake, preparing for the program. He is performing the arati for the Deities, he is chanting his rounds, and the disciples are still in bed, sleeping peacefully!</p>
+<p>This is opposite! It is upside down. How can we make any spiritual advancement if we are behaving like this?</p>
+<p>We cannot. Laziness is the enemy of bhakti. A genuine disciple is always active, always eager, and always ready to serve. They don’t need to be pushed, dragged, or begged to attend the morning program. Their love for the Guru makes them wake up early because they don’t want to miss a single opportunity to please him.</p>
+<p>And let me tell you what Śrīla Prabhupāda mentioned in one of his purports. He warned us: <strong>“The moment a disciple says ‘no’ to the Guru, at that very moment, the roots in the seed is cut off.”</strong> This is extremely serious. We must think about this very carefully.</p>
+<div class="divider">&#10022;</div>
+<h3>The Caretaker Consciousness</h3>
+<p>Another heavy quality of a disciple is that they must <strong>“give up all sense of proprietorship over the objects of the senses, including his wife, children, home, and society.”</strong></p>
+<p>Who among us can claim to be the permanent owner of anything in this world?</p>
+<p>We build a nice house, we get a nice family, we have a husband, a wife, and children, and we think: <em>“This is mine. This is my family, this is my home.”</em></p>
+<p>But Śrīla Prabhupāda writes in his purport that these material relationships are temporary. They appear and disappear just like bubbles on the surface of the ocean. You are walking on the beach, you see a bubble, and the next second it is gone. That is your family. That is your wealth. That is your prestigious position.</p>
+<p>If you think you are the creator of your children, let me ask you: <em>If parents are the creators of their children’s bodies, why can’t they stop them from dying?</em> Why can’t a parent simply create a new body for their child when they get sick? And why do parents themselves die? Why don’t they just create new bodies for themselves to replace the old ones?</p>
+<p>The truth is, we create nothing.</p>
+<p>Kṛṣṇa is the only creator. He creates the material elements, and He creates every body. Therefore, before death comes and violently drags these things out of our tight grip, we should voluntarily hand them over to Kṛṣṇa. We must engage them in the service of the spiritual master.</p>
+<p>When you use your home, your money, and your family to serve the Guru, then instead of causing you deep lamentation, they become the source of unlimited spiritual happiness.</p>
+<p>We should understand that everything belongs to the spiritual master. Including one's spouse and children, all are the Guru's properties. Everything is the Guru's property. Guru has given His property in our care, so we are simply to take care of it. It does not belong to us; we are simply to take care of it.</p>
+<p>To explain this caretaker consciousness, Śrīla Bhaktivinoda Ṭhākura is our perfect, shining example.</p>
+<p>In one of his beautiful songs, Śrīla Bhaktivinoda Ṭhākura wrote: <em>“My dear Lord Kṛṣṇa, my wife, my children, my home, my properties—everything belongs strictly to You. I am simply a caretaker.”</em></p>
+<p>And he did not just write this as a nice poem. He lived it! He acted exactly like that in his daily life. He had twelve children!</p>
+<p>Now, please think about this. Today, we have just one child, or two children, and we have so many complaints! We say: <em>“Oh, my child is so difficult. I have no time for Sādhana. I am so stressed, I have so many headaches.”</em></p>
+<p>But Śrīla Bhaktivinoda Ṭhākura had twelve children, and he had <strong>no complaint</strong>!</p>
+<p>Why? Because his consciousness was clear. He knew: <em>“I am not the owner of these twelve children. They belong to Kṛṣṇa. They are the Guru’s property. Kṛṣṇa has simply placed them in my care for a few short years. My only duty is to take care of them and train them to become pure devotees.”</em></p>
+<p>Because he had no false prestige and no sense of proprietorship, his life was free from all material complexities and obstacles. He used everything within his reach to serve Kṛṣṇa.</p>
+<div class="divider">&#10022;</div>
+<h3>Loving Friendship and Undeviated Focus</h3>
+<p>A genuine disciple should be endowed with feelings of loving friendship towards the spiritual master, and he should never become deviated or bewildered. We must never become deviated. If we are listening attentively to the spiritual master, all of our doubts will be cleared.</p>
+<p>Why does the Guru speak? The Guru speaks to destroy the deep ignorance in the life of the disciple. When the disciple listens attentively, that ignorance is destroyed.</p>
+<p>The servant should always work for advancement in spiritual understanding, and he should be free from envy. He should not envy anyone.</p>
+<div class="divider">&#10022;</div>
+<h3>Avoiding Useless Conversation</h3>
+<p>Any conversation which does not involve Kṛṣṇa is useless. Devotees should speak only about the subject that concerns Kṛṣṇa. This is the topic devotees should discuss when they come together. We should talk about Kṛṣṇa, discuss how to perform our duties nicely for His pleasure, and discuss what we write from the scriptures. Anything outside of this is useless and worthless conversation.</p>
+<p>According to Śrīla Prabhupāda, useless secular conversation is like the croaking of a frog, which simply invites the biting of a snake. And what is our own snake? Our snake is death. When we spend our time talking about unnecessary things, we forget that we are wasting our time. The time is going imperceptibly. We waste our time, and then death comes, leaving us with nothing but lamentation.</p>
+<p>I have seen many devotees who have spent many years in this movement, who have spent so much time in meditation, yet they are lamenting when they are leaving the body. They are angry when they are leaving the body. They are worried about what they are leaving behind. That means failure!</p>
+<p>A devotee should never lament. We should not be angry, frustrated, or bewildered. A devotee should live joyfully, smiling. That means success!</p>
+<p>Let us drop our false prestige, wake up from our laziness, and strictly follow our spiritual master’s instructions with an open, loving heart. This is Kṛṣṇa consciousness.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 4 &middot; Heart Check</p>
+<h4>Servants, Not Bosses</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Take a few quiet, honest minutes to examine your consciousness:</p>
+<p class="hc-item numbered" data-n="1"><strong>My prestige:</strong> Do I find myself constantly seeking appreciation, praise, or recognition in my devotional service, or am I happy remaining a hidden, menial servant?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p class="hc-item numbered" data-n="2"><strong>My willingness:</strong> Do I hesitate or find excuses to say “no” to services requested of me by Gurudeva or senior Vaiṣṇavas because of my own bodily comfort?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p class="hc-item numbered" data-n="3"><strong>My complaints:</strong> When dealing with my spouse, children, job, or finances, do I complain, or do I remember that they are the Guru's property entrusted to my care?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p class="hc-item numbered" data-n="4"><strong>My tongue:</strong> What do I actually discuss when I meet with my friends and fellow devotees? Is our conversation centered on Kṛṣṇa, or are we wasting our imperceptible time with political gossip and criticism?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p class="hc-item numbered" data-n="5"><strong>My exit:</strong> If death came for me today, would I leave my body joyfully, smiling, or would I be filled with anxiety, anger, and lamentation for what I am leaving behind?</p>
+<ol class="hc-lines one"><li></li></ol>
+<p style="font-size:10.2pt; margin-bottom:8pt;"><em>Write down one practical area where you will lay down your prestige and act as a simple caretaker this week, followed by your prayer:</em></p>
+<p class="hc-item plain"><span class="commitment">My Commitment:</span> <span class="inline-blank" style="width:2.4in;"></span></p>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">The Caretaker’s Confession</div>
+  <p class="prayer-prompt">Śrīla Bhaktivinoda Ṭhākura had twelve children and no complaint because he saw them strictly as Kṛṣṇa's property, and himself as a simple caretaker. Write a personal prayer, consciously returning the ownership of your family, your home, and your abilities back to Kṛṣṇa, and begging for the submissive heart of a true servant.</p>
+  <p class="prayer-salut">My Dear Lord Krishna,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

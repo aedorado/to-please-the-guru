@@ -1,106 +1,92 @@
 # "To Please the Guru" — Full Manuscript Diagnostic Audit
-**Scope:** Front/back matter + all 21 chapters, each cross-checked against its matching raw source transcript.
-**Update (2026-08-22, pass 1):** Full re-verification pass completed against the chapter files current at that time and master manuscript v47.
-**Update (2026-08-22, pass 2):** Nine chapter files had already been re-edited again by the time of this pass (Ch.1 v40→v52, Ch.5 v43→v55, Ch.9 v42→v48, Ch.13 v37→v50, Ch.14 v38→v51, Ch.16 v38→v45, Ch.18 v44→v54, Ch.19 v43→v53, Ch.21 v46→v56; master manuscript v47→v66). Re-checked every open item from pass 1 against these newest versions. Result: several more fixes landed, but **one initially-suspected regression** (Ch.13/14) turned out on investigation to be a correctly-executed intentional content swap, not a defect — see below.
-**Update (2026-08-22, pass 3 — CLOSEOUT):** Author confirmed a final decision on Ch.13/14 (Option B, the swapped-chronological order, is the confirmed final structure — kept as-is) and made targeted fixes to the two remaining open items:
-- **Ch.8** (now v57) — attribution restored: "**Śrīla Gaura Govinda Mahārāja**," confirmed correct by cross-checking source 8's raw transcript ("Guru Govinda Maharaj") against the same ASR mis-transcription pattern (Gaura→Guru) already validated in Ch.9's fix.
-- **Ch.16** (now v51) — the Maharaj quote is corrected: the "you are Maharaj... your mind" second-person misattribution is gone, replaced with the disciple's own first-person realization ("I realized that now **I** was truly a Maharaj... **my** mind was completely off..."), matching the source. The guru's own quoted line is now kept to the accurate, minimal "**Maharaj.**"
-- **Ch.6** and **Ch.12** — author reviewed and elected to leave both as-is (flattened call-and-response opening in Ch.6; unverified Vāruṇī liquor detail in Ch.12 both accepted, not fixed).
-- Stale duplicate files (`chapter_13_when_the_teacher_leaves_the_classroom-v50.md`, `chapter_14_cry_like_a_queen-v51.md`, the pre-swap titled versions) have been deleted by the author.
-**All items from the pass-2 priority list are now closed** (fixed or knowingly accepted as-is). See Section 4 for final status.
+
+**Scope:** Front/back matter + all 22 chapters (the book grew from 21 to 22 chapters — a new Chapter 21, "The Apple of His Eye," was inserted from a newly transcribed talk, pushing the old Chapter 21 to Chapter 22), each cross-checked against its source transcript.
+
+**⚠️ SUPERSEDES ALL PRIOR AUDIT PASSES.** Everything below this line is a ground-up re-audit, not a recheck. The entire manuscript was rebuilt: every chapter file was rewritten (`-clean.md` files), front/back matter was rewritten (v4), and — critically — **every numbered source now has three independent ASR passes** (e.g. source 1 = `01+15`, `01.1`, `01.2`). This tripling of source material is a major fidelity upgrade: it lets claims be triangulated across independent transcriptions rather than trusting one possibly-garbled pass. Findings from before this rebuild should be treated as historical only.
+
+**Methodology note:** six parallel audits were run (front matter + Ch.1–3, Ch.4–7, Ch.8–11, Ch.12–15, Ch.16–19, Ch.20–22), each reading every chapter file in full and cross-referencing all available ASR passes of the matching source(s).
 
 ---
 
 ## 1. FRONT & BACK MATTER
 
-**Re-checked against master manuscript v47 (lines 1–200; front matter exists only in the master file, not in `/chapters/`).**
-
 | Section | Status | Key Finding |
 |---|---|---|
-| Preface | 🟢 **FIXED** (confirmed still fixed in v47) | Plain language throughout; no "blazing, revolutionary spirit" / "spiritual straight talk" phrasing |
-| Introduction ("Hearing on the Rug") | 🟢 **FIXED** (confirmed still fixed in v47) | No "18 vs 21 chapters" numerology claim (text now just says "twenty-one chapters"); the floor-sitting passage remains explicitly framed as an *"Editorial Note"* |
-| About the Ācāryas & Teachers | 🟢 | Clean — unchanged |
-| Acknowledgments | 🟢 | Clean — unchanged |
-| New minor item | ⚪ | Ch.1's table of contents in the v47 front matter doesn't list all of Ch.1's actual subheadings (e.g. missing "Hero-Worship vs. Guru-Worship") — copyedit note, not a fidelity issue |
+| Front matter (`to_please_the_guru_front_matter-v4.md`) | 🟠 | **Dangling citation artifacts:** nearly every sentence carries bracketed numbers like `[13, 15]` with no footnote key or reference list anywhere in the file — looks like unresolved AI-drafting markers left in by mistake. Needs a real endnote apparatus or the brackets removed entirely. |
+| Front matter — author bio | 🟡 | States the author served in Bhakti Tīrtha Swami's missions across "Nigeria, Ghana, the Ivory Coast, Liberia, and Zimbabwe" and received his sannyāsa recommendation from him — specific, checkable biographical claims about a real person not drawn from any of the audited talk sources. Not necessarily wrong, but should be confirmed against a vetted biographical record before print, not left resting on the book's own authority. |
+| Back matter (`to_please_the_guru_back_matter-v4.md`) | 🟢 | Clean. No external URLs, no numerology claims. "Praise" section is explicitly marked placeholder pending real endorsements — proper disclosure. |
 
 ---
 
 ## 2. PER-CHAPTER STATUS
 
-| Ch. | Title | File version | Status | Headline Issue |
+| Ch. | Title | Source(s) | Status | Headline Issue |
 |---|---|---|---|---|
-| 1 | Putting Our Head on the Ground | v52 | 🟢 **FIXED (pass 2)** | The misplaced "postman/sacred parcel" line (previously traced to Ch.5's source) is no longer present anywhere in the current file |
-| 2 | What Are We Living For | v43 | 🟢 **FIXED** (reconfirmed) | Still faithful: real examples, correct ācārya attribution. Only remaining item: Heart Check's hour/minute tally format (soft tone note) |
-| 3 | It Is Compulsory | v40 | 🟢 **FIXED** | Authentic dog/cat humor and "eyes" metaphor restored verbatim from source; invented "dark jungle without eyes" metaphor is gone |
-| 4 | Servants, Not Bosses | v31 | 🟢 **FIXED/confirmed** | Still faithful across all major beats (false-prestige teaching, caretaker consciousness, frog/snake dialogue) |
-| 5 | Fighting Spiritual Laziness | v55 | 🟢 **FIXED (pass 2)** | The "lazy" repetition is now rendered correctly ("**Lazy, lazy. Lazy. Lazy.**" / "**Lazy! Lazy, that is the problem. Laziness.**"), matching the source's incantatory style. The toilet-prayer/diary-prayer material has been rewritten as third-person narration (what Gurudeva did) rather than quoted first-person speech, removing the earlier invented-verbatim-dialogue risk |
-| 6 | Plan Your Day, Sādhana Will Suffer | **no version suffix** ("(1)") | 🟡 **ACCEPTED AS-IS (pass 3)** | Opening still flattened from live call-and-response into expository prose — author reviewed and elected to leave this as-is. **Production flag persists:** file still carries no `-vNN` suffix, unlike every other chapter file |
-| 7 | Purity Is a Force | v31 | 🟢 | Reconfirmed — still one of the most faithful chapters |
-| 8 | Seeing Kṛṣṇa Through the Ears | v57 | 🟢 **FIXED (pass 3)** | Attribution restored: "Śrīla Gaura Govinda Mahārāja shared a powerful history" — confirmed correct against source 8's raw transcript |
-| 9 | Like Hot Sugarcane Juice | v48 | 🟢 **FIXED (pass 2)** | The teaching is now attributed to "**Śrīla Gaura Govinda Mahārāja**" — a real, named ācārya whose name phonetically matches the source's garbled OCR rendering far better than the earlier "Bhakti Tīrtha Swami" guess did. The misattribution is resolved |
-| 10 | Bypassing the Gatekeeper | v28 | 🟢 **CONFIRMED FAITHFUL** | Correct source identified as SB 7.9.28 talk (source 10), a genuinely distinct talk from Ch.1's source — confirms the Ch.1/Ch.10 hero-worship overlap is legitimate redundancy, not fabrication |
-| 11 | The Miracle of Eagerness | v27 | 🟢 | Reconfirmed faithful, no issues |
-| 12 | Balarāma's Path of Strength | v36 | 🟡 **ACCEPTED AS-IS (pass 3)** | Stray editorial-note sentence ("...stronger editorial claim that Balarāma is the only gateway") **FIXED — deleted**. Vāruṇī liquor detail is still presented as narrated fact with no direct source confirmation — **author reviewed and elected to leave this as-is** |
-| 13 | When the Teacher Leaves the Classroom | v50 | 🟢 **Explained, not a defect (pass 2 correction)** | Initially flagged as a regression because the phone-call story (which only exists in source 14's transcript) is now in Ch.13. **Root cause, confirmed by the author:** in an earlier untangling pass, the two chapters' entire content pools were deliberately swapped between sources — Ch.13 (title/number unchanged) was intentionally remapped to draw its whole content from source 14, and Ch.14 from source 13. Content markers confirm this is a clean, total swap, not a stray fragment: Ch.13 now consistently contains the "Empty Classroom" metaphor, "Myth of Being an Orphan," and the phone-call story — all source 14. The title still fits this content well. **Remaining note:** chapter numbers no longer match source numbers (source 14 material sits under chapter "13," and vice versa) — a documentation/traceability gap for future editors, not a reader-facing fidelity issue |
-| 14 | Cry Like a Queen | v51 | 🟢 **Explained, not a defect (pass 2 correction)** | Checkbox violation remains fixed — confirmed zero `☐` characters, Heart Check still open prose + blank fill-ins. The phone-call story's absence here is not a loss — Ch.14 was deliberately remapped to draw entirely from source 13 instead (Vidarbha-queen lament, "Connecting to the Powerhouse," "Caretaker Sweeper"), confirmed by content markers, and the title "Cry Like a Queen" fits this content well. Same source/chapter-number traceability note as Ch.13 above |
-| 15 | The Floor Wet With Sweat | v32 | 🟢 **FIXED** | The American corporate-leadership-author story is now traced to source 05+15 (a garbled but clearly matching account of an author who "wrote many books on leadership"). This was the chapter's last open item — now resolved. Heart Check reconfirmed clean |
-| 16 | A Caring Father | v51 | 🟢 **FIXED (pass 3)** | "Stop the music" duplication with Ch.15 remains fixed (unique to Ch.16). The Maharaj quote is corrected — now reads as the disciple's own first-person realization ("I realized that now I was truly a Maharaj... my mind was completely off... I was simply serving"), matching the source, with the guru's own quoted line accurately kept minimal ("**Maharaj.**") |
-| 17 | The Kāliya Inside Us | v40 | 🟢 **FIXED (all four sub-issues)** | Messenger correctly "a Brāhmaṇa"; only Raghunātha dāsa Gosvāmī named; Śaṅkarācārya accusation-and-vindication frame restored; both dropped vivid details (infant evacuation exception, gopīs invited to watch) restored |
-| 18 | Preparing for the Ultimate Test | v54 | 🟢 **FIXED (pass 2)** | The undisclosed "Test of Death" splice from source 02 (the 4:30 AM/yama-niyama material) is gone — confirmed via direct text search, no "yama," "niyama," or "4:30" content remains in the current file. Heart Check unchanged (clean, but soft hour-tally KPI drift persists) |
-| 19 | Stop Cooking, Start Listening | v53 | 🟢 **FIXED (pass 2)** | Heart Check confirmed clean (no checkboxes). "My body immediately reacts" and "corporate slavery" fixes hold. The Caitanya Mahāprabhu attribution is now **gone** — the cook's-consciousness teaching is now framed generically ("our teachers explain"), removing the unsourced attribution entirely |
-| 20 | Giving Beyond the Modes | v34 | 🟢 | Both minor glosses ("auspicious," "karasa"=Ekādaśī) remain, but are transparently bracketed as editorial insertions — consistent with the prior "strong/faithful, minor" rating. Heart Check clean |
-| 21 | What Is Our Sacrifice? | v56 | 🟢 **FIXED, and prior flag downgraded (pass 2)** | "Multi-million dollar temples" and Prabhupāda heart-attacks/rat-ridden-rooms claims remain removed. Closing bridge back to Ch.1's "head on the ground" theme remains in place. Re-checked the Rāmānujācārya persecution detail directly against source 21's transcript: it substantially matches ("They killed all of his disciples. Only one escaped... He ran to Melkote") — the pass-1 "unsourced addition" flag is **downgraded**; "Shaivite king" is a reasonable historical gloss on the source's garbled "Siddhartha," not a fabrication |
+| 1 | Putting Our Head on the Ground | 01 / 01.1 / 01.2 | 🟡 | **Fabricated detail:** "(then Ghanashyam Prabhu)" is asserted as Bhakti Tīrtha Swami's pre-sannyāsa name — appears in NONE of the 3 ASR passes. The name-resolution to "Bhakti Tīrtha Swami" itself is a reasonable, well-triangulated call (source passes garble it as "Bhakti Chitra Maharaj"/"Bhaktijana Maharaja"), but "Ghanashyam" is an unsupported add-on. Minor: the vivid "Love me? Love my dog" Prabhupāda quote (present in source) was dropped in favor of generic paraphrase. The Śrīmatī Lakṣmīdevī pastime and the Hiranyakasipu/Prahlāda lap metaphor are both faithfully and closely rendered. Heart Check clean. |
+| 2 | What Are We Living For | 02 / 02.1 / 02.2 | 🟡 | **Misattribution:** the "beauty of Śrīmad-Bhāgavatam" saying is credited to "Śrīla Baladeva Vidyābhūṣaṇa (Balabhadra)" — but triangulating all three passes shows this is one continuous quote from **Bhaktivinoda Ṭhākura** (unambiguous in pass 02.2, in the same breath as a Bhaktivinoda quote the chapter itself correctly attributes). This invents a second, historically distinct 18th-century commentator as the source. Everything else (Man on Crutches, Mārkaṇḍeya verse, animal comparison) is clean. |
+| 3 | It Is Compulsory, Not Optional | 03 / 03.1 / 03.2 | 🟢 | Clean throughout — dog/cat metaphor, 64 principles, initiation-as-contract, Śiva-Pārvatī beggar pastime all verified closely against source. |
+| 4 | Servants, Not Bosses | 04 / 04.1 / 04.2 | 🟢 | Clean on all major content. Minor: the "I am not the doer" story's disciple is named across all 3 passes (garbled variants converging on **Hari Śauri Prabhu**, a real, documented servant of Śrīla Prabhupāda) but the chapter genericizes him to "a disciple" — a real name dropped without cause. |
+| 5 | Fighting Our Spiritual Laziness | 05+15 / 05.1+15.1 / 05.2+15.2 | 🟠 | **Miscited source:** the Yugoslavia arrest/interrogation story is genuine (not invented) but is NOT in any pass of source 5 — it's from source **02**, where it matches closely. The chapter's own References section footnotes it as coming from "the Brahmachari Class series" (source 5) — a citation that's actively wrong, not just missing. This chapter also introduces a formal bracketed-citation apparatus not used in Ch.4/6/7, making the inconsistency more visible. Rest of chapter (postman/parcel analogy, foolish-beggar prayer, "stop the music") is clean. |
+| 6 | If You Don't Plan Your Day, Your Sādhana Will Suffer | 06 / 06.1 / 06.2 | 🟢 | Clean — Jaḍa Bharata/Rahūgaṇa, Mr. Boeing, "squeeze the dead body," sādhana-as-vaccine all verified faithfully, vivid phrasing preserved. **File hygiene:** `chapter_6...-clean.md` and `chapter_6...-clean (1).md` are byte-for-byte identical — delete the duplicate. |
+| 7 | Purity Is a Force | 07 / 07.1 / 07.2 | 🟢 | Clean — Ekādaśī origin story, Janmāṣṭamī/letter-to-Kṛṣṇa pastime both verified. No fabrication, no external citations. |
+| 8 | Seeing Kṛṣṇa Through the Ears | 08 / 08.1 / 08.2 | 🟡 | The "two ladies crossing a river" story is explicitly credited in all 3 passes to "Śrīla Gaura Govinda Mahārāja" — chapter genericizes this to "our ācāryas," erasing a named, source-confirmed attribution (this is the same name/story previously restored correctly in the old book structure — the fix didn't carry over into this rebuild). Minor: an added detail that Prahlāda heard this "from his spiritual master, Nārada Muni" is not in any pass (doctrinally fine, but undisclosed addition). |
+| 9 | Like Hot Sugarcane Juice | body: 09 / 09.1 / 09.2; title pastime: 12 / 12.1 / 12.2 | 🟡 | **Attribution independently re-confirmed:** triangulating all 3 passes of source 12 again confirms the sugarcane-juice teaching belongs to **Śrīla Gaura Govinda Mahārāja** (12.2 unambiguous: "Srila Gour Govinda Maharaja said..."), not Bhakti Tīrtha Swami. Good. Remaining issue: the chapter's title pastime is spliced in from an entirely different recorded talk (source 12) than the rest of the chapter (source 9), with no disclosure that this is a composite of two sessions. |
+| 10 | Bypassing the Gatekeeper | 10 / 10.1 / 10.2 | 🔴 | **Worst chapter in this audit.** (a) Misattribution: chapter says Kṛṣṇa taught this "to Uddhava in the eleventh canto" — source actually attributes it to **Dhruva, in the ninth canto**. Wrong person, wrong canto. (b) Fabricated citation: an invented "Ādi Purāṇa" quote ("Those who are My direct devotees are actually not My devotees...") appears in no pass. (c) Misattribution: a line is presented as Viśvanātha Cakravartī Ṭhākura's own commentary when in the source it's part of Prabhupāda's purport/translation. (d) Invented narrative padding around the Rāmānujācārya pastime (a "quiet pond," daily habits) not in any pass. |
+| 11 | The Miracle of Eagerness | 11 / 11.1 / 11.2 | 🟢 | Clean across the board — no fabrication, no misattribution, all three passes consistent. |
+| 12 | Balarāma's Path of Strength | 12 / 12.1 / 12.2 | 🟢 | Clean — Trinity comparison, Yamunā-dragging story, Akrūra's chastisement, Satyabhāmā conversation all verified closely. |
+| 13 | Cry Like a Queen | 13 / 13.2 (13.1 appears mislabeled — see note) | 🔴 | **Regression:** the Candra/moon-god passage and the ENTIRE "Don't come, stay there" phone-call section do not appear anywhere in source 13 — they belong to source 14, and now appear duplicated near-verbatim in BOTH Ch.13 and Ch.14. This undoes the clean content separation the author deliberately established in the prior audit round. Also: Reference [3] ("Śrīla Gour Govinda Swami, *The Embankment of Separation*, Chapter 2") is a fabricated citation — no pass of source 13 contains this metaphor or any such reference. **File-hygiene note:** `13.1`'s extracted text contains none of Ch.13's expected content and appears to be a mislabeled/wrong recording — don't rely on it for this chapter. |
+| 14 | When the Teacher Leaves the Classroom | 14 / 14.1 / 14.2 | 🟢 | Clean and correctly mapped — empty-classroom metaphor, orphan-mentality section, Bhaktisiddhānta Sarasvatī letter, phone-call story, five-point disciple checklist all trace directly to source 14. |
+| 15 | The Floor Wet With Sweat | compiled across many BTS-pastime sources (02, 16, `bdds-bts-dsiappearance-day-pastimes-2026.pdf`, `05.2+15.2`, 01.2) | 🟡 | Most anecdotes traced successfully across the wider source pool — Yugoslavia/Soviet arrests, sannyāsa-dhoti kīrtana story, hidden-letter naming story, diary habit, West Africa hardships. **Two anecdotes remain untraceable:** the temple-president removal/chiding scene, and the deathbed medical-fund-redirection story — neither is supported by any available source. **Title mismatch:** the file's internal heading reads "The Fire of a Spiritual Warrior," inconsistent with the chapter title "The Floor Wet With Sweat." Same unverified "Ghanashyam Prabhu" name issue as Ch.1. |
+| 16 | A Caring Father | 16 / 16.1 / 16.2 | 🟡 | The previously-fixed Maharaj-quote speaker attribution (disciple's own first-person "I am Maharaj") **holds and is verified correct.** New, moderate issue: the letter-in-the-book scene originally had Gurudev *correcting* the disciple ("See? You are not Maharaj... yet" — confirmed in all 3 passes) but the chapter rewrites this as a warm, smiling "Maharaj." — reversing a chastisement into affection. |
+| 17 | The Kāliya Inside Us | 17 / 17.1 / 17.2 | 🟠 | Two fabricated-looking citations: Reference [2] names "King Purañjana" and cites "Madhvācārya, *Bhāgavata-tātparya-nirṇaya*" — no pass ever names the king. Reference [9] names the disciple "Padmapāda" and cites "*Śaṅkara-vijaya-vilāsa*, Chapter 12" — no pass gives this name either (source is garbled/unresolved here). Core narrative otherwise faithful. |
+| 18 | Preparing for the Ultimate Test | 18 / 18.1 / 18.2 | 🟠 | The old "Test of Death" splice (from source 02) is confirmed gone. **But a new splice has taken its place:** "The Completely Deformed Person on the Road" section is verbatim material from source 02, not source 18 — same undisclosed cross-splicing problem, just relocated. Rest of chapter is clean. |
+| 19 | Stop Cooking, Start Listening | 19 / 19.1 / 19.2 | 🟢 | Clean overall. Two minor undisclosed additions: the name "Gour Mohan De" (Prabhupāda's father, factually correct but never spoken in-source) and Reference [9]'s Ṛṣabhadeva/SB 5.5.1 citation (real, correctly cited verse, but not found spoken in this specific talk). |
+| 20 | Giving Beyond the Modes | 20 / 20.1 / 20.2 | 🟡 | Mostly clean. One embellished quote: the Dhruva Mahārāja "broken glass vs. a diamond" line is not in any pass (source only has a plainer "asking for a kingdom was an offense... don't give it to me again"). Well-known devotional phrase from elsewhere, but wasn't spoken in this class. |
+| 21 | The Apple of His Eye (**new chapter**, no prior audit history) | 21 / 21.1 / 21.2 | 🟠 | **Fabricated specificity + false citation:** the chapter places an early Prabhupāda lecture at "26 Second Avenue, New York (1966)" and cites this as Reference [1] "Biographical accounts of..." — no pass mentions New York, 1966, or any address; source only says lectures were 20 minutes with a shared piece of apple. Also: the Haridāsa Ṭhākura pastime adds "the forest of Jārikhaṇḍa" and "hills and valleys" — real to the wider Caitanya-caritāmṛta tradition, but not part of this recorded talk. Everything else (the SB 4.31.19 verse, "character preaches not philosophy," the ant-greeting illustration) is clean. |
+| 22 | What Is Our Sacrifice? (formerly Ch.21) | 22 / 22.1 / 22.2 | 🟠 | **Altered fact:** all 3 passes agree the persecuted ācārya's disciples were **killed** ("They killed all of his disciples. Only one escaped"); the chapter changes this to "brutally tortured... blinding **Kureśa** and **Mahāpūrṇa**," inventing two names present in no pass, plus an added "fled to Śrīraṅgam" detail. This isn't paraphrase — it changes what actually happened. Confirmed still absent (good): "multi-million dollar temples," Prabhupāda heart-attack/rat-ridden-room claims. Closing "head on the ground" bridge to Ch.1 remains and still reads fine. |
 
 ---
 
 ## 3. CROSS-CUTTING FINDINGS
 
-### A. Heart Check anti-corporate rule
-- **No live checkbox violations remain.** Ch.14's two `☐` checkboxes are confirmed removed. Ch.19's earlier-version violation is confirmed absent from the current file.
-- Ch.2 and Ch.18 still carry soft, non-checkbox quantified fill-ins (hour/minute tallies) — tone note, not a hard violation.
+### A. Heart Check anti-corporate rule — 🟢 PERFECT COMPLIANCE
+Every one of the 22 chapters was checked. **Zero checkbox (☐), Yes/No, or scored-format violations found anywhere.** All Heart Check sections use open-ended reflective prose, either/or discernment questions, or blank fill-in journaling. This rule has been fully internalized across the rebuild — genuinely good news.
 
-### B. Source-fidelity items — ALL CLOSED as of pass 3
-1. **Ch.16** — ✅ FIXED. Maharaj quote corrected to first-person, matching source
-2. **Ch.8** — ✅ FIXED. "Śrīla Gaura Govinda Mahārāja" attribution restored
-3. **Ch.12** — ⚪ ACCEPTED AS-IS. Vāruṇī liquor detail left unhedged by author's decision
-4. **Ch.6** — ⚪ ACCEPTED AS-IS. Flattened call-and-response opening left as-is by author's decision
-5. **Ch.13/14** — ⚪ RESOLVED — CONFIRMED, NOT A DEFECT. Author confirmed final structure (Option B: Ch.13 "Cry Like a Queen" from source 13, Ch.14 "When the Teacher Leaves the Classroom" from source 14, ending on the phone-call story). The source-number/chapter-number mismatch (source 14 material under chapter "14" — this now aligns correctly under Option B) is fully resolved
+### B. The dominant new pattern: citations dressing up unsupported claims
+This is the most important structural finding of this audit. The rebuild introduced formal bracketed References sections in several chapters (5, 9, 10, 13, 17, 19, 21, 22) that **did not exist in the prior version of this book**. In multiple cases, these citations are actively harmful rather than neutral:
+- **Fabricated citations** (invented sources that don't exist or can't be verified as real): Ch.10's "Ādi Purāṇa" quote; Ch.13's "Gour Govinda Swami, *The Embankment of Separation*"; Ch.17's Madhvācārya and Śaṅkara-vijaya-vilāsa citations; Ch.21's "26 Second Avenue, 1966" biographical citation.
+- **Miscited real content** (the story is genuine but the footnote points to the wrong source): Ch.5's Yugoslavia story, footnoted to source 5 when it's actually from source 2.
+- **Inconsistent usage:** some chapters (4, 6, 7, 8, 11, 12, 14, 16, 18, 20) have no References section at all; others use one only sometimes. There's no book-wide policy being followed.
 
-### Resolved since pass 1 (no longer open items)
-- **Ch.9** — sugarcane-juice teaching now correctly attributed to Śrīla Gaura Govinda Mahārāja
-- **Ch.18** — undisclosed "Test of Death" splice from source 02 has been removed
-- **Ch.1** — misplaced postman/parcel metaphor has been removed
-- **Ch.5** — "lazy" repetition now rendered correctly; toilet/diary material rewritten as narration, no longer presented as invented verbatim dialogue
-- **Ch.19** — Caitanya Mahāprabhu attribution removed; teaching now framed generically
-- **Ch.21** — Rāmānujācārya persecution detail re-checked and found substantially source-supported; downgraded from "unsourced addition" to a reasonable historical gloss
-- **Ch.13/14** — initially misread as a regression (phone-call story "misplaced" in Ch.13). Investigation found a deliberate, consistent content swap between the two chapters from an earlier untangling pass. Author has now confirmed Option B (swapped-chronological order) as final; stale pre-swap files deleted
-- **Ch.8** — attribution restored (pass 3)
-- **Ch.16** — Maharaj quote corrected (pass 3)
+The risk here is specific: a citation makes a claim *look* more rigorously sourced than a plain paraphrase would, so a fabricated or miscited footnote is arguably worse for reader trust than the same content presented with no citation at all. **Recommend a full audit of every bracketed citation in the manuscript against the actual ASR sources before publication, and a decision on whether external/scholarly citations belong in this book at all** — nothing in the original oral talks used this apparatus.
 
-### C. Legitimate repetition (real talks, not invention) vs. redundant placement
-- **Ch.1 & Ch.10**: confirmed two genuinely separate talks (source 01+15 vs. source 10/SB 7.9.28) — legitimate but still reader-facing redundant
-- **Ch.13 & Ch.14**: no longer any duplication between them — each draws its whole content from one source (see above); general thematic overlap (guru's departure) remains, which is expected since it's the shared premise of the two source talks
-- **Ch.7 & Ch.9**: unchanged from prior audit (not re-verified this pass)
-- **Ch.15 & Ch.16**: "stop the music" duplication resolved — now unique to Ch.16
+### C. Undisclosed cross-talk splicing (a recurring pattern, not a one-off)
+Three chapters silently blend material from a *different* recorded talk into their body without flagging it as a composite: Ch.9 (title pastime from source 12, body from source 9), Ch.18 (a whole section from source 2), and Ch.13/14 (the phone-call story properly belongs in one chapter but now duplicates into both). This isn't inherently wrong — Ch.15 is *deliberately* a multi-source compilation and that's clearly signaled by its nature — but when it happens inside a chapter that otherwise reads as one continuous talk, it should be disclosed, or the borrowed material should be removed/relocated.
 
-### D. Production/versioning note
-- Master manuscript is now `to_please_the_guru_master_manuscript-v66.md` — **still stale relative to individual chapter files** and should not be treated as source of truth for chapter body content (front matter is the exception, since it lives only there). Recommend a final re-compile of the master from current chapter files before publication.
-- **`chapter_6_if_you_dont_plan_your_day_your_sādhana_will_suffer (1).md` carries no `-vNN` suffix**, unlike every other chapter file. Content has been reviewed and accepted as-is, but this file should still be confirmed as being on the same revision-tracking pipeline as the rest before final compile.
-- Stale duplicate Ch.13/14 files (the pre-swap titled versions) have been deleted, resolving the file-hygiene risk flagged in pass 2.
-- Across this audit, chapter files were re-edited multiple times mid-session (pass 1 → pass 2 → pass 3), and one apparent regression (Ch.13/14) turned out on investigation to be intentional. This is worth noting for future audits: **confirm with the author before treating a content shift between two thematically-related chapters as an error**, since deliberate source-remapping can look identical to misplacement at first glance.
+### D. Altered facts vs. paraphrase (the most serious category)
+Two findings go beyond omission or embellishment into changing what actually happened: Ch.22's "killed" → "blinded" (with invented victim names), and Ch.10's invented Kṛṣṇa/Uddhava/11th-canto attribution replacing the source's actual Dhruva/9th-canto framing. These should be prioritized above stylistic or citation issues.
+
+### E. File hygiene
+- `chapter_6_plan_your_day_sadhana_suffers-clean (1).md` is a byte-identical duplicate of the non-"(1)" file — delete it.
+- Source file `13.1 - The Guru–Disciple Relationship...pdf` does not actually contain Ch.13-relevant content on extraction — flag to production as possibly mislabeled/misfiled before anyone relies on it.
 
 ---
 
-## 4. FINAL STATUS (as of pass 3 — CLOSEOUT)
+## 4. TOP PRIORITY FIXES (ranked)
 
-**All items are closed.** Nothing remains outstanding from this audit.
-
-| Item | Resolution |
-|---|---|
-| Chapter 16 — Maharaj quote speaker/person swap | ✅ Fixed |
-| Chapter 8 — dropped "Gaura Govinda Mahārāja" attribution | ✅ Fixed |
-| Chapter 12 — unverified Vāruṇī liquor detail | ⚪ Accepted as-is (author decision) |
-| Chapter 6 — flattened call-and-response opening | ⚪ Accepted as-is (author decision) |
-| Chapter 13/14 — content/title mapping | ⚪ Confirmed intentional (Option B); stale files deleted |
-
-No further action is required unless new versions of the chapter files are produced, in which case a fresh re-verification pass is recommended before final publication.
+1. **Chapter 10** — the most-flawed chapter: fix the Dhruva/9th-canto misattribution (currently wrongly says Uddhava/11th canto), remove the fabricated "Ādi Purāṇa" quote, fix the Viśvanātha Cakravartī Ṭhākura misattribution, and cut the invented Rāmānujācārya scene-padding.
+2. **Chapter 22** — restore "killed" (not "blinded") and remove the invented disciple names (Kureśa, Mahāpūrṇa) and invented "fled to Śrīraṅgam" detail — this changes a historical fact, not just style.
+3. **Chapter 13** — remove the duplicated phone-call/Candra material (it belongs solely in Ch.14) and the fabricated "Embankment of Separation" citation; also flag source file `13.1` to production as likely mislabeled.
+4. **Chapter 17** — verify or remove the two fabricated-looking citations (Purañjana/Madhvācārya; Padmapāda/Śaṅkara-vijaya-vilāsa).
+5. **Chapter 21** (new) — verify or remove the "26 Second Avenue, New York, 1966" detail and its citation; verify or hedge the "Jārikhaṇḍa forest" addition.
+6. **Chapter 18** — disclose or remove "The Completely Deformed Person on the Road," which is spliced in from source 2.
+7. **Chapter 5** — correct the Yugoslavia story's citation to point to its real source (2), not source 5.
+8. **Chapter 2** — fix the ācārya misattribution: Bhaktivinoda Ṭhākura, not Baladeva Vidyābhūṣaṇa.
+9. **Chapter 1** — remove or verify the unsupported "(then Ghanashyam Prabhu)" detail; same check applies to the identical claim in Ch.15.
+10. **Chapter 9** — disclose that the title pastime is drawn from a different session than the rest of the chapter (or leave as-is if a compiled-chapter framing is acceptable, as with Ch.15).
+11. **Chapter 16** — reconsider whether the letter-scene chastisement should be restored rather than presented as a smiling affirmation.
+12. **Chapter 20** — remove or separately attribute the "broken glass vs. diamond" line, which isn't in any source pass.
+13. **Chapter 8** — restore the "Gaura Govinda Mahārāja" attribution (currently genericized to "our ācāryas" again, despite this exact fix having been made in the pre-rebuild version).
+14. **Chapter 15** — trace or remove the temple-president-removal and deathbed-fund-redirection anecdotes.
+15. **Front matter** — resolve the dangling `[13, 15]`-style citation brackets (currently point to nothing) and confirm the author's West Africa mission biography independently.
+16. **Housekeeping** — delete the duplicate `chapter_6...-clean (1).md` file.

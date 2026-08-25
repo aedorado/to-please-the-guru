@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part One &middot; The Foundation of Devotion</div>
+  <div class="chap-num">I</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">Putting Our Head on the Ground</div>
+  <p class="drop">Where does the <em>Śrīmad-Bhāgavatam</em> begin? Before the main verse of the scripture is spoken, the invocation begins with <em>oṁ namo bhagavate vāsudevāya</em>—an offering of obeisances to the Supreme Personality of Godhead.</p>
+<p>Have you ever stopped to ask yourself what that actually means? We walk around in human bodies, but Śrīmad-Bhāgavatam suggests that human life does not actually begin with a human body. It begins with human behavior. And that behavior begins the very moment we decide to come and offer our heads to Kṛṣṇa. Out of nine billion people on this planet, how many are trying to be devotees? A very small number.</p>
+<p>If you want to get a mathematical equation correct, you have to follow the formula. If you ignore the formulas of algebra, will your equation be correct? No, of course not. In the exact same way... In the exact same way, we cannot be successful devotees if we do not follow the formula of <em>bhakti</em>.</p>
+<p>The formula begins with putting our head on the ground.</p>
+<p>Since time immemorial, we have been wandering in this material world. And what have we been doing all this time? We have been trying deliberately, systematically, to avoid Kṛṣṇa. No one has ever succeeded in this, and nobody ever will. Yet we keep trying. We only become fortunate when we finally say, <em>“I am tired. Now, Kṛṣṇa, I surrender to you.”</em> That is the true beginning of life.</p>
+<p>There is nothing ordinary in Kṛṣṇa consciousness. Everything is real, and there is no fiction. Look at HH Dhanurdhara Swami. He spent four years of his life trying to understand everything in Vṛndāvana. How many of us do like that? We don’t absorb ourselves in Kṛṣṇa consciousness, yet we think, <em>“Oh, I am a pure devotee.”</em> But a pure devotee is not artificial; they are real, and they are enjoying their Kṛṣṇa consciousness fully.</p>
+<p>Yet, look at our behavior in the temple. Many of us stand there during the <em>pranama</em> mantras with no obeisances. Some of us have even forgotten our own Guru’s <em>pranama</em> mantras because we are “too busy” to chant them. How will you be a devotee if you cannot even bow your head?</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>The Order is the Life Substance</h3>
+<p>How do we please the spiritual master? We must understand that pure devotees do not come to this world to take anything from us. They do not care for our scholarship, our money, or our artificial glorification. If they wanted glorification, they would have stayed in the spiritual world where the appreciation is real and from the heart. Here, almost everything we do is contaminated by lust, envy, greed, or delusion. It is artificial. The spiritual master comes here strictly to teach us, to give us the absolute truth.</p>
+<p>Look at the Pracetās, the ten sons of King Prachinabarhi. When they went to the forest to perform austerities, they were favored by the appearance of Lord Shiva, who became their spiritual master and instructed them. And how did they respond? They took his words so seriously that simply by meditating upon his instructions, they became perfect.</p>
+<p>This is the secret of success. Once you are initiated and receive the orders of the spiritual master, you must unhesitatingly think about those instructions and refuse to be disturbed by anything else in this world.</p>
+<p>Srila Visvanatha Cakravarti Thakura explains this beautifully in his commentary on the <em>Bhagavad-gītā</em> (2.41): <em>vyavasayatmika buddhir ekeha kuru-nandana</em>. He points out that the order of the spiritual master is the very life substance of the disciple. As a disciple, your first business is not even to worry about whether you are going back home, back to Godhead. Your only business is to execute the order of your spiritual master. That is what we call “directional meditation.” We must meditate on the order, and then actively find the practical means to execute it.</p>
+<p>We have beautiful examples of this in our own movement. Śrīla Prabhupāda often mentioned that book distribution gave him life. When he was physically present, he noted that hearing the sankirtan results made his desire to continue living in his physical body increase.</p>
+<p>The best person who understood this was His Holiness Bhakti Tīrtha Swami (then Ghanashyam Prabhu). When Prabhupāda heard his sankirtan results, tears would pour from his eyes. He would embrace Bhakti Tīrtha Swami (then Ghanashyam Prabhu), rub his head, and show him unlimited affection. That disciple’s life was a complete success because he brought tangible satisfaction to the spiritual master.</p>
+<p>Shortly before Śrīla Prabhupāda left this world, some devotees wanted to make it official. They went to his bedside and asked, <em>“Prabhupāda, what pleases you the most?”</em> They were expecting him to name a specific project or book distribution. But Prabhupāda shocked them. He looked at them and said: <em>“If you become a pure devotee, it will please me the most.”</em></p>
+<p>And how do you become a pure devotee? By pleasing a pure devotee through the sincere, unhesitating execution of his instructions.</p>
+<div class="divider">&#10022;</div>
+<h3>The Principle of Vaishnava Etiquette</h3>
+<p>There is an important standard we must understand at the very beginning of our spiritual life: we must never separate the spiritual master from those who serve him.</p>
+<p>A genuine disciple is one who honors the entire family of the Guru—his godbrothers, his godsisters, and the junior devotees who assist him. We must avoid the diseased mentality of treating the Guru as an isolated star while neglecting or ignoring the devotees around him. When we learn to treat every Vaishnava with love and submissive respect, our service becomes pure, pleasing, and free from material offenses. This is the preliminary definition of Vaishnava etiquette, which protects our surrender from becoming a cheap, prestigious show.</p>
+<div class="divider">&#10022;</div>
+<h3>Śrīmatī Lakṣmīdevī’s Extreme Sacrifice</h3>
+<p>To understand what genuine, risk-taking surrender looks like, we must study a pastime of Śrīmatī Lakṣmīdevī, an exalted householder disciple of Śrīpāda Rāmānujācārya.</p>
+<p>She was extremely, painfully poor—possessing only one single, veiled, torn dress. She hardly had anything to eat. But her heart was pure, and her dedication to her spiritual master was absolute.</p>
+<p>One day, Śrīpāda Rāmānujācārya was traveling all over India, preaching Kṛṣṇa consciousness. He arrived unexpectedly at Śrīmatī Lakṣmīdevī’s village. He did not come alone; he came with many disciples. He purposefully bypassed the comfortable homes of his wealthy disciples and walked straight to the house of his poorest disciple, Śrīmatī Lakṣmīdevī. He wanted to use her to teach all of us a lesson, to test her and show us where we truly stand.</p>
+<p>Rāmānujācārya looked at her and said, <em>“Please, provide Prasadam for me and all my disciples.”</em></p>
+<p>Now, what would a modern disciple do in that situation? We would immediately complain: <em>“Gurudev, did you tell me you’re coming? How can you just come like that? You are a pure devotee, you’re supposed to know I have no money! How can you bring all these people to my empty house?”</em> But Śrīmatī Lakṣmīdevī did not have even a single thought of complaint. She never felt like that. She was simply overjoyed: <em>“My Gurudev has come! My life has come!”</em></p>
+<p>But there was not even a single grain of rice in her home. Zero!</p>
+<p>In that same village, there lived an incredibly wealthy merchant. For years, this man had been lusting after Śrīmatī Lakṣmīdevī. Every time he saw her in her torn clothes, he would mock her husband and tempt her: <em>“Your husband is very poor. He cannot maintain you. You are such a beautiful girl—why did you make the mistake of marrying that man? Come and enjoy with me! All this wealth will be yours if you become my girlfriend. Your father gave birth to you to suffer like this? Is it your karma? Even if it is, if you become my girlfriend, is that not also your karma?”</em></p>
+<p>And every time, she had fiercely rebuffed him: <em>“Nonsense! I have not died because of my husband’s poverty. I don’t want to pollute my situation. Get out!”</em> She had blocked every single entrance for Maya to enter her life.</p>
+<p>But on this day, she realized her Guru and his followers were at her door, and they were hungry. In her mind, the calculation was simple: she was ready to do anything—including sacrificing her own body and her chastity—if it meant her Guru and his disciples would be fed.</p>
+<p>She walked straight to the wealthy merchant’s house, looked him in the eye, and said: <em>“My Gurudev has come with so many people, and I must feed them. There is nothing in my house. Give me the grains and supplies I need to serve them. After they are fed, I am here for you. Whatever you want to do with me, I am free.”</em></p>
+<p>She was ready to break the principles, to break her Sādhana, out of pure, unadulterated love to feed her Guru.</p>
+<p>When she spoke those words, something miraculous happened. Śrīmatī Lakṣmīdevī’s desire to serve her Guru was so incredibly, blindingly pure that her purity pierced straight through the merchant’s lust and entered his soul.</p>
+<p>The wealthy merchant began to weep.</p>
+<p>He fell to the floor, touched her feet, and cried: <em>“For years, I tempted you, and I failed. Today, you are ready to sacrifice your very chastity just to feed your Guru. You are not an ordinary woman; you are Lakshmi Devi herself! Please, take everything you need. I beg you, let me touch your Guru’s lotus feet so I can be free from the heavy contamination in my own heart. Please, you become my Shiksha Guru, and take me to your Diksha Guru so I can surrender my sinful life.”</em></p>
+<p>The merchant loaded her with the finest grains, ghee, and vegetables. Śrīmatī Lakṣmīdevī returned home, cooked a magnificent feast, and joyfully served Rāmānujācārya and his disciples.</p>
+<p>Now, when the feast was over, did she pretend nothing had happened? Did she hide the truth to protect her reputation? No. She was transparent. She knelt before Rāmānujācārya and confessed everything: <em>“Gurudev, I had no alternative. I went to the wealthy merchant who has been tempting me for years and offered myself to him so I could get food for you. But when I did, his heart was completely transformed by your mercy, and he gave me all of this.”</em></p>
+<p>Rāmānujācārya smiled and embraced her in his heart, declaring: <em>“You are a truly bona fide disciple. You are ready to take the ultimate, genuine risk for your Guru.”</em></p>
+<p><strong>However, we must be extremely careful here. Gurudeva immediately warns us against a dangerous, self-serving interpretation of this pastime: “Someone can say, ‘Yes, I want to break principles so I can raise money for my Guru’s project.’ Please, understand it is not the same. You will not get the result Śrīmatī Lakṣmīdevī got. They are two different things, not the same.”</strong></p>
+<p><strong>In her mind, there was absolutely no self-interest, no calculation, and no desire to enjoy. But when our minds try to copy her under a false pretense, Maya will immediately trap us. Taking a cheap, calculated shortcut for our own convenience is entirely different from her unalloyed, risk-taking surrender.</strong></p>
+<p>If we do not take risk, we cannot satisfy Kṛṣṇa, we cannot satisfy Guru. When we take a genuine risk, it touches the heart of a pure devotee. Śrīpāda Rāmānujācārya did not come to her house because he was a fool. He did it to stage a living drama, to teach us where we truly stand in our Kṛṣṇa consciousness, and to show us the depth of pure surrender that can touch the heart of a pure devotee.</p>
+<div class="divider">&#10022;</div>
+<h3>Nirasta-Kuhakam: The Uncheating Realm</h3>
+<p>What is the ultimate, highest destination we are looking for when we speak of Goloka Vṛndāvana?</p>
+<p>We find the answer in the very opening words of the <em>Śrīmad-Bhāgavatam</em> (1.1.1): <strong><em>nirasta-kuhakam, satyam param dhimahi</em></strong>.</p>
+<p><em>Nirasta-kuhakam</em> means the realm that is 100% free from all illusion, duplicity, and cheating pretenses. In the spiritual world, cheating is 100% absent—one hundred percent! What we think here, what we see here, and what we say here in this material world is almost always full of hidden motives. But the spiritual realm is a place of absolute, uncheating purity.</p>
+<p>And that purity can only be reached when we stop playing spiritual games. We must follow the formula of <em>Sādhana</em>. We must put our heads on the ground, take the Guru’s order as our very life and soul, and serve his followers with a sincere, open heart. Only then will the heavy curtain of Maya be swept aside, and we will finally see Kṛṣṇa face-to-face.</p>
+
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 1 &middot; Heart Check</p>
+<h4>Examining Our Obeisances</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Honestly examine your last three visits to the temple room or your altar:</p>
+<p class="hc-item">Did you offer a physical obeisance, or did you just do a fast, standing head-nod?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Were you dropping your body while your mind was still running through your material schedule, worries, and plans?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item plain"><span class="commitment">The Commitment:</span> Next time you offer obeisances, take <strong>five slow, conscious seconds</strong> with your head physically touching the floor. Silence your mind and pray from the heart: <em>“Kṛṣṇa, I am tired of trying to run my own life. Today, I place my intellect, my anxieties, and my plans at Your feet.”</em></p>
+<h4>Loving the Guru's Associates</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">To defeat the disease of celebrity hero-worship, write down the name of one devotee in your local community whom you find difficult, whom you usually ignore, or who has no special social prestige:</p>
+<p class="hc-item plain"><span class="commitment">The Devotee:</span> <span class="inline-blank" style="width:2.4in;"></span></p>
+<p class="hc-item"><span class="commitment">The Act of Service:</span> Identify one small, practical, and completely anonymous way you will serve or encourage them this week:</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>Write down your experience after completing it. Did you feel your spiritual master smiling?</em></p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Uncalculated Devotion vs. Cheap Calculation</h4>
+<p style="font-size:10.2pt; margin-bottom:8pt;">Śrīmatī Lakṣmīdevī was ready to sacrifice everything—with zero self-interest, calculation, or desire to enjoy—simply to feed her spiritual master and his followers.</p>
+<p class="hc-item">Am I constantly trying to play smart, taking calculated shortcuts or cheap compromises for my own convenience while pretending it is for "serving the mission"?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">Where am I hesitating to take a genuine, selfless risk to execute the instructions of my spiritual master and support his mission?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item"><em>My Reflection on Sincere Risk:</em></p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  <div class="prayer-title">Dropping My Guard</div>
+  <p class="prayer-prompt">Human life begins when we finally get tired of trying to run our own lives and put our head on the ground. Write a short, honest prayer to your spiritual master. Name one specific worry, plan, or area of your life where you have been desperately trying to play the controller, and beg him for the faith to finally put your head on the ground and leave it at his feet.</p>
+  <p class="prayer-salut">My Dear Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>
