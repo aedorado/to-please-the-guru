@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chapter 24</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,400;0,600;1,400;0,700&family=Noto+Serif:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  @page{
+    size: 6in 9in;
+    margin: 0.7in 0.6in 0.75in 0.6in;
+  }
+  *{ box-sizing:border-box; }
+  html,body{
+    margin:0; padding:0;
+    background: #ffffff;
+    color:#1a1a1a;
+    font-family:"Noto Serif", Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.55;
+  }
+  .sanskrit{ font-style:italic; color:#1a1a1a; }
+
+  .opener{ padding-top: 0.6in; }
+  .part-label{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing: 0.2em; text-transform: uppercase;
+    color: #4d4d4d; text-align:center; margin: 0 0 20pt;
+  }
+  .chap-num{
+    font-family:"Noto Serif Display", serif;
+    font-style: italic; font-size: 52pt; line-height:1;
+    text-align:center; color:#1a1a1a; margin: 0 0 4pt;
+  }
+  .chap-rule{
+    width: 0.7in; height: 1.4pt; margin: 0 auto 20pt;
+    background: linear-gradient(90deg, transparent, #1a1a1a, transparent);
+  }
+  .chap-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 22pt; line-height:1.25;
+    text-align:center; margin: 0 0 34pt;
+  }
+  p{ margin: 0 0 10pt; text-align: justify; hyphens:auto; }
+  .drop::first-letter{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size: 40pt; line-height: 0.72;
+    float:left; padding: 3pt 6pt 0 0; color:#1a1a1a;
+  }
+
+  h3{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-style:italic; font-size: 14pt;
+    color:#1a1a1a; margin: 22pt 0 10pt; page-break-after: avoid;
+  }
+  .divider{
+    width: 100%; text-align:center; color:#8a8a8a;
+    letter-spacing: 0.4em; font-size: 9pt; margin: 16pt 0;
+  }
+  .verse{
+    text-align:center; font-style:italic; font-size:10.3pt;
+    line-height:1.5; margin: 14pt 0; color:#1a1a1a;
+  }
+  .inline-blank{
+    display:inline-block; border-bottom:0.8pt solid #999999;
+    height:1em; margin:0 2pt; vertical-align:-2pt;
+  }
+  sup.cite{ font-size:7pt; color:#666666; margin-left:1pt; }
+  .content-list{
+    margin: 0 0 10pt; padding-left:1.4em; text-align:justify;
+  }
+  .content-list li{ margin-bottom:6pt; }
+
+  .fm-page-break{ page-break-before: always; }
+
+  .fm-title-page{ padding-top:1.6in; text-align:center; }
+  .fm-title-eyebrow{
+    font-family:"Cinzel", serif; font-size:10pt; letter-spacing:0.28em;
+    text-transform:uppercase; color:#8a8a8a; margin-bottom:0.5in;
+  }
+  .fm-title{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:44pt;
+    line-height:1.15; margin:0 0 0.3in;
+  }
+  .fm-subtitle{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:14pt;
+    color:#333333; line-height:1.5; margin-bottom:0.4in;
+  }
+  .fm-rule{ width:0.9in; height:1.4pt; background:#1a1a1a; margin:0 auto 0.4in; }
+  .fm-author{
+    font-family:"Cinzel", serif; font-size:11pt; letter-spacing:0.1em;
+    color:#333333;
+  }
+
+  .fm-copyright-wrap{ padding-top:2.2in; }
+  .fm-copyright{ text-align:center; font-size:9.5pt; line-height:1.7; color:#333333; }
+  .fm-copyright p{ text-align:center; margin-bottom:14pt; }
+  .fm-copyright .fm-small{ font-size:8.3pt; color:#666666; line-height:1.6; }
+
+  .fm-dedication-wrap{ padding-top:1.8in; }
+  .fm-dedication{ text-align:center; }
+  .fm-ded-label{
+    font-family:"Noto Serif Display", serif; font-style:italic; font-size:13pt;
+    margin-bottom:0.35in; text-align:center;
+  }
+  .fm-ded-name{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-size:15pt;
+    line-height:1.4; margin-bottom:8pt; text-align:center;
+  }
+  .fm-ded-desc{ font-style:italic; font-size:10.5pt; color:#444444; line-height:1.6; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-and{ font-style:italic; font-size:11pt; color:#8a8a8a; margin-bottom:0.3in; text-align:center; }
+  .fm-ded-close{ font-size:10pt; color:#555555; line-height:1.7; margin-top:0.4in; text-align:center; }
+
+  .fm-page{ padding-top:0.3in; }
+  .fm-heading{
+    font-family:"Cinzel", serif; font-size:13pt; letter-spacing:0.1em;
+    text-transform:uppercase; text-align:center; color:#1a1a1a; margin-bottom:0.35in;
+  }
+  .fm-page h4{
+    font-family:"Noto Serif Display", serif; font-weight:600; font-style:italic;
+    font-size:12.5pt; margin:18pt 0 8pt;
+  }
+
+  .toc-page{ padding-top:0.2in; }
+  .toc-part{
+    font-family:"Cinzel", serif; font-size:9.5pt; letter-spacing:0.14em;
+    text-transform:uppercase; color:#7a7a7a; margin:20pt 0 8pt;
+    border-bottom:0.8pt solid #cccccc; padding-bottom:5pt;
+  }
+  .toc-part:first-of-type{ margin-top:6pt; }
+  .toc-list{ list-style:none; margin:0 0 4pt; padding:0; }
+  .toc-list li{
+    display:flex; align-items:baseline; font-size:10.3pt; line-height:1.7;
+    page-break-inside: avoid;
+  }
+  .toc-num{ color:#999999; width:1.4em; flex:none; font-variant-numeric:tabular-nums; }
+  .toc-title{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .toc-dots{
+    flex:1; border-bottom:1px dotted #b3b3b3; margin:0 6pt 3pt; min-width:8pt;
+  }
+  .toc-page-num{ color:#555555; font-variant-numeric:tabular-nums; flex:none; }
+
+  /* Heart Check */
+  .hc-block{
+    border-top: 1.6pt solid #1a1a1a; padding-top: 12pt; margin: 26pt 0 16pt;
+  }
+  .hc-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; margin: 0 0 10pt; page-break-after: avoid;
+  }
+  .hc-block h4{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:13pt; margin: 14pt 0 8pt; page-break-after: avoid;
+  }
+  .hc-block h4:first-of-type{ margin-top:0; }
+  .hc-item{
+    font-size: 10.2pt; line-height:1.55; color:#333333;
+    margin: 0 0 8pt; padding-left:12pt; position:relative;
+    page-break-inside: avoid;
+  }
+  .hc-item::before{
+    content:"◆"; position:absolute; left:0; top:1.5pt;
+    font-size:6pt; color:#4d4d4d;
+  }
+  .hc-item.numbered::before{
+    content: attr(data-n) "."; font-size:9pt; font-weight:600; top:0; color:#1a1a1a;
+  }
+  .hc-item.plain{ padding-left:0; }
+  .hc-item.plain::before{ content:none; }
+  .fill-rule{
+    display:block; border-bottom:0.8pt solid #999999;
+    margin-top:4pt; width:96%;
+  }
+  .commitment{ font-weight:600; }
+
+  .hc-lines{
+    margin: 8pt 0 10pt 12pt; padding:0; list-style:none;
+    width:88%; page-break-inside: avoid;
+  }
+  .hc-lines li{ height:0; margin-bottom: 13pt; border-bottom: 0.8pt solid #999999; }
+  .hc-lines li:last-child{ margin-bottom:0; }
+
+  /* References */
+  .refs{ margin-top: 22pt; padding-top: 10pt; border-top: 0.8pt solid #cccccc; }
+  .refs-label{
+    font-family:"Cinzel", serif;
+    font-size: 8.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#999999; margin: 0 0 10pt;
+  }
+  .refs ol{ margin:0; padding:0 0 0 1.3em; font-size: 8.3pt; line-height:1.5; color:#555555; }
+  .refs li{ margin-bottom: 7pt; padding-left: 2pt; }
+  .refs em{ font-style:italic; }
+  .refs .url{ color:#7a7a7a; word-break: break-all; }
+
+  /* Personal Prayer — full page, bleeds into the unused margin since it
+     carries no running header/footer, to maximize writing room */
+  .prayer-page{
+    page-break-before: always;
+    margin: 0;
+    padding: 0.04in;
+  }
+  .prayer-frame{
+    border-top: 1.4pt solid #1a1a1a;
+    border-bottom: 1.4pt solid #1a1a1a;
+    padding: 0.1in 0.55in 0.08in;
+  }
+  .prayer-eyebrow{
+    font-family:"Cinzel", serif;
+    font-size: 9.5pt; letter-spacing:0.16em; text-transform:uppercase;
+    color:#4d4d4d; text-align:center; margin: 0 0 5pt;
+  }
+  .prayer-title{
+    font-family:"Noto Serif Display", serif;
+    font-weight:600; font-size:14pt; text-align:center; margin:0 0 7pt;
+  }
+  .prayer-prompt{
+    font-style:italic; font-size:8.7pt; line-height:1.35; color:#333333;
+    text-align:center; margin: 0 auto 9pt;
+  }
+  .prayer-salut{ font-size:10.5pt; margin: 0 0 7pt; }
+  .prayer-lines{ margin:0; padding:0; list-style:none; }
+  .prayer-lines .fill-rule{ display:block; width:100%; height:23pt; border-bottom:0.8pt solid #b3b3b3; }
+  .prayer-close{
+    text-align:right; font-style:italic; font-size:9.5pt; color:#4d4d4d; margin-top:5pt;
+  }
+</style>
+</head>
+<body>
+
+<div class="opener">
+  <div class="part-label">Part Three &middot; The Offering</div>
+  <div class="chap-num">XXIV</div>
+  <div class="chap-rule"></div>
+  <div class="chap-title">What is Our Sacrifice?</div>
+  <p class="drop">We must think deeply about our future.</p>
+<p>I remember in 2004, I was staying at the Radha Gopinath Temple in Chowpatty, Mumbai. His Holiness Radhanath Swami observed something very alarming: the children of our congregation were spending far more time in the wrong, materialistic association than in good, spiritual association.</p>
+<p>Maharaj asked the parents directly: <strong>“Do you want to leave your children like this?”</strong></p>
+<p>They said, <em>“No.”</em></p>
+<p>So, with just four students, they started a small school called Gopal Garden <sup class="cite">1</sup>. In the beginning, there was no building, no big facilities, nothing. But by the time I visited, that humble initiative had grown into a massive, beautiful building where children were being trained exquisitely in Kṛṣṇa consciousness.</p>
+<p>I had a Christian background before I came to Kṛṣṇa consciousness. The Christians understand the power of education; they have their own schools and universities in Nigeria and all over the world. And you cannot go to a Muslim school and teach them about the <em>Gītā</em> there; if you go there, you have to learn the Koran <sup class="cite">2</sup>.</p>
+<p>But why are “Kṛṣṇa’s children” not becoming devotees?</p>
+<p>Have we checked why? It is because we do not have our own educational system. We have simply not prioritized the spiritual formation of the next generation.</p>
+<p>Śrīla Prabhupāda boldly declared that modern secular schools are nothing but <strong>slaughterhouses of consciousness</strong> <sup class="cite">3</sup>. Just as innocent animals are sent to slaughterhouses to have their bodies killed, we send our innocent children to these materialistic schools to have their spiritual consciousness systematically slaughtered.</p>
+<p>If we want to save our children, we must make particular, serious arrangements for their spiritual education. Sending them to the temple program for two hours on Sunday while leaving them for six hours a day in a secular school is a complete waste of labor. It is exactly like trying to <strong>use a basket to fetch water</strong>!</p>
+<p>If you try to carry water in a wicker basket, what will happen? The water will leak out completely! Only a mystic like Durvāsā Muni can use a wicker basket to carry water without it leaking. But let me ask you: how many Durvāsā Munis are sitting in our temple rooms today? None of us! So why are you trying to carry the spiritual consciousness of your children in the wicker basket of secular education? Settle this in your mind: we must take responsibility for our children's spiritual formation and build our own schools.</p>
+
+</div>
+<div class="divider">&#10022;</div>
+<h3>Overcoming Selfishness and Prioritizing the Future</h3>
+<p>Let me say something very heavy and very direct: <strong>devotees are extremely, deeply selfish.</strong></p>
+<p>We make grand, lavish plans for weddings. We design highly elaborate, static, and luxurious wedding ceremonies that last for just one day of prestige.</p>
+<p>But what is our plan for the children that come after that marriage? What is our plan for their spiritual future? Zero! We have no plan. Is that selflessness or is that deep selfishness?</p>
+<p>We are constructing big temples, but where are the schools? If you can build a grand temple, why can you not build a school?</p>
+<p>In fact, you will get far more money and support for a school than a temple! Many philanthropic and secular organizations will happily donate to build a school because they see the immediate benefit it brings to society. But because we are selfish and short-sighted, we hesitate.</p>
+<p>I am sorry to say this, but <strong>we have leaders without vision.</strong></p>
+<p>Our GBC and temple leaders do not look at the importance of our children, and they are not planning for our future. They think only about their own bellies, their personal positions, and their prestige. Their philosophy is not clean because it is constantly controlled by politics.</p>
+<p>Let us give up this artificial, prestigious lifestyle. If you are not looking ahead to who is going to maintain this mission tomorrow, you are not a leader.</p>
+<p>Before I came to India, I sat down with all the devotees in Nigeria and challenged them: <strong>“Look at my body. My body is old. If I give this society to you today, which of you is ready to handle it?”</strong></p>
+<p>If you have built a million temples, opened a hundred departments, and initiated a billion disciples, but not a single one of them is spiritually qualified to represent you and carry on the pure lineage after you leave—you are an absolute, total failure! Succession means everything, and huge numbers and grand facilities mean little if nobody is spiritually qualified to carry the lineage forward.</p>
+<div class="divider">&#10022;</div>
+<h3>Śrīla Prabhupāda’s Standard of Boiling the Milk</h3>
+<p>What is real success in Kṛṣṇa consciousness?</p>
+<p>Success is not measured by how many congregation members we have, or how many grand facilities we own. Success is: <strong>How many of us are actually becoming pure devotees?</strong></p>
+<p>Śrīla Prabhupāda famously gave us a crucial instruction: <strong>“Boil the milk.”</strong> <sup class="cite">4</sup></p>
+<p>We are very expert at getting the milk—preaching, distributing books, attracting people, and building new facilities. But are we boiling the milk to make it thick and sweet? Are we developing devotees, character, depth, and genuine qualifications?</p>
+<p>If you do not boil the milk, it will spoil and become useless. We must not be satisfied simply with bringing new people; we must be satisfied with keeping the devotees and refining their character.</p>
+<p>Prabhupāda clearly made his intentions known: <em>“If I can make even one pure devotee, I will consider my entire attempt a success.”</em></p>
+<p>He designed everything in ISKCON—from college preaching and Life Membership to food for life, restaurants, farm communities, and Deity worship—for that single, unadulterated purpose: to make pure devotees. He was completely purpose-driven.</p>
+<p>Because he was purpose-driven, he could tackle all the obstacles and successfully establish this movement. If we want to please him, we must boil the milk.</p>
+<div class="divider">&#10022;</div>
+<h3>Establishing Self-Sufficient Devotee Communities</h3>
+<p>A true devotee-centered future cannot exist only inside concrete city buildings. We need self-sufficient communities.</p>
+<p>And what does a community mean to my spiritual master, His Holiness Bhakti Tīrtha Mahārāja? It means: <strong>the school is there, the farm is there, the cows are there, and the agricultural lands are there.</strong> <sup class="cite">5</sup></p>
+<p>I have never read anywhere in the <em>Śrīmad-Bhāgavatam</em> that Kṛṣṇa fed His cows dry grass inside a concrete house. Kṛṣṇa took the cows out to graze. He walked with them in the forests of Vraja, and they ate fresh, green grass. We must return to this natural, Vedic lifestyle where schools, agriculture, and cow protection are integrated together.</p>
+<p>Bhakti Tīrtha Mahārāja emphasized this so much in West Africa. He started it small, seeing the future, wanting us to be self-sufficient and not look for anything from the outside. He demonstrated cottage industries, schools, and clinics. Today in West Africa, we have two schools—one in Nigeria (Port Harcourt) and one in Ghana—where even non-devotees send their children to be trained. They learn everything Kṛṣṇa consciously!</p>
+<p>In Nigeria, we have acquired one hundred acres of land, and in Ghana, we have two hundred and fifty acres. We are not building these farms for material business; we are developing the Surabhi project as a direct, loving offering to him because that is what he wanted.</p>
+<p>A genuine disciple’s only duty is to fulfill the desires of the spiritual master. We are pushing these schools and farms with all our energy to show the world that Kṛṣṇa is always present when His devotees cooperate with selflessness.</p>
+<div class="divider">&#10022;</div>
+<h3>Making Sincere Sacrifices for the Preaching Mission</h3>
+<p>Many parents tell me: <em>“Maharaj, we want to start a school, but we are hesitant. We are afraid of the challenges, the lack of money, and the opposition from others.”</em></p>
+<p>Why are you afraid? Fear of what?</p>
+<p>Are you afraid because Kṛṣṇa is not there? Kṛṣṇa is always there!</p>
+<p>If you are not ready to face challenges, you will never make anything wonderful happen in this world. You will remain babies forever!</p>
+<p>Look at how our previous Ācāryas struggled to give us this sublime path. They sacrificed for devotees they would never meet, and we have inherited their mission.</p>
+<p><em> <strong>Śrīpāda Rāmānujācārya</strong> was persecuted so severely by the Shaivite king that they wanted to kill him <sup class="cite">6</sup>. He had to flee his home in Srirangam and run to Melkote. The king’s soldiers arrested and brutally tortured his disciples, blinding Kureśa and Mahāpūrṇa; only one managed to escape. </em> <strong>Śrīla Prabhupāda</strong> made many attempts, underwent unimaginable struggles, and made the ultimate sacrifice to give us this society.</p>
+<p>They made these extreme, life-threatening sacrifices, and today we are sitting comfortably in these beautifully decorated rooms enjoying the fruits of their labor.</p>
+<p>But let me ask you a very direct question: <strong>What is our own sacrifice?</strong></p>
+<p>What are you risking for Kṛṣṇa? Sincere sacrifice is our turn to give back, and it must go beyond just schools. What time, money, comfort, prestige, career opportunity, energy, or ambition are we willing to sacrifice for the devotees who will come after us? Sincere schools and farms are just our major examples.</p>
+<p>Sometimes, devotees think with a very narrow, business mind: <em>“Maharaj, why should I spend my hard-earned money and time to build a school? By the time the school is finished, my own children will have already graduated. What will I get out of it?”</em></p>
+<p>If you think with this business calculation, <strong>you are not a devotee!</strong></p>
+<p>A devotee never asks, <em>“What will I get out of it?”</em> A devotee only asks, <em>“What can I give?”</em></p>
+<p>Think of the person who discovered electricity. He did not sit back and think, <em>“Oh, if I invent this, I will not personally get to enjoy the light bulb before I die.”</em> He simply wanted to help humanity, and because of his selflessness, we are all sitting under bright lights today.</p>
+<p>We must have that exact same spirit of selflessness. We must make sacrifices today so that the devotees of tomorrow have a safe harbor to protect their souls and continue the disciplic succession after we are gone.</p>
+<p>Śrīla Prabhupāda's expectation was that the third generation of our children should be so pure that they can <strong>light a fire with mantras</strong>! This is his expectation. That will come from pure <strong>Garbhādhāna-saṁskāra</strong> and careful training <sup class="cite">7</sup>. Samskara means to prepare the consciousness, making everything auspicious for a divine person to appear. Prabhupāda was teaching us how important our children are—he even told a disciple once: <em>“Leave Deity worship, go and take care of your child.”</em></p>
+<p>Our entire journey through these pages has been a steady, progressive ascent of the soul. In the beginning, we learned that spiritual life begins only when we are willing to put our heads on the ground in full, unreserved surrender at the feet of the Guru. We then learned how to wire our hearts directly to the powerhouse of his instructions, hearing him with undivided attention and serving his Vāṇī even in separation. And now, in this final hour, we are called to make the ultimate, risk-taking sacrifice to protect the future of his mission and preserve the next generation of devotees.</p>
+<p>So let us come together, sit down on the floor, and discuss what to do. Let us stop acting like babies, drop our selfish prestige, and make a glorious, risk-taking offering of sacrifice at the feet of Śrīla Prabhupāda and our spiritual masters! This is where our journey back to Godhead is completed—not in some proud, independent achievement, but by returning directly to where we first began: with our heads on the ground, fully surrendered to the dust of their lotus feet.</p>
+
+<div class="refs">
+<p class="refs-label">References</p>
+<ol>
+<li>Traditional biographical records of the Radha Gopinath Temple (Chowpatty) and Gopal Garden School (2004).</li>
+<li><em>Śrīmad-Bhāgavatam</em> 7.14.3-4 (establishing the duties of a gṛhastha).</li>
+<li>Śrīla Prabhupāda's Lectures and Purports, <em>Śrīmad-Bhāgavatam</em> 4.28.47 (critiquing secular educational "slaughterhouses").</li>
+<li>Śrīla Prabhupāda's Room Conversation, "Boil the Milk" (Mumbai, 1972).</li>
+<li>Biographical records of His Holiness Bhakti Tīrtha Mahārāja and the West African Surabhi Project.</li>
+<li>Śrī Vyāsācala, <em>Rāmānuja-campū</em> / Traditional life histories of Śrīpāda Rāmānujācārya (describing the persecution by Krimikantha).</li>
+<li><em>Śrīmad-Bhāgavatam</em> 10.2.7-15, and Śrīla Prabhupāda's letters regarding the importance of child-rearing and Garbhādhāna-saṁskāra.</li>
+</ol>
+</div>
+
+<div class="hc-block">
+<p class="hc-eyebrow">Chapter 24 &middot; Heart Check</p>
+<h4>Building for the Future</h4>
+<p class="hc-item">What am I actively building in my spiritual life and community that will outlive my physical body?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p style="font-size:10.2pt; margin-bottom:8pt;">`My Legacy: _________________________`</p>
+<p class="hc-item">Who am I personally training, loving, and mentoring to submissively carry forward the disciplic instructions I received?  `My Successor:</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<h4>Boiling the Milk</h4>
+<p class="hc-item">Am I putting my energy only into "getting the milk"—attracting new people and expanding external projects—while neglecting to help existing devotees develop genuine depth, character, and spiritual qualification?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+<p class="hc-item">What comfort, career opportunity, money, time, or prestige am I willing to voluntarily sacrifice this month to ensure the devotees of tomorrow have a safe, stable harbor to protect their souls?</p>
+<ol class="hc-lines"><li></li><li></li></ol>
+</div>
+
+
+<div class="prayer-page">
+ <div class="prayer-frame">
+  <div class="prayer-eyebrow">My Personal Prayer</div>
+  
+  <p class="prayer-prompt">️ <strong>My Sacrifice / My Personal Offering</strong> *Our Ācāryas bled and made extreme, life-threatening sacrifices to hand us the golden key of pure bhakti. Write a raw, un-concocted offering, begging Śrīla Prabhupāda and your spiritual master for the selfless vision to stop thinking only of your own comfort and prestige, and offering one specific risk or sacrifice you will undertake to protect the future of their mission.</p>
+  <p class="prayer-salut">My Dear Srila Prabhupada and Gurudev,</p>
+  <div class="prayer-lines">
+    <span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span><span class="fill-rule"></span>
+  </div>
+  <div class="prayer-close">&mdash; your aspiring servant</div>
+ </div>
+</div>
+
+
+</body>
+</html>

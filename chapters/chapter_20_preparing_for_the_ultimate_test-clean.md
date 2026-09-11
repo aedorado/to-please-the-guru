@@ -1,4 +1,4 @@
-# Chapter 18: Preparing for the Ultimate Test
+# Chapter 20: Preparing for the Ultimate Test
 
 What is the duty of a person who is about to die? 
 
@@ -103,7 +103,7 @@ Let us stop playing games. Let us take our Sādhana seriously, hear with our min
 
 ---
 
-## **Chapter 18: Heart Check**
+## **Chapter 20: Heart Check**
 
 ### **The Hardware vs. The Software**
 

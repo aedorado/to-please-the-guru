@@ -1,4 +1,4 @@
-# Chapter 17: The Kāliya Inside Us
+# Chapter 19: The Kāliya Inside Us
 
 Why are we not making rapid progress in our spiritual life? We hear these beautiful pastimes of Kṛṣṇa year after year, yet our characters remain unchanged, our hearts remain hard, and we continue to carry critical, offensive, and envious thoughts in our minds. 
 
@@ -142,7 +142,7 @@ If we do our part, the footprint of Kṛṣṇa will be decorated on our heads, 
 
 ---
 
-## **Chapter 17: Heart Check**
+## **Chapter 19: Heart Check**
 
 ### **The Envy in Our Hearts**
 Observe your reactions when someone enters your territory or critiques your work:

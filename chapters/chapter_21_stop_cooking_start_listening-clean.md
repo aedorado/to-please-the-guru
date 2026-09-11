@@ -1,4 +1,4 @@
-# Chapter 19: Stop Cooking, Start Listening
+# Chapter 21: Stop Cooking, Start Listening
 
 When we gather for *Śrīmad-Bhāgavatam*, it is not an ordinary, dry academic seminar. *Śrīmad-Bhāgavatam* is the direct sound representation of Lord Kṛṣṇa Himself. It is a sound incarnation, and hearing it is the absolute, most important activity of our eternal souls. 
 
@@ -126,7 +126,7 @@ Let us hear about Kṛṣṇa continuously, again and again (*abhīkṣṇaśa�
 
 ---
 
-## **Chapter 19: Heart Check**
+## **Chapter 21: Heart Check**
 
 ### **My Household Commitment**
 

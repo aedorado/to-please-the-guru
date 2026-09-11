@@ -1,4 +1,4 @@
-# Chapter 16: A Caring Father
+# Chapter 18: A Caring Father
 
 I was very new in Kṛṣṇa consciousness, and my beloved spiritual master, His Holiness Bhakti Tīrtha Swami, had taught us a very simple and powerful practice: how to write a personal letter to Lord Kṛṣṇa. He encouraged us to put our deepest thoughts, our struggles, and our prayers on paper, addressing the Lord directly.
 
@@ -132,7 +132,7 @@ He told us: **“So, try, keep trying, to make something good.”**
 
 ---
 
-## **Chapter 16: Heart Check**
+## **Chapter 18: Heart Check**
 
 ### **Devotee Care and Protection**
 

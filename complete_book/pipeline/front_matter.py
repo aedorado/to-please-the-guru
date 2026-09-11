@@ -1,7 +1,22 @@
 import build, parse_chapter
+from render_chapter import PARTS
 
 md_inline = parse_chapter.md_inline
 render_paragraphs = parse_chapter.render_paragraphs
+
+_ONES = ["zero","one","two","three","four","five","six","seven","eight","nine","ten",
+         "eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen",
+         "eighteen","nineteen"]
+_TENS = ["","","twenty","thirty","forty"]
+
+def _num_word(n):
+    if n < 20:
+        return _ONES[n]
+    tens, ones = divmod(n, 10)
+    return _TENS[tens] + ("-" + _ONES[ones] if ones else "")
+
+TOTAL_CHAPTERS = PARTS[-1][1]  # last part's upper bound == total chapter count
+TOTAL_CHAPTERS_WORD = _num_word(TOTAL_CHAPTERS)
 
 TITLE_PAGE = """
 <div class="fm-title-page">
@@ -65,7 +80,11 @@ Throughout these pages, you will hear the direct, personal voice of Srila Gurude
 Instead, his focus is entirely on surrender, purity, and the active sacrifices we must make to protect our consciousness and build a real, devotee-centered future. This is a handbook for those who are ready to put their heads on the ground in genuine surrender.
 """
 
-INTRO_HTML = """
+def _intro_html():
+    lo1, hi1, _, _ = PARTS[0]
+    lo2, hi2, _, _ = PARTS[1]
+    lo3, hi3, _, _ = PARTS[2]
+    return f"""
 <div class="fm-page">
 <h2 class="fm-heading">Introduction: Hearing on the Rug</h2>
 <p style="font-style:italic;">Editorial Note: As editors, our goal has been to preserve the atmosphere of the original rooms where these discourses were delivered. When you read these chapters, we invite you to imagine sitting on the floor of a quiet temple room, surrounded by sincere souls who have laid their doubts, struggles, and pain before the speaker. The afternoon sun is fading, the mṛdaṅga is quiet, and Srila Gurudeva is sitting directly on the rug in front of you. He is looking you in the eye. He is not speaking to a corporate audience or a passive screen; he is speaking directly to your soul.</p>
@@ -77,15 +96,15 @@ INTRO_HTML = """
 <p>In our modern world, we are conditioned to believe that "seeing is believing". We want to see Kṛṣṇa with our own unqualified material eyes. But the great scripture <em>Śrīmad-Bhāgavatam</em> and our great ācāryas tell us that the process of spiritual seeing begins through the ears. Sincere, submissive hearing is what connects our hearts directly to the powerhouse of divine mercy (<em>vāṇī</em>). When we hear with submissive attention, the transcendental vibration penetrates our ears, pierces through our intellectual pride, and enters straight into the heart, cleansing it of the venomous Kāliya of envy, pride, and material desires. Unlike dry, polished writing, the spoken word carries the raw, spontaneous potency of the speaker's realizations. It has the power to transform a listener from a dry, mechanical ritualist into a pure devotee who can walk across the raging, dangerous rivers of material existence.</p>
 
 <h4>The Three Progressive Stages of the Journey</h4>
-<p>This book is structured to guide the reader on an internal, progressive journey of twenty-two chapters, replicating the spiritual development of a sincere disciple:</p>
+<p>This book is structured to guide the reader on an internal, progressive journey of {TOTAL_CHAPTERS_WORD} chapters, replicating the spiritual development of a sincere disciple:</p>
 <ol class="content-list">
-<li><strong>Part I: Putting Our Head on the Ground (The Foundation of Devotion) (Chapters 1&ndash;7):</strong> This section establishes the foundational standards of our spiritual practice. We learn that human behavior begins when we bow our heads to the disciplic line. We explore the compulsory nature of initiation, the absolute necessity of vigilant sadhana, and the importance of daily planning to protect our early-morning chanting from the laziness of the mind.</li>
-<li><strong>Part II: Deepening Our Connection (The Internal Battle) (Chapters 8&ndash;16):</strong> Having established our foundational standards, we enter the internal battlefield. We learn to perceive Kṛṣṇa through the ears, embrace the purifying burn of pure love, and execute instructions unhesitatingly without bypassing the gatekeepers of the mission. We then study the paths of strength and separation, learning to cry with genuine appreciation like a queen, and to stand as mature, responsible representatives in the empty classroom of life once the teacher departs.</li>
-<li><strong>Part III: Crushing Pride and Making Our Sacrifice (The Offering) (Chapters 17&ndash;22):</strong> The final section demands that we offer our lives as a practical sacrifice. We confront the venomous Kāliya of our internal pride, prepare ourselves perfectly for the ultimate test of death, and establish clear, spiritual boundaries inside our household lives, finally making the ultimate sacrifice to "boil the milk" and build devotee-centered educational communities to protect the future of our children.</li>
+<li><strong>Part I: Putting Our Head on the Ground (The Foundation of Devotion) (Chapters {lo1}&ndash;{hi1}):</strong> This section establishes the foundational standards of our spiritual practice. We learn that human behavior begins when we bow our heads to the disciplic line. We explore the compulsory nature of initiation, the absolute necessity of vigilant sadhana, and the importance of daily planning to protect our early-morning chanting from the laziness of the mind.</li>
+<li><strong>Part II: Deepening Our Connection (The Internal Battle) (Chapters {lo2}&ndash;{hi2}):</strong> Having established our foundational standards, we enter the internal battlefield. We learn to perceive Kṛṣṇa through the ears, embrace the purifying burn of pure love, and execute instructions unhesitatingly without bypassing the gatekeepers of the mission. We then study the paths of strength and separation, learning to cry with genuine appreciation like a queen, and to stand as mature, responsible representatives in the empty classroom of life once the teacher departs.</li>
+<li><strong>Part III: Crushing Pride and Making Our Sacrifice (The Offering) (Chapters {lo3}&ndash;{hi3}):</strong> The final section demands that we offer our lives as a practical sacrifice. We confront the venomous Kāliya of our internal pride, prepare ourselves perfectly for the ultimate test of death, and establish clear, spiritual boundaries inside our household lives, finally making the ultimate sacrifice to "boil the milk" and build devotee-centered educational communities to protect the future of our children.</li>
 </ol>
 
 <h4>The Heart Checks and Raw Prayers</h4>
-<p>Every chapter in this book closes with a practical, honest <strong>Heart Check</strong> and a raw, personal <strong>Prayer</strong>. These are not academic questionnaires. They are designed to serve as a mirror for your soul. They ask you to look honestly into your own heart when the teacher is out of the room, when no one is policing you, and to ask: <em>Is my spiritual life real, or is it just a prestigious, mechanical show?</em> The personal prayers are there to help you write your raw struggles, anxieties, and submissive vows on paper, addressing the Lord and the Guru directly.</p>
+<p>Every chapter in this book closes with a practical, honest <strong>Heart Check</strong> and, where the source discourse gives one, a raw, personal <strong>Prayer</strong>. These are not academic questionnaires. They are designed to serve as a mirror for your soul. They ask you to look honestly into your own heart when the teacher is out of the room, when no one is policing you, and to ask: <em>Is my spiritual life real, or is it just a prestigious, mechanical show?</em> The personal prayers are there to help you write your raw struggles, anxieties, and submissive vows on paper, addressing the Lord and the Guru directly.</p>
 </div>
 """
 
@@ -96,5 +115,5 @@ def all_pages_html():
         f'<div class="fm-page-break"></div><div class="fm-dedication-wrap">{DEDICATION_PAGE}</div>'
         f'<div class="fm-page-break"></div>{_section("Acknowledgements", ACKNOWLEDGEMENTS_MD)}'
         f'<div class="fm-page-break"></div>{_section("Preface", PREFACE_MD)}'
-        f'<div class="fm-page-break"></div>{INTRO_HTML}'
+        f'<div class="fm-page-break"></div>{_intro_html()}'
     )

@@ -1,4 +1,4 @@
-# Chapter 22: What is Our Sacrifice?
+# Chapter 24: What is Our Sacrifice?
 
 We must think deeply about our future. 
 
@@ -135,7 +135,7 @@ So let us come together, sit down on the floor, and discuss what to do. Let us s
 
 ---
 
-## **Chapter 22: Heart Check**
+## **Chapter 24: Heart Check**
 
 ### **Building for the Future**
 

@@ -133,11 +133,18 @@ def parse_prayer(text):
     return title, md_inline(prompt), (salut or "My Dear Gurudev,")
 
 def parse_references(text):
+    text = re.sub(r'(?m)^\s*-{3,}\s*$', '', text)  # strip stray "---" divider lines
     items = []
-    # try "[n] text" blocks separated by blank lines
-    bracket_items = re.findall(r'\[\d+\]\s*(.+?)(?=\n\[\d+\]|\Z)', text, re.S)
-    if bracket_items:
-        items = [i.strip().replace("\n", " ") for i in bracket_items]
+    # "[n] text" entries -- these appear either one-per-line/blank-line
+    # separated, OR all run together inline on a single line/paragraph with
+    # no separator but the "[n]" markers themselves, so split on every
+    # "[digit]" occurrence rather than requiring a preceding newline.
+    bracket_matches = list(re.finditer(r'\[\d+\]\s*', text))
+    if bracket_matches:
+        for i, m in enumerate(bracket_matches):
+            start = m.end()
+            end = bracket_matches[i + 1].start() if i + 1 < len(bracket_matches) else len(text)
+            items.append(text[start:end].strip().replace("\n", " "))
     else:
         # numbered list "1. text"
         items = re.findall(r'^\d+\.\s*(.+)$', text, re.M)
@@ -204,23 +211,35 @@ def parse_chapter(md_text, chap_num):
     title = m.group(1).strip() if m else f"Chapter {chap_num}"
     md_text = md_text[m.end():] if m else md_text
 
-    # locate heart check heading
-    hc_m = re.search(r'##\s*\*\*Chapter\s*\d+:\s*Heart Check\*\*', md_text)
+    # Locate & extract References FIRST, wherever it falls -- most chapters
+    # put it after the Heart Check, but at least one (confirmed: ch. 15,
+    # "Cry Like a Queen") puts it BEFORE the Heart Check heading instead.
+    # Pulling it out up front means the body/Heart-Check split below never
+    # has to special-case which order this particular chapter used, and
+    # References never gets accidentally swallowed as a plain body section.
+    hc_heading_re = r'##\s*\*\*Chapter\s*\d+:\s*Heart Check\*\*'
+    hc_heading_m_probe = re.search(hc_heading_re, md_text)
+    ref_m = re.search(r'##\s*\*{0,2}References\*{0,2}', md_text)
+    ref_text = ""
+    if ref_m:
+        if hc_heading_m_probe and hc_heading_m_probe.start() > ref_m.start():
+            ref_end = hc_heading_m_probe.start()
+        else:
+            ref_end = len(md_text)
+        ref_text = md_text[ref_m.end():ref_end]
+        md_text = md_text[:ref_m.start()] + md_text[ref_end:]
+
+    # locate heart check heading (in the references-free text)
+    hc_m = re.search(hc_heading_re, md_text)
     body_text = md_text[:hc_m.start()] if hc_m else md_text
     rest = md_text[hc_m.end():] if hc_m else ""
-
-    # locate references independently first -- it may appear with or without
-    # a prayer section before it, so pull it out before splitting hc/prayer
-    ref_m = re.search(r'##\s*\*{0,2}References\*{0,2}', rest)
-    rest_before_refs = rest[:ref_m.start()] if ref_m else rest
-    ref_text = rest[ref_m.end():] if ref_m else ""
 
     # split heart-check vs. prayer on the FIRST \newpage marker (present in
     # every chapter that has a prayer section, even when wording of the
     # prayer heading itself varies chapter to chapter)
-    newpage_m = re.search(r'\\?newpage|ewpage', rest_before_refs, re.I)
-    hc_text = rest_before_refs[:newpage_m.start()] if newpage_m else rest_before_refs
-    prayer_text = rest_before_refs[newpage_m.end():] if newpage_m else ""
+    newpage_m = re.search(r'\\?newpage|ewpage', rest, re.I)
+    hc_text = rest[:newpage_m.start()] if newpage_m else rest
+    prayer_text = rest[newpage_m.end():] if newpage_m else ""
 
     body_text, hc_text, prayer_text, ref_text = (
         _clean(body_text), _clean(hc_text), _clean(prayer_text), _clean(ref_text)

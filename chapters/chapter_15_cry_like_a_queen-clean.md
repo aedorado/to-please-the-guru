@@ -1,4 +1,4 @@
-# Chapter 13: Cry Like a Queen
+# Chapter 15: Cry Like a Queen
 
 When the mortal body of our spiritual master expires, what should be our response? How should we, who have received his fatherly protection and guidance, navigate the devastating, heart-breaking pain of his physical disappearance?
 
@@ -119,7 +119,7 @@ Let us rise up. Let us dry our tears of lamentation and replace them with the ac
 
 ---
 
-## **Chapter 13: Heart Check**
+## **Chapter 15: Heart Check**
 
 ### **The Powerhouse Connection**
 Take a few quiet minutes to examine the reality of your connection:

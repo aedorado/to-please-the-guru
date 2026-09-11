@@ -1,4 +1,4 @@
-# Chapter 15: The Fire of a Spiritual Warrior
+# Chapter 17: The Fire of a Spiritual Warrior
 
 If we want to understand what it means to serve the spiritual master in separation, we do not have to look very far. We can look at the life of my beloved spiritual master, His Holiness Bhakti Tīrtha Swami. He was a spiritual warrior who had unflinching faith in his spiritual master, Śrīla Prabhupāda. His faith in his Guru increased every single moment, under any difficulties and challenges [1].
 
@@ -108,7 +108,7 @@ If we can follow in the footsteps of such an uncompromised spiritual warrior, an
 
 ---
 
-## **Chapter 15: Heart Check**
+## **Chapter 17: Heart Check**
 
 ### **Sincerity in the Empty Classroom**
 Reflect on your spiritual standards and daily practices:

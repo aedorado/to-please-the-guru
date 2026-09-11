@@ -1,4 +1,4 @@
-# Chapter 20: Giving Beyond the Modes
+# Chapter 22: Giving Beyond the Modes
 
 If you want to know how to give charity, you must study the supreme instructions of the *Bhagavad-gītā* [1]. There, Kṛṣṇa explains that everything in this material world is tinged by the three modes of nature, and our giving is no exception [2]. 
 
@@ -155,7 +155,7 @@ Let us throw away our dry, corporate calculations. Give from a sweet heart, with
 
 ---
 
-## **Chapter 20: Heart Check**
+## **Chapter 22: Heart Check**
 
 ### **My Intentions in Giving**
 Before you make any donation or perform any service for the temple or the devotees, look into your heart:

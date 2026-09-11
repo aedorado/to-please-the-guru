@@ -1,4 +1,4 @@
-# Chapter 14: When the Teacher Leaves the Classroom
+# Chapter 16: When the Teacher Leaves the Classroom
 
 Whether the spiritual master is far away preaching, or we are simply apart from him in our daily service, how should a disciple maintain the connection? What is the actual test of a disciple who is physically separated from his guru?
 
@@ -68,7 +68,7 @@ We must look for a bona fide Guru, but we must first become a bona fide disciple
 
 ---
 
-## **Chapter 14: Heart Check**
+## **Chapter 16: Heart Check**
 
 ### **The Test of the Empty Classroom**
 Honestly reflect on your spiritual standards when you are away from the temple, your spiritual family, or the physical presence of the Guru:

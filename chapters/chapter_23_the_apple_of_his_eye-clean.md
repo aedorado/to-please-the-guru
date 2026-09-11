@@ -1,4 +1,4 @@
-# Chapter 21: The Apple of His Eye
+# Chapter 23: The Apple of His Eye
 
 To satisfy Lord Kṛṣṇa is our only business. With our services, with our activities, and in everything we do, our sole motivation must be the desire to please the Lord. That is selflessness. The moment the desire for satisfying ourselves enters, it becomes selfishness, and we can go on performing activities for millions of years without ever being successful in Kṛṣṇa consciousness. 
 
@@ -127,7 +127,7 @@ Let us stop treating Kṛṣṇa consciousness as a cheap, mechanical show. Let 
 
 ---
 
-## **Chapter 21: Heart Check**
+## **Chapter 23: Heart Check**
 
 ### **Character over Scholarship**
 
